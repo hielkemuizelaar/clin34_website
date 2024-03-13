@@ -1,0 +1,103 @@
+// Sidebar
+//
+// Styles for the sidebar.
+
+.masthead {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+
+  a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 
+            -2px -2px 0 black,  
+             2px -2px 0 black,
+            -2px  2px 0 black,
+             2px  2px 0 black; 
+  }
+}
+
+.avatar-image {
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.masthead-title {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 900;
+
+  a:hover,
+  a:focus {
+    color: var(--link-hover-color);
+  }
+}
+
+.masthead-tagline {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 1;
+  color: white;
+  text-decoration: none;
+  text-shadow: 
+            -2px -2px 0 black,  
+             2px -2px 0 black,
+            -2px  2px 0 black,
+             2px  2px 0 black; 
+  
+}
+
+.navigation-list {
+  margin-top: var(--spacer-2);
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-item {
+  display: block;
+  margin-bottom: var(--spacer);
+}
+
+.navigation-item a {
+  background: transparent;
+  color: inherit;
+  letter-spacing: 0.05em;
+  font-size: 90%;
+  border-bottom: 2px solid;
+  border-color: inherit;
+
+  &:hover,
+  &:focus {
+    color: var(--link-hover-color);
+  }
+}
+
+.social {
+  margin-top: var(--spacer-2);
+  font-size: 150%;
+  white-space: normal;
+  line-height: .5;
+}
+
+.social-icon {
+  padding: var(--spacer);
+  &:hover,
+  &:focus {
+    color: var(--link-hover-color);
+    background-color: transparent;
+  }
+}
+
+@media (max-width: $md-width) {
+  .avatar-image {
+    width: 15%;
+  }
+}
