@@ -3,7 +3,46 @@
 </main>
 
 <footer class="footer">
-  <img src="/liacs.jpg" alt="LIACS" width="240" height="69">
+  <style>
+    .column {
+  float: left;
+  width: 33.33%;
+  padding: 2px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .image-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+
+  .image-container img {
+    vertical-align: middle; /* Align images vertically within container */
+  }
+  </style>
+  <div class="image-container">
+    <div class="row">
+      <div class="column">
+        <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+          <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+        </a>
+      </div>
+      <div class="column">
+        <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+          <img src="/lucl.png" alt="LUCL" width="300" height="150">
+        </a>
+      </div>
+      <div class="column">
+        <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+          <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+        </a>
+      </div>
+    </div>
+  </div>
   <small>
     &copy; 2024 {% if site.author %}<a href="{{ site.author.url }}">{{ site.author.name }}</a>{% endif %}. All rights reserved.
   </small>
