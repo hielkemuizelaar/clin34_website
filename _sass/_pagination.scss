@@ -29,7 +29,7 @@ a.pagination-item:hover {
 
 @media (min-width: $sm-width) {
   .pagination {
-    margin: var(--spacer-3) 0;
+    margin: var(--spacer-10) 0;
     height: calc(var(--body-font-size) * var(--body-line-height) + var(--spacer) * 2);
   }
 

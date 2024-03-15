@@ -3,15 +3,65 @@ layout: default
 ---
 
 {% include home-header.html %}
+<style>
+    .special-div {
+        background-color: #001158;
+        border: 2px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #ffff;
+        transition: background-color 0.3s ease;
+    }
 
-<div class="posts">
+    .special-heading-h1 {
+    text-align: center;
+    color: #ffff; /* Change color to blue */
+    }
+
+    .special-heading-h2 {
+    text-align: center;
+    }
+
+    /* .special-div:hover {
+        background-color: #e0e0e0;
+    } */
+
+    /* Styling for div with ID "featured-div" */
+    .featured-div {
+        background-color: #f0f0f0;
+        border: 2px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #333;
+        transition: background-color 0.3s ease;
+    }
+
+    /* #featured-div:hover {
+        background-color: #e0e0e0;
+    } */
+</style>
+<div class="special-div">
+  <section>
+  <h1 class="special-heading-h1"> CLIN 34 — Leiden 2024</h1>
+  The 34th Meeting of Computational Linguistics in The Netherlands (CLIN 34), organized by the Leiden University Centre for Linguistics (LUCL), in collaboration with the Leiden Institute of Advanced Computer Science (LIACS), and the Leiden University Centre for Digital Humanities (LUCDH), Leiden University, is set to be held on August 30, 2024 at the Science Park campus of Leiden University, Leiden, The Netherlands.
+  </section>
+</div>
+<h2 class="special-heading-h2">News</h2>
+<div class="featured-div">
+  {%- assign paginator.per_page = 10 -%}
   {% for post in paginator.posts %}
   <section class="post-entry">
-    <h1 class="post-title">
+    <h3 class="post-title">
       <a href="{{ post.url | relative_url }}">
         {{ post.title }}
       </a>
-    </h2>
+    </h3>
 
     <div class="post-meta">
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
@@ -31,18 +81,6 @@ layout: default
   {%- endif -%}
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
 <style>
   body {
       font-size: 15px;

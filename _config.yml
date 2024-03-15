@@ -1,9 +1,9 @@
 # Setup
 title: The 34th Meeting of Computational Linguistics in The Netherlands.
-description: The 34th Meeting of Computational Linguistics in The Netherlands (CLIN 34), organized by the Leiden Institute of Advanced Computer Science (LIACS), the Leiden University Centre for Linguistics (LUCL), and the Leiden University Centre for Digital Humanities (LUCDH), Leiden University, is set to be held on August 30, 2024 at the Science Park campus of Leiden University, Leiden, The Netherlands.
 url: https://hielkemuizelaar.github.io
 avatar: /logo_placeholder.png
-paginate: 5
+paginate: 10
+paginate_per_page: 10
 permalink: pretty
 cover_image: /ul.jpg
 
@@ -54,6 +54,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Hielke Muizelaar
-  url: https://github.com/hielkemuizelaar/
+  # name: Hielke Muizelaar
+  # url: https://github.com/hielkemuizelaar/
   email: clin34@leidenuniv.nl

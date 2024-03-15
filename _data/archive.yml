@@ -1,9 +1,9 @@
-- type: dates
-  title: Dates
-  url: /dates/
+- type: home
+  title: Home
+  url: /
 #- type: categories
 #  title: Categories
 #  url: /categories/
-- type: tags
-  title: Tags
-  url: /tags/
+- type: abstracts
+  title: Call for Abstracts
+  url: /2024/03/12/call-for-abstracts/

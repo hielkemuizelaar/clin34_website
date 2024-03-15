@@ -1,16 +1,14 @@
 ---
 layout: post
-title: Call for Abstracts CLIN34
-date: 2024-03-13 18:00 +0100
+title: Call for Abstracts
+date: 2024-03-12 18:00 +0100
 # last_modified_at: 2024-03-13 18:00 +0100
 tags: [abstracts]
 toc:  false
 ---
 
 Abstract submissions are welcomed for CLIN34, encompassing theoretical or applied research across all facets of computational linguistics and natural language processing. Authors of accepted abstracts will have the opportunity to submit a full paper after the conference to CLIN Journal.
-<!-- {: .message } -->
-
-# <a href="https://docs.google.com/forms/d/1G2Ee1LUfQdmh2xQz8T46YcR1BXUMuB4q4iuAKq9sp8Q">Submit your abstract here</a>
+# <a href="https://docs.google.com/forms/d/1G2Ee1LUfQdmh2xQz8T46YcR1BXUMuB4q4iuAKq9sp8Q">Submit your abstract here.</a>
 
 
 <!-- First, do you notice the TOC on the right side? Try to scroll down to read this post, you'll find that the TOC is always sticky in the viewport.
