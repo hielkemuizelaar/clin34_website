@@ -19,12 +19,13 @@
 }
 
 .avatar-image {
-  width: 30%;
+  width:35%;
   height: auto;
-  border-radius: 50%;
+  border-radius: 100%;
   display: block;
   margin-right: auto;
   margin-left: auto;
+  background-color:transparent;
 }
 
 .masthead-title {
@@ -98,6 +99,6 @@
 
 @media (max-width: $md-width) {
   .avatar-image {
-    width: 15%;
+    width: 80%;
   }
 }
