@@ -7,5 +7,5 @@ toc:  false
 excerpt: Abstract submission for CLIN 34 is now closed! We are pleased to announce we received more than 130 submissions.
 ---
 <div>
-Abstract submission for CLIN 34 is now closed! We are pleased to announce we received more than 130 submissions.
+Abstract submission for CLIN 34 is now closed! We are pleased to announce we received more than 130 submissions. Notifications of acceptance will be sent out by June 15th 2024.
 </div>

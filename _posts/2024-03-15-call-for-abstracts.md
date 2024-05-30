@@ -4,7 +4,7 @@ title: Call for abstracts
 date: 2024-03-15 18:00 +0100
 tags: [abstracts]
 toc:  false
-excerpt: Abstract submission for CLIN 34 is now open! Click <a href="/2024/03/15/call-for-abstracts/">here</a> for more information.
+excerpt: Click <a href="/2024/03/15/call-for-abstracts/">here</a> for more information.
 ---
 <div>
 Abstracts describing work on any aspect of computational linguistics / natural language processing (finished or in progress), are welcome for submission at CLIN 34. Submissions must be written in English, adhere to the 500 word limit, and must be submitted through <a href="https://docs.google.com/forms/d/1G2Ee1LUfQdmh2xQz8T46YcR1BXUMuB4q4iuAKq9sp8Q">this web form</a>. Please provide all information requested in the form. 
