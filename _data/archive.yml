@@ -4,6 +4,9 @@
 #- type: categories
 #  title: Categories
 #  url: /categories/
+- type: sponsors
+  title: Sponsors
+  url: /sponsors/
 - type: abstracts
   title: Call for Abstracts
   url: /2024/03/15/call-for-abstracts/

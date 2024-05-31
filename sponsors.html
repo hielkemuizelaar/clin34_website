@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+
+<article class="post">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        .image-container-sponsor {
+            display: flex;
+            justify-content: space-around; /* Optional: Adjusts spacing between images */
+            align-items: center;
+        }
+        .image-container-sponsor img {
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+        .below-section {
+            display: flex;
+            justify-content: space-around; /* Optional: Adjusts spacing between images */
+            align-items: center;
+        }
+        .below-section img {
+            float: left;
+            width: 30%;
+            height: auto;
+        }
+        .below-below-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .below-below-section img.textkernel {
+            max-width: 500px; /* Set maximum width as needed */
+        }
+        .below-below-section a {
+            margin-right: 10px; /* Adjust space between images */
+        }
+        .below-below-section img {
+            float: left;
+            width: 50%;
+            height: auto;
+        }
+
+    </style>
+
+    <h1>Sponsors</h1>
+
+    <h2>Gold Sponsors</h2>
+    <div class="image-container-sponsor">
+        <a href="https://ivdnt.org/">
+            <img src="/sponsor_logos/ivdNt.png" alt="ivdNt">
+        </a>
+        <a href="https://taalunie.org/">
+            <img src="/sponsor_logos/taalunie.png" alt="taalunie">
+        </a>
+        <a href="https://www.tno.nl/en/">
+            <img src="/sponsor_logos/tno.png" alt="tno">
+        </a>
+    </div>
+
+    <h2>Silver Sponsors</h2>
+    <div class="below-section">
+        <a href="https://www.zeta-alpha.com/">
+            <img src="/sponsor_logos/zeta-alpha.png" alt="zeta-alpha">
+        </a>
+    </div>
+    <h2>Bronze Sponsors</h2>
+    <div class="below-below-section">
+        <a href="https://notas.nl/">
+            <img src="/sponsor_logos/notas.png" alt="notas">
+        </a>
+        <a href="https://www.textkernel.com/">
+            <img class="textkernel" src="/sponsor_logos/textkernel.png" alt="textkernel">
+        </a>
+    </div>
+</article>
