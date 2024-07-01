@@ -1,0 +1,183 @@
+---
+layout: post
+title: Accepted abstracts for CLIN 34
+date: 2024-06-15 8:00 +0100
+tags: [abstracts]
+toc:  false
+excerpt: Notifications of acceptance for CLIN 34 have been sent out. Find a list of accepted abstracts <a href="/2024/06/15/accepted-abstracts/">here</a>.
+---
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            width: 100%;
+            /* border-collapse: collapse; */
+            margin-top: 0px;
+            margin-bottom: 0px;
+            display: table-cell;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #001158;
+            color: white;
+        }
+        .name-column {
+            min-width: 250px;
+        }
+        .aff-column {
+            min-width: 250px;
+        }
+        .containers {
+            margin: 0;
+            display: table;
+        } 
+
+    </style>
+ <div class="containers">
+        <table>
+            <thead>
+                <tr><th class="name-column">Name(s)</th>
+                    <th class="aff-column">Affiliation(s)</th>
+                    <th>Abstract Title</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Shantanu Nath</td><td>University of Trento</td><td>EVALUATION OF COREFERENCE MODELS ON DIFFERENT DOMAINS AND TEXT GENRES</td></tr>
+                <tr><td>Hyewon Jang <br> Diego Frassinelli</td><td>University of Konstanz <br> University of Konstanz, Center for Information and Language Processing at LMU Munich</td><td>Detecting sarcasm using LLMs when sarcasm is way too broad</td></tr>
+                <tr><td>Behnaz Motavali</td><td>Radboud University</td><td>Written by one: Common authorship features of Fake Job Posts</td></tr>
+                <tr><td>Esther Ploeger <br> Wessel Poelman <br> Andreas Holck Høeg-Petersen <br> Anders Schlichtkrull <br> Miryam de Lhoneux <br> Johannes Bjerva</td><td>Aalborg University <br> KU Leuven <br> Aalborg University <br> Aalborg University <br> KU Leuven <br> Aalborg University</td><td>Leveraging Linguistic Typology for Fairer Multilingual Language Technology</td></tr>
+                <tr><td>Colin Swaelens <br> Ilse De Vos <br> Els Lefever</td><td>LT3, Ghent University, Belgium <br> VAIA - Flanders AI Academy <br> LT3, Ghent University, Belgium</td><td>Similarity Detection in Medieval Marginal Writing</td></tr>
+                <tr><td>Xinnain Zhao <br> Hugo Van Hamme</td><td>KU Leuven</td><td>Weakly and Semi-supervised Training of Flemish ASR from Subtitles</td></tr>
+                <tr><td>Leonidas Mylonadis <br> Jelke Bloem</td><td>University of Amsterdam <br> Institute for Logic, Language and Computation, University of Amsterdam; Data Science Centre, University of Amsterdam</td><td>Evaluation of Greek Word Embeddings</td></tr>
+                <tr><td>Maya Sappelli <br> Laura Meijer <br> Marije Vrijmoeth <br> Dianne Teunisse <br> Annette Klarenbeek</td><td>HAN University of Applied Sciences <br> University of Applied Sciences Utrecht <br> University of Applied Sciences Utrecht <br> University of Applied Sciences Utrecht <br> University of Applied Sciences Utrecht</td><td>Automatic Detection of Discursive Patterns in Dutch Social Media</td></tr>
+                <tr><td>Baoyi Zeng <br> Leonidas A. A. Doumas</td><td>Faculty of Engineering Science, KU Leuven, Leuven, Belgium <br> School of Philosophy, Psychology, and Language Sciences, The University of Edinburgh, Edinburgh, UK</td><td>lllusion of Plausibility with Large Language Models</td></tr>
+                <tr><td>Bram Groenhof <br> Wieke Harmsen <br> Helmer Strik</td><td>Radboud University</td><td>On the possibility of using pre-trained ASR-models to assess oral reading exams automatically</td></tr>
+                <tr><td>Janiça Hackenbuchner <br> Aaron Maladry <br> Arda Tezcan <br> Joke Daems</td><td>Ghent University</td><td>Systematic, Stereotypical or an Educated Guess? Gender inference by humans and machine translation systems of words in and out of context</td></tr>
+                <tr><td>Natalia Evgrafova <br> Véronique Hoste <br> Els Lefever</td><td>LT3, Ghent University</td><td>Identifying Controversial Claims in Political YouTube Comments</td></tr>                
+                <tr><td>Goya van Boven <br> Yupei Du <br> Dong Nguyen</td><td>Utrecht University</td><td>Transforming Dutch: Debiasing Dutch Coreference Resolution Systems for Non-binary Pronouns</td></tr>                
+                <tr><td>Mario Perez Eguiluz</td><td>TNO; Leiden University</td><td>Evaluating User trust for the FarmBuddy chatbot: a mixed methods study</td></tr>                
+                <tr><td>Xander Snelder</td><td>University of Amsterdam</td><td>Evaluating the Intrinsic Effects of Prompt Engineering: The Indirect Extraction of Semantic Similarities from GPTs</td></tr>
+                <tr><td>Gus Lathouwers <br> Helmer Strik <br> Wieke Harmsen <br> Catia Cucchiarini</td><td>Radboud University</td><td>Examining Boundaries: Recontextualizing Dutch Syllabification Algorithms</td></tr>
+                <tr><td>Tess Dejaeghere <br> Pranaydeep Singh <br> Bas Vercruysse <br> Julie Birkholz <br> Els Lefever</td><td>Ghent Center for Digital Humanities, Ghent University; LT3, Ghent University <br> LT3, Ghent University <br> Ghent Center for Digital Humanities, Ghent University <br> Ghent Center for Digital Humanities, Ghent University <br> LT3, Ghent University</td><td>Exploring Zero-Shot Named Entity Recognition in Multilingual Historical Travelogues Using Open-Source Large Language Models</td></tr>
+                <tr><td>Matthijs Westera <br> Mark Rademaker</td><td>Leiden University</td><td>Can we detect the need-for-closure bias in social media behavior?</td></tr>
+                <tr><td>Kyo Gerrits <br> Ana Guerberof Arenas</td><td>University of Groningen</td><td>Reader reception of computational literary translations: the question of creativity.</td></tr>
+                <tr><td>Stef Accou <br> Tim Van de Cruys</td><td>KU Leuven</td><td>Word Sense Discrimination using French Transformer Models</td></tr>
+                <tr><td>Sander Puts <br> Shashank Chakravarthy <br> Martijn Nobel <br> André L. A. J. Dekker <br> Catharina M.L. Zegers <br> Inigo Bermejo</td><td>Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+</td><td>Improving Text Classification by Filtering Out Irrelevant Sentences Using a Sentence Classifier</td></tr>
+                <tr><td>Joël Buter <br> Joost Broekens <br> Suzan Verberne</td><td>Leiden University</td><td>Data Augmenting Dialogues for Improving Emotional Support Chatbots</td></tr>
+                <tr><td>Hadi Mohammadi <br> Anastasia Giachanou <br> Ayoub Bagheri</td><td>Utrecht University</td><td>Enhancing Human-Likeness of Generative AI through Explainable Techniques</td></tr>
+                <tr><td>Elena Savinova <br> Jet Hoek</td><td>Centre for Language Studies, Radboud University</td><td>Interpreting Subjectivity Regressor Trained on Native English Speakers’ Judgments: Theory vs. Speaker Intuitions</td></tr>
+                <tr><td>Mert Yazan <br> Jirui Qi <br> Xinyi Chen <br> Andreas Paraskeva <br> Yumeng Wang <br> Mohanna Hoveyda </td><td>Leiden University <br> University of Groningen <br> University of Amsterdam <br> Leiden University <br> Leiden University <br> Radboud University</td><td>Comprehensive Evaluation of RAG Pipelines in QA Systems: Insights from the CRAG Benchmark</td></tr>
+                <tr><td>Pauline van Nies <br> Marten Koopmans <br> Gijs Wobben <br> Coen Goedhart <br> Paul Verhaar</td><td>Ordina; University of Applied Sciences Utrecht <br> Ordina; University of Applied Sciences Utrecht <br> Ordina <br> Ordina <br> Ordina; University of Applied Sciences Utrecht </td><td>Information Retrieval for Dutch Organizations: Evaluating Encoder Models and Practical Approaches</td></tr>
+                <tr><td>Katrien Depuydt <br> Jesse de Does <br> Thomas Haga <br> Roland de Bonth <br> Tim Brouwer <br> Vincent Prins <br> Mathieu Fannee</td><td>Instituut voor de Nederlandse Taal</td><td>Towards better linguistic annotation for historical Dutch</td></tr>
+                <tr><td>Julia Pestel <br> Raquel G. Alhama</td><td>Institute for Logic, Language and Computation; University of Amsterdam</td><td>Evaluating the Linguistic Knowledge of Dutch Large Language Models</td></tr>
+                <tr><td>Crit Cremers</td><td>Leiden University Centre for Linguistics</td><td>A view on propositions: graphics for meaningful parsing and generation</td></tr>
+                <tr><td>Nadine Donia <br> Weiwei Sun <br> Arun Kumar Rajasekaran</td><td>École Polytechnique Fédérale de Lausanne <br> Cambridge University <br> Cambridge University</td><td>Sentiment Analysis of Arabic-English Code-Switched Data: A Comparative Study of Machine Learning and Lexicon-Based Approaches</td></tr>
+                <tr><td>Marije Kanis <br> Marijn Schraagen <br> Shihan Wang <br> Erik Tjong Kim Sang</td><td>Amsterdam University of Applied Sciences <br> Utrecht University <br> Utrecht University <br> Netherlands eScience Center</td><td>Happy or lonely? Investigating Dutch people’s mental well-being using remote methods during the COVID-19 pandemic</td></tr>
+                <tr><td>Sidi Wang <br> Jelke Bloem</td><td>Computational Linguistics and Text Mining Lab, Vrije Universiteit Amsterdam <br> Data Science Centre, University of Amsterdam; Institute for Logic, Language and Computation, University of Amsterdam</td><td>Quantifying Politicization: Leverage Contextualized Embeddings of Politicized Keywords</td></tr>
+                <tr><td>Camille Lavigne <br> Alex Stasica</td><td>Utrecht University</td><td>Automated Correction of Error Patterns in Dutch Child Speech: Leveraging Transformer Architecture for Enhanced Accuracy</td></tr>
+                <tr><td>Lilit Kharatyan <br> Frédéric Blain <br> Gloria Corpas Pastor</td><td>Julius Maximilian University of Würzburg <br> Tilburg University <br> University of Malaga </td><td>Speech-to-Text Translation: Cascaded or End-to-end? Multidimensional Comparative Evaluation</td></tr>
+                <tr><td>Simon Blanchard <br> Walter Daelemans</td><td>University of Antwerp</td><td>On the generalisability of personality models</td></tr>
+                <tr><td>Qixiang Fang <br> Javier Garcia Bernardo <br> Erik-Jan van Kesteren</td><td>Utrecht University</td><td>Addressing LLM-related Measurement Error in Social Science Modeling Research</td></tr>
+                <tr><td>Foteini Papadopoulou</td><td>Radboud University</td><td>Unveiling Sentiments and Topics in COVID-19 Vaccine Comments on YouTube Over Time: from the First Vaccine Approval to the Post-Pandemic Era</td></tr>
+                <tr><td>Veronica Juliana Schmalz</td><td>KU Leuven</td><td>The Strange Case of AI-generated and human-authored texts: A preliminary study comparing features from different levels of linguistic analysis and languages</td></tr>
+                <tr><td>Pepijn Stoop <br> Jelke Bloem</td><td>University of Amsterdam <br> Institute for Logic, Language and Computation, University of Amsterdam</td><td>Exploring Semantic Consistency in Zero-Shot Pre-trained Language Models for Emotion Detection Tasks in the Social Sciences and Humanities</td></tr>
+                <tr><td>Jens Lemmens <br> Walter Daelemans</td><td>University of Antwerp</td><td>Styloscope and Toposcope: Towards user-friendly digital text analysis</td></tr>
+                <tr><td>Marzieh Abdolmaleki <br> Véronique Hoste <br> Els Lefever</td><td>LT3, Ghent University</td><td>Enhancing Update Statement Generation by Modeling Hypothesis Probability in Defeasible NLI</td></tr>
+                <tr><td>Bram Vanroy <br> Tim Van De Cruys</td><td>KU Leuven</td><td>Forced Creativity: Constrained Decoding to Generate Poetry With Any LLM</td></tr>
+                <tr><td>Vincent Vandeghinste <br> Job van Doeselaar <br> Bram Vanroy</td><td>Instituut voor de Nederlandse Taal</td><td>Human Evaluation of Automated Text Simplification through Crowdsourcing</td></tr>
+                <tr><td>Silvana Abdi <br> Hylke Brouwer <br> Martine Elzinga <br> Shenza Gunput <br> Sem Huisman <br> Collin Krooneman <br> David Poot <br> Jelmer Top <br> Cain Weideman <br> Lisa Bylinina</td><td>University of Groningen</td><td>Dutch CoLA: Dutch grammatical knowledge in monolingual and multilingual language models</td></tr>
+                <tr><td>Florelien Soete <br> Vincent Vandeghinste</td><td>KU Leuven</td><td>Optimizing Controllable Sentence Simplification for Dutch using T5 Large Language Model</td></tr>
+                <tr><td>Florian Debaene <br> Aaron Maladry  <br> Pranaydeep Singh <br> Els Lefever <br> Veronique Hoste</td><td>LT3, Language and Translation Technology Team, Ghent University</td><td>Do we still need specialized transformers? A comparison to generative foundation models for non-normative Dutch</td></tr>
+                <tr><td>Xiao Zhang <br> Johan Bos</td><td>Center for Language and Cognition, University of Groningen</td><td>IconNet and Pictorial Meaning Representation: Towards Language-Neutral Semantics</td></tr>
+                <tr><td>Congfeng Cao <br> Jelke Bloem</td><td>Institute for Logic, Language and Computation, University of Amsterdam</td><td>Linearly Mapping from Graph to Text Space</td></tr>
+                <tr><td>Dragoș Alexandru Bălan</td><td>University of Twente</td><td>Evaluating the State-of-the-Art Automatic Speech Recognition systems for Dutch</td></tr>
+                <tr><td>Sisi Chen <br> Vincent Vandeghinste <br> Goedele Vandommele</td><td>Department of Computer Science, KU Leuven <br>
+Centre for Computational Linguistics, KU Leuven <br>
+Centre for Language and Education, KU Leuven</td><td>Automated Pass/Fail Classification for Dutch as a Second Language Using Large Language Models</td></tr>
+                <tr><td>R. Kinds <br> S. Abdi <br> D. Timmer <br> S. van Loon <br> T. Caselli</td><td>University of Groningen</td><td>Watch Your Vocabulary More Than Your Pre-training Data</td></tr>
+                <tr><td>I-Fan Lin <br> Faegheh Hasibi <br> Suzan Verberne</td><td>Leiden University <br> Radboud University <br> Leiden University</td><td>Generate then Refine: Data Augmentation for Zero-shot Intent Detection</td></tr>
+                <tr><td>Nikki Rademaker <br> Linthe van Rooij <br> Yanna Smid <br> Tessa Verhoef <br> Tom Kouwenhoven</td><td>LIACS, Leiden University</td><td>The Riddle Experiment: two groups are trying to solve a black story behind a screen, only one group is alive.</td></tr>
+                <tr><td>Tanmay Khokle <br> Tim Van de Cruys <br> Kris Heylen</td><td>KU Leuven <br> Centre for Computational Linguistics, KU Leuven <br> Instituut voor de Nederlandse Taal</td><td>Multilingual Definition Modeling for Neologisms</td></tr>
+                <tr><td>Rob Reijtenbach <br> Gijs Wijnholds</td><td>Leiden University</td><td>Dataset Generation for Visual Entailment using Generative AI</td></tr>
+                <tr><td>Andriy Kosar <br> Guy De Pauw <br> Walter Daelemans</td><td>Textgain; CLiPS, University of Antwerp <br> Textgain <br>
+CLiPS, University of Antwerp</td><td>Evaluating LLM-Generated Topic Names via Text Reconstruction</td></tr>
+                <tr><td>Svea Bösch <br> Jelke Bloem <br> Raquel Garrido Alhama</td><td>Amsterdam Center for Language and Communication, University of Amsterdam <br> Institute for Logic, Language and Computation, University of Amsterdam <br> Amsterdam Center for Language and Communication, University of Amsterdam</td><td>Comparing the Impact of the Input Source in Modelling Child Language Acquisition</td></tr>
+                <tr><td>Andrew Kosar <br> Jens Van Nooten <br> Walter Daelemans <br> Guy De Pauw</td><td>University of Antwerp; Textgain <br> University of Antwerp <br> University of Antwerp <br> Textgain</td><td>One Size Does Not Fit All: Exploring Variable Thresholds for Distance-Based Multi-Label Text Classification</td></tr>
+                <tr><td>Katharina Sommer <br> Evgeniia Egorova <br> Eugene Shalugin</td><td>Radboud University</td><td>Domain adaptation of Large Language Models for Sparse Information Retrieval</td></tr>
+                <tr><td>Zahra Abedi <br> Gijs Wijnholds <br> Richard van Dijk</td><td>Leiden University</td><td>Enriching Historical Records: An OCR and AI-Driven Approach for Database Integration</td></tr>
+                <tr><td>Urtė Jakubauskaitė <br> Raquel G. Alhama <br> Phong Le</td><td>Institute for Logic, Language and Computation, University of Amsterdam <br> Institute for Logic, Language and Computation, University of Amsterdam <br> Amazon Alexa</td><td>Compositionality in Emergent Languages: Evaluating the Metrics</td></tr>
+                <tr><td>Lorenzo Lazzari <br> Carlos Villacampa Calvo <br> Sophia Katrenko</td><td>EcoVadis</td><td>Case Study: Leveraging Large Language Models in a Hybrid Search System for Improved CSR Information Retrieval</td></tr>
+                <tr><td>Leonardo Grotti</td><td>CLiPS, University of Antwerp</td><td>Evaluating Grapheme-to-Phoneme Conversion and Syllable Counting of Large Language Models for Dutch</td></tr>
+                <tr><td>Michelle Suijkerbuik <br> Zoë Prins <br> Marianne de Heer Kloots <br> Willem Zuidema <br> Stefan L. Frank</td><td>Centre for Language Studies, Radboud University <br> Institute for Logic, Language and Computation, University of Amsterdam <br> Institute for Logic, Language and Computation, University of Amsterdam <br> Institute for Logic, Language and Computation, University of Amsterdam <br> Centre for Language Studies, Radboud University</td><td>BLiMP-NL: A corpus of Dutch minimal pairs and grammaticality judgements for language model evaluation</td></tr>
+                <tr><td>Shima Rahimi <br> Ehsan Lotfi <br> Walter Daelemans</td><td>University of Antwerp</td><td>In-Corpus and Cross-Corpus Analysis of Native Language Identification Using Machine Learning</td></tr>
+                <tr><td>Myrthe Reuver <br> Indira Sen <br> Gabriella Lapesa</td><td>Vrije Universiteit Amsterdam <br> Universitat Konstanz <br> GESIS - Leibniz-Institut für Sozialwissenschaften and Heinrich-Heine University Düsseldorf</td><td>A pilot study and framework for using and analyzing social scientist’s interaction strategies with Instruction-Tuned LLMs</td></tr>
+                <tr><td>Cristina Reguera-Gómez <br> Denis Paperno <br> Maaike H. T. de Boer</td><td>TNO; Utrecht University <br> Utrecht University <br> TNO</td><td>Natural Chatbots: Designing an Intuitive Healthcare Conversational Agent by Studying the Role of Empathy in Generated Messages</td></tr>
+                <tr><td>Léa Gontard <br> Jelke Bloem</td><td>Institute for Logic, Language and Computation, University of Amsterdam</td><td>Using Natural Language Processing to Quantify Politicization in Foreign Aid Reports</td></tr>
+                <tr><td>Matthew Micyk <br> Jelke Bloem </td><td>Amsterdam Center for Language and Communication, University of Amsterdam <br> Institute for Logic, Language and Computation, University of Amsterdam</td><td>Distributional Semantic Modeling of SC-Pair Polish Aspectual Verbs</td></tr>
+                <tr><td>Ineke Schuurman <br> Caro Brosens <br> Kris Heylen <br> Vincent Vandeghinste <br> Bram Vanroy</td><td>Centrum voor Computerlinguïstiek, KU Leuven <br> Vlaams GebarentaalCentrum <br> Instituut voor de Nederlandse Taal <br> Instituut voor de Nederlandse Taal <br> Centrum voor Computerlinguïstiek, KU Leuven</td><td>WordNet-based Relations between Words, Signs and Concepts</td></tr>
+                <tr><td>Michiel De Vrindt <br> Anaïs Tack <br> Renske Bouwer <br> Wim Van Den Noortgate <br> Marije Lesterhuis</td><td>imec research group ITEC, KU Leuven <br> imec research group ITEC, KU Leuven <br> Institute for Language Sciences, Utrecht University <br> imec research group ITEC, KU Leuven <br> Center for Research and Development of Health Professions Education, UMC Utrecht</td><td>Predicting Initial Quality Scores of Dutch Essays with Language Models to Warm-Start Comparative Judgment Assessments</td></tr>
+                <tr><td>Loic De Langhe <br> Orphée De Clercq <br> Veronique Hoste</td><td>LT3, Ghent University</td><td>NewsBERTje: a Domain-Adapted Dutch BERT Model</td></tr>
+                <tr><td>Qianru Meng <br> Zhaochun Ren <br> Joost Visser</td><td>Leiden University</td><td>Automatic Release Notes Summarization with Large Language Models</td></tr>
+                <tr><td>Wu Chi Hsiu <br> Aaron Maladry <br> Veronique Hoste</td><td>University of Antwerp <br> LT3, Ghent University <br>
+LT3, Ghent University</td><td>Comparing and Contrasting Modality Disparity in Multimodal Sarcasm Detection</td></tr>
+                <tr><td>Aletta Dorst <br> Alina Karakanta</td><td>Leiden University Centre for Linguistics, Leiden University</td><td>Comparing LLMs with commercial Machine Translation systems for Metaphor Translation</td></tr>
+                <tr><td>Felicia Redelaar <br> Suzan Verberne <br> Maaike de Boer <br> Romy van Drie</td><td>Leiden University; TNO <br> Leiden University <br> TNO <br> TNO</td><td>Attributed Question Answering for the Dutch Law using Retrieval augmented Large language models</td></tr>
+                <tr><td>Chenglinzi Yang <br> Jet Hoek <br> Wilbert Spooren</td><td>Centre for Language Studies, Radboud University</td><td>Stance detection in conversational L1 and L2 English</td></tr>
+                <tr><td>Simone van Bruggen <br> Maaike Koninx</td><td>Bookarang, NBD Biblion</td><td>Ontology-based distance metrics for keyword evaluation</td></tr>
+                <tr><td>Lisa Hubin</td><td>KU Leuven</td><td>Metaphorically speaking: a clustering-based exploration of metaphor identification in Dutch using transformer architectures</td></tr>
+                <tr><td>Marthe Kellen <br> Tim Van de Cruys</td><td>KU Leuven</td><td>Exploratory Study on Dutch Verb Clusters Using Supervised and Unsupervised Machine Learning: Evaluating Transformer Models’ Language Skills</td></tr>
+                <tr><td>Suzan Lejeune <br> Iris Hendrickx</td><td>Centre for Language Studies, Radboud University <br> Centre for Language and Speech Technology, Radboud University</td><td>Location-focused Translation in Low-resource Tagalog of Flooding Events in News Articles</td></tr>
+                <tr><td>Henry Grafé <br> Tim Van de Cruys</td><td>KU Leuven</td><td>Multi-token and Multi-word Lexical Substitution using Encoder-Only Language Models</td></tr>
+                <tr><td>Thijs Groeneweg <br> Gijs Wijnholds</td><td>Leiden University</td><td>Improving the CoThought pipeline for training a BabyLM on Dutch data</td></tr>
+                <tr><td>Yumeng Wang <br> Suzan Verberne</td><td>Leiden University</td><td>Query-to-intent generation for explainable search engines</td></tr>
+                <tr><td>Gabriella Bollici</td><td>TNO</td><td>Enhancing Human-Computer Interaction: Leveraging Miscommunication Detection in Chatbot Dialogues for Conversation Breakdown Prevention</td></tr>
+                <tr><td>Urja Khurana <br> Eric Nalisnick <br> Antske Fokkens</td><td>Vrije Universiteit Amsterdam <br> Johns Hopkins University <br> Vrije Universiteit Amsterdam</td><td>Do Hate Speech Detection Models Reflect their Dataset’s Definition? Investigating Model Behavior on Hate Speech Aspects</td></tr>
+                <tr><td>Wout Sinnaeve <br> Joni Kruijsbergen <br> Orphée De Clercq</td><td>Ghent University</td><td>Controlled Text Simplification for Dutch using Generative Large Language Models</td></tr>
+                <tr><td>Michael Wheeler <br> Suzan Verberne</td><td>LIACS, Leiden University</td><td>Retrieval augmented chatbot for an IT helpdesk (WIP)</td></tr>
+                <tr><td>Lea Krause <br> Ana Valdivia</td><td>Vrije Universiteit Amsterdam <br> University of Oxford</td><td>Exploring the Lack of Cultural Diversity in Multilingual Datasets for Conversational AI</td></tr>
+                <tr><td>Kushal Tatariya <br> Artur Kulmizev <br> Esther Ploeger <br> Marcell Bollman <br> Jiaming Luo <br> Johannes Bjerva <br> Miryam de Lhoneux <br> Heather Lent</td><td>KU Leuven <br> KU Leuven <br> Aalborg University <br> Linköping University <br> Google <br> Aalborg University <br> KU Leuven <br> Aalborg University</td><td>How Good is Your Wikipedia? Quality Estimation and Methods of Data Pruning for Non-English Wikipedias</td></tr>
+                <tr><td>Qixiang Fang <br> Daniel Oberski <br> Dong Nguyen</td><td>Utrecht University</td><td>PATCH -- Psychometrics-AssisTed benCHmarking of Large Language Models: A Case Study of Mathematics Proficiency</td></tr>
+                <tr><td>Bram Vanroy</td><td>KU Leuven; Instituut voor de Nederlandse Taal</td><td>F(r)ietje: An efficient, transparent LLM for Dutch</td></tr>
+                <tr><td>Allmin Susaiyah <br> Natalia Sidorova</td><td>Eindhoven University of Technology</td><td>Towards the Extraction of Event Logs from Dutch Medical Reports Using Large Language Models</td></tr>
+                <tr><td>Anum Afzal <br> Alexandre Mercier <br> Florian Matthes</td><td>Technical University of Munich</td><td>Investigating Data-to-Text Approaches to Achieve Diversity of Generated Marketing Text in the Music Industry</td></tr>
+                <tr><td>Ine Gevers <br> Walter Daelemans</td><td>University of Antwerp</td><td>Bag of Lies: Robustness in Continuous Pre-training BERT</td></tr>
+                <tr><td>Anna Wegmann <br> Tijs van den Broek <br> Dong Nguyen</td><td>Utrecht University <br> Vrije Universiteit Amsterdam <br> Utrecht University</td><td>What's Mine becomes Yours:  Defining, Annotating and Detecting  Context-Dependent Paraphrases in News Interview Dialogs</td></tr>
+                <tr><td>Ho Wang Matthew Sung</td><td>Leiden University</td><td>Outliers or Wrong Classifications? On Dialect Typicality and Transitional Dialects</td></tr>
+                <tr><td>David Shakouri</td><td>Leiden University Centre for Linguistics (LUCL), Leiden University; Leiden Institute for Brain and Cognition (LIBC), Leiden University</td><td>MODOMA: Providing a Computational Laboratory for Language Acquisition Experiments</td></tr>
+                <tr><td>Roos M. Bakker <br> Juul A. Schoevers <br> Romy A.N. van Drie <br> Marijn P. Schraagen <br> Maaike H. T. de Boer</td><td>TNO; Leiden University <br> TNO <br> TNO <br> Utrecht University <br> TNO</td><td>Semantic Role Extraction in Law Texts: A Comparative Analysis of Language Models for Legal Information Extraction</td></tr>
+                <tr><td>Marcel Haas <br> Hielke Muizelaar <br> Marco Spruit</td><td>Department of Public Health & Primary Care, Leiden University Medical Centre <br> Department of Public Health & Primary Care, Leiden University Medical Centre <br> LIACS, Leiden University</td><td> Exploring Translation's Impact on Dutch BERT Model Performance</td></tr>
+                <tr><td>Xiyuan Gao <br> Shekhar Nayak <br> Matt Coler</td><td>Campus Fryslân, University of Groningen</td><td>Investigating the Multimodal Interplay of  Prosodic and Visual Cues of Sarcasm</td></tr>
+                <tr><td>Olga Lyashevska <br> Michael Giffin <br> Samira van Bohemen</td><td>Netherlands eScience Center <br> Erasmus School of Social and Behavioural Sciences, Erasmus University Rotterdam</td><td>On stereotypes in online pornography: the use of topic modelling.</td></tr>
+                <tr><td>Ine Gevers <br> Cristina Arhiliuc <br> Leonardo Grotti <br> Pieter Fivez</td><td>University of Antwerp</td><td>Retrieval-Augmented Generation (RAG) in Generative Large Language Models for Automated Essay Grading</td></tr>
+                <tr><td>Wouter Hajer <br> Anne Fleur van Luenen <br> Jakob Söhl <br> Rolf Ypma</td><td>Netherlands Forensic Institute; TU Delft <br> Netherlands Forensic Institute <br> TU Delft <br> Netherlands Forensic Institute</td><td>Utilizing Conversations as a Proxy for Topic: a Study in Forensic Authorship Attribution</td></tr>
+                <tr><td>Anne Fleur van Luenen</td><td>Netherlands Forensic Institute</td><td>ASMtransformers: a BERT model for ARM64 assembly</td></tr>
+                <tr><td>Heike Pauli <br> Lukas Latacz <br> Hugo Van hamme</td><td>KU Leuven <br> SAY IT Labs <br> Processing Speech and Images (PSI), KU Leuven; Department of Electrical Engineering (ESAT), KU Leuven</td><td>Cross-lingual age estimation: distinguishing child speech from adult speech</td></tr>
+                <tr><td>Bram van Dijk <br> Marco Spruit</td><td>Leiden University Medical Center</td><td>Welzijn.AI: a System in Development for Monitoring Mental Wellbeing in Dutch Elderly Populations</td></tr>
+                <tr><td>Jan Odijk <br> Martin Kroon <br> Tijmen Baarda <br> Ben Bonfil <br> Sheean Spoel</td><td>Utrecht University</td><td>Automatic Identification of MWEs</td></tr>
+                <tr><td>Anaïs Tack <br> Tuba Özturan <br> Siem Buseyne</td><td>imec research group ITEC, KU Leuven</td><td>Classifying Utterances with Collaborative Problem-Solving Strategies in Student Teamwork Interactions</td></tr>
+                <tr><td>Caspar de Jong <br> Oskar van der Wal <br> Willem Zuidema</td><td>University of Amsterdam <br> Institute for Logic, Language and Computation, University of Amsterdam <br> Institute for Logic, Language and Computation, University of Amsterdam</td><td>Causal Methods for a (Mechanistic) Understanding of Gender Bias in Dutch Language Models</td></tr>
+                <tr><td>Thomas Winters <br> Stijn Van der Stockt</td><td>KU Leuven <br> DPG Media</td><td>Evaluating Humor Generation in an Improvisational Comedy Setting</td></tr>
+                <tr><td>Reshmi Gopalakrishna Pillai <br> Antske Fokkens <br> Wouter van Atteveldt</td><td>Vrije Universiteit Amsterdam</td><td>A Synergic Solution for the Regional Newsrooms: Identifying Regionally Relevant Information for News Stories with LLMs and Knowledge Graphs</td></tr>
+                <tr><td>Jiahui Liang <br> Stephan Raaijmakers <br> Aletta G. Dorst <br> Jelena Prokic</td><td>Leiden University <br> Leiden University; TNO <br> Leiden University <br> Leiden University</td><td>Using GPT-4 for Conventional Metaphor Detection</td></tr>
+                <tr><td>Hans van Halteren</td><td>Radboud University</td><td>Cross-genre and -topic authorship recognition on Dutch human and LLM-generated essays</td></tr>
+                <tr><td>Wenwen Guan <br> Marijn Alta <br> Jelke Bloem</td><td>University of Amsterdam</td><td>Automatic Metadiscourse Classification in Learners’ Writing and Speaking with SpanBERT</td></tr>
+                <tr><td>Leonidas Zotos <br> Malvina Nissim <br> Hedderik van Rijn</td><td>University of Groningen</td><td>Comparing Language Models and Student Strategies for Solving Multiple Choice Questions</td></tr>
+                <tr><td>Angel Daza <br> Ellie Smith <br> Antske Fokkens</td><td>Netherlands eScience Center <br> Vrije Universiteit Amsterdam <br> Vrije Universiteit Amsterdam</td><td>Informed Evaluation of Text Analysis Tools</td></tr>
+                <tr><td>Rik van Noord</td><td>University of Groningen</td><td>Benchmarking Beyond Translation: The Intrinsically Dutch Compound Noun Challenge for LLMs</td></tr>
+                <tr><td>Iris Hendrickx <br> Stan Vissers <br> Frank van Meurs</td><td>Centre for Language Studies, Radboud University</td><td>Characteristics of non-native communication in English: The case of English-language lyrics by Dutch artists</td></tr>
+                <tr><td>Silvia Stopponi <br> Saskia Peels-Matthey <br> Malvina Nissim</td><td>Center for Language and Cognition Groningen, University of Groningen</td><td>Creating a dataset for the evaluation of automatic semantic change detection in Ancient Greek</td></tr>
+                <tr><td>Tim Van de Cruys</td><td>KU Leuven</td><td>Do Tomatoes Sing Skyscrapers? The Curious Case of Absurd Text Generation</td></tr>
+                <tr><td>Xiaojuan Tan <br> Jelke Bloem</td><td>Vrije Universiteit Amsterdam <br> University of Amsterdam</td><td>Predicting the metaphoric potential of words from lexical features</td></tr>
+            </tbody>
+        </table>
+    </div>
