@@ -36,7 +36,10 @@ excerpt: Notifications of acceptance for CLIN 34 have been sent out. Find a list
             min-width: 250px;
         }
         .aff-column {
-            min-width: 250px;
+            min-width: 300px;
+        }
+        .title-column {
+            min-width: 300px;
         }
         .containers {
             margin: 0;
@@ -49,7 +52,7 @@ excerpt: Notifications of acceptance for CLIN 34 have been sent out. Find a list
             <thead>
                 <tr><th class="name-column">Name(s)</th>
                     <th class="aff-column">Affiliation(s)</th>
-                    <th>Abstract Title</th></tr>
+                    <th class="title-column">Abstract Title</th></tr>
             </thead>
             <tbody>
                 <tr><td>Shantanu Nath</td><td>University of Trento</td><td>EVALUATION OF COREFERENCE MODELS ON DIFFERENT DOMAINS AND TEXT GENRES</td></tr>

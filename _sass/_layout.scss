@@ -48,38 +48,38 @@ footer {
     bottom: 0;
   }
 
-  .sidebar-right {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 85%;
-  }
+  // .sidebar-right {
+  //   position: fixed;
+  //   top: 0;
+  //   bottom: 0;
+  //   left: 95%;
+  // }
 
   .home-header {
     margin-top: -2em;
   }
 }
 
-@media (min-width: $lg-width) {
-  .sidebar-right {
-    display: block;
-  }
-}
+// @media (min-width: $lg-width) {
+//   .sidebar-right {
+//     display: block;
+//   }
+// }
 
-@media (max-width: $lg-width) {
-  .sidebar-right {
-    display: none;
-  }
-}
+// @media (max-width: $lg-width) {
+//   .sidebar-right {
+//     display: none;
+//   }
+// }
 
 @media (max-width: $md-width) {
   .content {
-    width: 100%;
+    width: 150%;
   }
 }
 
 @media (min-width: $md-width) and (max-width: $lg-width) {
   .content {
-    width: 75%;
+    width: 150%;
   }
 }
