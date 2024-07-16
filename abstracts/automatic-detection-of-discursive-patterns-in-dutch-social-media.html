@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Automatic Detection of Discursive Patterns in Dutch Social Media</h1>
+<h3>Maya Sappelli</h3>
+<h6>HAN University of Applied Sciences</h6>
+<h3>Laura Meijer</h3>
+<h6>University of Applied Sciences Utrecht</h6>
+<h3>Marije Vrijmoeth</h3>
+<h6>University of Applied Sciences Utrecht</h6>
+<h3>Dianne Teunisse</h3>
+<h6>University of Applied Sciences Utrecht</h6>
+<h3>Annette Klarenbeek</h3>
+<h6>University of Applied Sciences Utrecht</h6>
+<br>
+In this abstract we describe a computational approach for detecting discursive patterns in social media. Newsrooms of municipalities and public organizations such as the police follow public debate on social media to be aware of and prepare for local and global issues and rumors. The onset of these issues and rumors are now detected by communication specialists in newsrooms.  Using discourse analysis we can ground their findings in theory.  
+<br><br>
+Devices from discursive psychology such as emotional evaluations are the lowest level components that can help spot and understand issues (Stinesen et al, 2016). The identification of these components can be facilitated through the training of communication specialists. For this purpose, we developed a computational approach that can highlight these devices in a learning environment [1]. 
+<br><br>
+For the development of the computational approach, we collected and annotated data in collaboration with 3 linguistic and communication specialists. They annotated a total of 917 posts from 5 cases using a discursive psychological framework (Potter,1996). These include multiple discursive patterns, but for the remainder of this abstract we focus on maximisations , emotional evaluations, and factual language use.
+<br><br>
+In an iterative process with the annotators, we translated their strategies for annotating the discursive devices to computational processes that we could automate using existing methods. These existing methods include low level textual analyses such as the use of emoticons or capital letters as well as higher level analysis such as syntactical word type or detected emotions.  In addition, we used an expanded word list approach based on the original annotations and curated expansions using word vectors. Together these form structured, transparent algorithms for detecting discursive devices in (social) media. 
+<br><br>
+Analysis of the precision and recall of the algorithms reveals good recall and low precision for all three discursive patterns. This was mainly due to the algorithm finding examples of a discursive pattern that were not annotated as such. Feedback from the annotators indicated that even though a discursive pattern was present, it was not always annotated. This was mostly due to the irrelevance of this pattern given the context. Additional analysis of a sample of the false positives of the algorithm suggested that indeed most false positives were due to missed annotations and not because of errors of the algorithm.
+<br><br>
+These results indicate that in discursive analysis the impact of knowledge about the context of a situation is large. In future work we will extend the algorithms as designed so far with the possibility to use a larger stream of messages as context for determining the relevance of a certain discursive pattern for a single message.
+<br><br>
+[1] https://husite.nl/bep/ 
+<br><br>
+Potter, J. (1996). Attitudes, social representations and discursive psychology. In M. Wetherell (Ed.), Identities, groups and social issues (pp. 119–173). Open University Press; Sage Publications, Inc.
+<br><br>
+Stinesen, B., Sneijder, P., & Klarenbeek, A. (2016). Geruchtvorming op social media: Een discursief psychologische analyse van Twitterberichten over een zoektocht naar twee vermiste kinderen. Tijdschrift voor Communicatiewetenschap, 44(4)

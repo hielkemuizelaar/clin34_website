@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Improving Text Classification by Filtering Out Irrelevant Sentences Using a Sentence Classifier</h1>
+<h3>Sander Puts, Shashank Chakravarthy, Martijn Nobel, André L. A. J. Dekker, Catharina M. L. Zegers, Inigo Bermejo</h3>
+<h6>Department of Radiation Oncology (Maastro), GROW Research Institute for Oncology and Reproduction, Maastricht University Medical Centre+</h6>
+<br>
+Background: In natural language processing (NLP), rule-based approaches struggle with ambiguity, synonyms, and spelling variations, while many machine learning models are limited by maximum sequence lengths that can be shorter than the documents they need to process. We propose a semi-unsupervised method that utilizes section headings to develop a sentence classification system, specifically targeting tumour classification in radiology reports. This strategy aims to improve the accuracy of rule-based systems and address sequence length constraints in machine learning models by selectively filtering for sentences relevant to the topic.
+<br><br>
+Methods: On a large dataset of 90,000 radiology reports, we first standardized section headings. From these standardized headings, we selected those that could effectively discriminate whether a section is strongly related or not related to pulmonary oncology. After labelling sentences with these selected headings, we used fastText, a word2vec-related algorithm, to develop a model that classifies sentences and filters out those unrelated to pulmonary oncology. The model evaluates the confidence level of its current sentence prediction and, if low, uses the classification of preceding sentences to resolve ambiguities. We evaluated this method on two tasks: lung cancer classification (machine learning-based) and TNM staging (rule-based). Two datasets from a large university medical centre were used: an existing dataset with 192 radiology reports labelled for TNM staging and a new dataset comprising 812 radiology reports labelled for lung tumour presence.
+<br><br>
+Results: Using fastText to classify headings for sentences in radiology reports achieved a high F1-score of 0.910. In the two use cases of lung tumour-related classifications, this technique showed slight accuracy improvements for the rule-based dataset, with accuracy increasing from 0.807 to 0.823. Significant improvements were observed when minimizing truncation for the transformer-based machine learning approach, with F1-scores improving from 0.70 to 0.828. The prefiltering by the sentence classifier significantly reduced the portion of documents requiring truncation to fit the token limit. Depending on the model, this reduction was from 68% to 7% in one model and from 38% to 1% in another.
+<br><br>
+Conclusion: A sentence heading classifier can be effectively applied to classification tasks, replacing sectionisers and blacklists for rule-based classification. For machine learning classifiers, it can reduce sequence length, minimizing the effects of truncation and ensuring that only relevant information is considered. This approach can be applied to other domains where sections are predominantly used, improving classifiers by pre-filtering relevant sentences based on headings.

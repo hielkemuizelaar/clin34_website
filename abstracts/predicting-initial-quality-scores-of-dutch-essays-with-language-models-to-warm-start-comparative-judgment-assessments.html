@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Predicting Initial Quality Scores of Dutch Essays with Language Models to Warm-Start Comparative Judgment Assessments</h1>
+<h3>Michiel De Vrindt</h3>
+<h6>imec research group ITEC, KU Leuven</h6>
+<h3>Anaïs Tack</h3>
+<h6>imec research group ITEC, KU Leuven</h6>
+<h3>Renske Bouwer</h3>
+<h6>Institute for Language Sciences, Utrecht University</h6>
+<h3>Wim Van Den Noortgate</h3>
+<h6>imec research group ITEC, KU Leuven</h6>
+<h3>Marije Lesterhuis</h3>
+<h6>Center for Research and Development of Health Professions Education, UMC Utrecht</h6>
+<br>
+The Comparative Judgment (CJ) method involves comparing pairs of items, such as essays, and estimating a final ranking (scoring) based on these comparisons. The assessment method has been applied to various domains, including assessing writing quality. While CJ is known to have high validity and reliability, it can suffer from inefficiency due to the need for numerous judgments before scores become reliable. To increase the efficiency of CJ, adaptive selection rules have been proposed (Pollitt, 2012). However, these rules face challenges: they cannot be used at the start of the assessment due to a “cold start” (i.e., the quality scores are unknown as no judgments have been made yet), and during assessment, they may inflate reliability estimates, causing biased quality scores. 
+<br><br>
+To address these challenges, we ran an experiment where we trained and evaluated language models to predict the quality scores of essays to increase the efficiency of CJ. Utilizing a dataset of Dutch essays centered on three argumentative topics (Lesterhuis et al., 2022), we fine-tuned several Dutch language models — BERTje (de Vries et al., 2019), RobBERT (Delobelle et al., 2022), and RobBERTje (Delobelle et al., 2021) — to predict the initial quality scores of essays at the start of an assessment. We trained models on completed assignments to predict scores for a new (unseen) assignment, simulating a real-world CJ scenario. We compared the performance of models fine-tuned solely on essay text to models incorporating both essay and prompt information. Our findings suggest that the RobBERT model consistently achieved the highest reliability of the predicted quality scores for Dutch essays by fine-tuning with both essay and prompt information. 
+<br><br>
+After having evaluated these Dutch language models, we examined two ways of integrating the predicted initial quality scores into CJ to increase the efficiency of the assessment. Firstly, we used the predicted quality scores to warm-start CJ by constructing informative prior distributions for the quality scores. We conducted simulations of CJ assessments to compare a warm-start Bradley-Terry-Luce (BTL) model with a cold-start BTL model, where initial quality scores are absent. Through our simulation study, we demonstrate that our approach increases the efficiency of CJ. On average, assessors need to make 30% fewer judgments for each essay to reach an overall reliability level of 0.70.  
+<br><br>
+Secondly, we used the predicted quality scores to devise an efficient selection rule to select pairs of essays. We constructed a selection rule based on the predicted quality scores used for warm-starting CJ. In addition to considering quality scores derived from texts, we also explored selection pairs based on textual differences between essay texts. As embeddings capture deeper semantic relationships between texts, we scrutinized the relationships between the fine-tuned embeddings of essay texts to select essay pairs. In a second simulation study, we compared various adaptive selection methods based on the predicted quality scores and essay embeddings. The results show that integrating the predicted quality scores in a selection rule further increases the efficiency of CJ by reducing the number of judgments required to obtain reliable quality scores. 

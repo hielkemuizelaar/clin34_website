@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/identifying-controversial-claims-in-political-youtube-comments/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/identifying-controversial-claims-in-political-youtube-comments/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/identifying-controversial-claims-in-political-youtube-comments/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Identifying Controversial Claims in Political YouTube Comments</h1>
+<h3>Natalia Evgrafova, Véronique Hoste, Els Lefever</h3>
+<h6>LT3, Ghent University</h6>
+<br>
+In political argument mining, it is vital to identify controversies that incite debate. As put by Lawrence and Reed (2019), identifying controversial points already gives us information about the argumentative structure, as  two conflicting propositions attract more supporting and attacking views. In this study, we aim to generate the prevailing controversial claims (conclusions)  from user comments on recent political YouTube videos.
+<br><br>
+The  topics for the existing corpora that contain user-generated comments on political  or social issues have been chosen mostly manually. Habernal and Gurevych (2017) focused on the domain of education, and, in cooperation with experts, identified current controversial topics within the domain. Rumshisky et al. (2017) collected comments about Maidan events in Ukraine in 2013-2014, and tracked the major changes associated with the topic over time. Other datasets of user-generated comments were mined from the debate portals with user predefined topics (Ajjour-2019; Abbott-2016). The research on controversy detection in social media comments was performed mostly as a classification task in order to detect posts that contain controversy based on the posts content, reply tree structure or community labelled features (Hessel and Lee, 2019; Zhong et al., 2020; Figueras et al., 2023). 
+<br><br>
+In our study, topics are the most discussed events mentioned in recent news videos. We use the YouTube Data API to find the most relevant and commented news videos (from January 2024 to May 2024) and scrape the longest comment threads to these videos. We decided on the official channels of newspapers in the target languages – Dutch, Russian, and English (VRT NWS, BBC Russian Service, BBC NEWS respectively) to ensure the content quality and relevance. To be able to extract argumentative structure of comments, we first want to define the target controversial claim(s). 
+<br><br>
+The preliminary manual analysis of the video threads revealed that the comments contain repeated competing claims, either implicitly or explicitly stated. For example, a BBC video on Moscow terror attack includes such competing claims as “Ukraine has been involved in the attack”, “Ukraine has not been involved in the attack”. For VRT NWS video on the reaction of the Belgian influencer Acid to the court decision in a legal case, the debated narratives include “The decision was fair”, “The decision was unfair”, for the BBC Russian Service Interview with Vasily Nebenzya, such pairs as “The Crimean Referendum was legitimate”, “The Crimean referendum was illegitimate” could be drawn.  
+<br><br>
+To detect such claims automatically, we present an approach incorporating:<br>
+(1) semantic similarity clustering, as done for prominent argument identification in Boltužić and Šnajder (2015), (2) structural information from a reply tree that has been rebuilt using the comment time and user-names (since it is not available with the YouTube API) as in Zhong et al. (2020), and (3) human annotations of explicit/implicit claims. Drawing such pairs of claims will make it possible to analyse the prevailing claims around relevant news events and extract corresponding premises from comments. This will contribute to a deeper understanding of public opinion and reasoning on current political news.
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

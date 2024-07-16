@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Semantic Role Extraction in Law Texts: A Comparative Analysis of Language Models for Legal Information Extraction</h1>
+<h3>Roos M. Bakker</h3>
+<h6>TNO; Leiden University</h6>
+<h3>Juul A. Schoevers</h3>
+<h6>TNO</h6>
+<h3>Romy A.N. van Drie</h3>
+<h6>TNO</h6>
+<h3>Marijn P. Schraagen</h3>
+<h6>Utrecht University</h6>
+<h3>Maaike H. T. de Boer</h3>
+<h6>TNO</h6>
+<br>
+Norms are essential in our society: they dictate how individuals should behave and interact within a community. They can be written down in laws or other written sources. Interpretations often differ; this is where formalisations offer a solution. They express an interpretation of a source of norms in a transparent manner. However, creating these interpretations is labour intensive. Natural language processing techniques can support this process. Previous work showed the
+potential of transformer-based models for Dutch law texts. In this paper, we 1) introduce a dataset of 2335 English sentences annotated with legal semantic roles conform the Flint framework; 2) fine-tune a collection of language models on this dataset, and 3) query two non-fine-tuned generative large language models (LLMs). This allows us to compare performance of fine-tuned domain-specific, task-specific, and general language models with non-fine-tuned generative LLMs.
+The results show that models fine-tuned on our dataset have the best performance (accuracy around 0.88). Furthermore, domain-specific models perform better than general models, indicating that domain knowledge is of added value for this task. Finally, different methods of querying LLMs perform unsatisfactorily, with maximum accuracy scores around 0.6. This indicates that for specific tasks, such as this adaptation of semantic role labelling, the process of annotating data and fine-tuning a smaller language model is preferred over querying a generative LLM, especially when domain-specific models are available.

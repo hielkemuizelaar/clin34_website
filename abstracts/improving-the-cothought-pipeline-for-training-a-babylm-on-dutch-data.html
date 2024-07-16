@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Improving the CoThought pipeline for training a BabyLM on Dutch data</h1>
+<h3>Thijs Groeneweg, Gijs Wijnholds</h3>
+<h6>Leiden University</h6>
+<br>
+This research investigates the possibility of producing a small and efficient Dutch language model, motivated by the BabyLM challenge (Warstadt et al. 2023). Inspired by the CoThought pipeline (Zheyu Zhang et al. 2023), which transforms the BabyLM data into task-specific instances through LLM prompting, we prepare two different pretraining corpora: in one, the task-specific data is automatically translated to Dutch; in the other, parts of the translated data are substituted by original Dutch resources that were preprocessed using a Dutch-capable LLM (Gemini-1.0-Pro). In the latter step, we optimize the prompting strategy, resulting in a third pretraining dataset. 
+<br><br>
+In order to be as efficient as possible during pretraining, we make use of adapter models (Houlsby et al. 2019), which freeze part of the model while initializing new layers which are updated in pretraining. For specific downstream tasks, taken from a subset of the DUMB benchmark (De Vries et al. 2023), we add prediction heads that are subsequently finetuned. We report the results on the different pretraining corpora, different prompting methods used, and their effect on final downstream performance.

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>BLiMP-NL: A corpus of Dutch minimal pairs and grammaticality judgements for language model evaluation</h1>
+<h3>Michelle Suijkerbuik</h3>
+<h6>Centre for Language Studies, Radboud University</h6>
+<h3>Zoë Prins</h3>
+<h6>Institute for Logic, Language and Computation, University of Amsterdam</h6>
+<h3>Marianne de Heer Kloots</h3>
+<h6>Institute for Logic, Language and Computation, University of Amsterdam</h6>
+<h3>Willem Zuidema</h3>
+<h6>Institute for Logic, Language and Computation, University of Amsterdam</h6>
+<h3>Stefan L. Frank</h3>
+<h6>Centre for Language Studies, Radboud University2</h6>
+<br>
+In 2020, Warstadt and colleagues introduced The Benchmark of Linguistic Minimal Pairs (BLiMP), a set of minimal pairs of well-known grammatical phenomena in English that is used to evaluate the linguistic abilities of language models. In the current work, we expand this work further by creating a benchmark of minimal pairs for Dutch: BLiMP-NL. We present a corpus of 8400 Dutch sentence pairs, intended for the grammatical
+evaluation of language models. Each pair consists of a grammatical sentence and a minimally different ungrammatical sentence.
+<br><br>
+By going through all the volumes of the Syntax of Dutch, we ended up with 22 grammatical phenomena (e.g., anaphor agreement, wh-movement), all consisting of different sub-phenomena (84 in total). For each of the 84 sub-phenomena, 10 minimal pairs were created by hand and another 90 minimal pairs were created synthetically. An example of a minimal pair of the sub-phenomenon ‘impersonal passive’ can be found below.
+<br><br>
+a. Er      wordt veel    gelachen door de vriendinnen.         [grammatical]<br>
+    there is        much laughed   by    the girlfriends<br>
+b. Yara wordt veel    gelachen door de vriendinnen.                [ungrammatical] <br>
+    Yara is        much laughed   by    the girlfriends 
+<br><br>
+In creating these minimal pairs, we improved the methodology of the English BLiMP by, for example, making sure that the critical word (i.e., the point at which the sentence becomes unacceptable; "gelachen"/"laughed" in the example) is the same for both sentences, which makes evaluation less noisy both when evaluation people and language models. Another improvement is in the set-up of the experiment in which we test the performance of native speakers. The 84 sub-phenomena were divided over 7 experiments, and in each experiment, there were 30 participants. These participants all performed a self-paced reading task, in which they read every sentence word-by-word and rated its acceptability. In contrast to the original BLiMP, these ratings were not binary but made on a scale of 1 to 7 to capture the gradience of acceptability judgements. 
+<br><br>
+We used our dataset to evaluate some Transformer language models. We evaluate these models both based on determining for which fraction of minimal pairs the grammatical sentence gets a higher probability from the language model than the ungrammatical sentence and by comparing the probability distributions of the sentences with the distribution of human ratings. We considered both causal and masked language models and found that bigger models can identify grammaticality quite reliably. Interestingly, we see that small masked language models perform better than bigger causal models when comparing probabilities per minimal pair, which is inconsistent with the abilities of these models on other evaluation criteria. 

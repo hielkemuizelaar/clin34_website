@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Evaluation of Greek Word Embeddings</h1>
+<h3>Leonidas Mylonadis, Jelke Bloem</h3>
+<h6>University of Amsterdam
+    Institute for Logic, Language and Computation, University of Amsterdam; Data Science Centre, University of Amsterdam</h6>
+<br>
+Word embeddings are crucial to widely applied natural language processing tasks such as machine translation and sentiment analysis. In addition, computational models that accurately capture semantic similarity as opposed to association or relatedness have wide-ranging applications and are an effective proxy evaluation for general-purpose representation-learning models (Hill, Reichart & Korhonen, 2015). Existing research on the evaluation of word embeddings has mostly been conducted on English. For example, the SimLex-999 dataset contains 999 English word pairings that were manually rated for their similarity by 50 participants. SimLex-999 also distinguishes itself from other word embedding evaluation frameworks by more accurately capturing similarity relations between word pairings. We created a version of SimLex-999 for Modern Greek so as to contribute to the evaluation of Greek word embeddings. We did so by translating the existing dataset of 999 English word pairs into Greek and then recruiting native Greek speakers to manually rate the semantic similarity of the word pairs. We then used the dataset produced by the manual annotators to evaluate popular Greek language models such as GREEK-BERT, M-BERT and XLM-R. This evaluation identifies which existing language models more accurately capture similarity relations and in doing so contribute to the development of accurate computational models for the Greek language.

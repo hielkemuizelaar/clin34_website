@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Retrieval-Augmented Generation (RAG) in Generative Large Language Models for Automated Essay Grading</h1>
+<h3>Ine Gevers, Cristina Arhiliuc, Leonardo Grotti, Pieter Fivez</h3>
+<h6>University of Antwerp</h6>
+<br>
+Automated Writing Evaluation (AWE), specifically automated essay grading, presents a challenge in educational technology. A reliable, and explicable method would offer the potential for consistent and fast assessment of student writing. The task’s significance is further underscored by the recent Kaggle competition, which invites NLP-based solutions on the largest open-access writing dataset for student assessments. The task is to create an algorithm to score these essays on a scale from 1 to 6.<br>
+Our methodology introduces a system where, for each test essay to be graded, we retrieve the most similar labeled train essay for each score category. For this purpose, we experiment with various Retrieval-Augmented Generation (RAG) models. The scoring process involves comparing the target essay with these retrieved examples using LLMs, allowing for a nuanced evaluation that captures the inherent qualities of each score category. We argue that this approach could result in more stable, and explainable grading systems.  For instance, in a real-world scenario, the LLM could be instructed to explain its reasoning process when comparing the target essay to the retrieved examples, to provide more insights into why the target essay is graded higher or lower than the example.

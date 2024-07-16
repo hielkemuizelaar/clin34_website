@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Cross-lingual age estimation: distinguishing child speech from adult speech</h1>
+<h3>Heike Pauli</h3>
+<h6>KU Leuven</h6>
+<h3>Lukas Latacz</h3>
+<h6>SAY IT Labs</h6>
+<h3>Hugo Van hamme</h3>
+<h6>Department of Electrical Engineering (ESAT), KU Leuven</h6>
+<br>
+For many applications, it would be advantageous to know which data is from children and which isn’t. Recently, Burkhardt et al. (2023) showed how to predict age and gender with models based on wav2vec 2.0. In preliminary experiments, we observed poor performance on child speech data, which might be caused by the small amount of child speech in their training data. Furthermore, the wav2vec 2.0 model is a heavy model with a lot of computational requirements.
+<br><br>
+We present an age classification model, built on top of speaker embeddings. Our best performing binary classification head, that can classify instances as either ‘child’ or ‘adult’, is a four-layer artificial neural network. As inputs to this classifier, we used 512-dimensional TDNN-based X-vectors, generated with pyannote.audio (Bredin et al., 2019). Our assumption is that these speaker embeddings might be able to capture the speaker’s characteristics across languages. To validate this assumption, we have trained our model on Dutch speech data and tested it on English speech data. 
+<br><br>
+In our experiments, we used Flemish adult speech data from the CGN corpus (Oostdijk, 2000) and Flemish child speech data from the CHOREC corpus (Cleuren et al., 2009) as training data. Speakers were labelled as children if they were 12 years old or younger. The models were tested on Flemish speech data from the JASMIN-CGN corpus (Cucchiarini et al., 2008), which contains speech from children, non-natives and elderly people. The best performing model reached an F1 score of 0.87 and an accuracy of 90%. As expected, the majority of errors were caused by misclassifying speakers around the threshold age (i.e. around 12 years old). There were more adults being classified as children than vice versa.
+<br><br>
+Attempts were also made at building a multi-class classification model that predicts the classes ‘child’, ‘adult’ and ‘elderly’, as well as a regression model, that predicts the exact age. These models performed worse than the binary classifiers. For the multi-class classification model, this can be explained by a class imbalance for the ‘elderly’ class (older than 65 years).  For testing in English, we used anonymised speech data collected from participants playing the Stutter Stars game, a video game for people who stutter. The speech data was randomly selected and manually annotated as either ‘child’ or ‘adult’. We balanced the test data by selecting a subset that contains a similar amount of adult and child speakers. Using our Dutch binary classifier, we obtained an F1 score of 0.83 and an accuracy of 79% on the English data. These results seem to confirm that our classifier has favourable cross-lingual performance to a certain extent.

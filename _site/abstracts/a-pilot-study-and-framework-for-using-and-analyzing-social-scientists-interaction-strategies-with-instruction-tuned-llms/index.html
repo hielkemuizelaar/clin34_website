@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/a-pilot-study-and-framework-for-using-and-analyzing-social-scientists-interaction-strategies-with-instruction-tuned-llms/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/a-pilot-study-and-framework-for-using-and-analyzing-social-scientists-interaction-strategies-with-instruction-tuned-llms/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/a-pilot-study-and-framework-for-using-and-analyzing-social-scientists-interaction-strategies-with-instruction-tuned-llms/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>A pilot study and framework for using and analyzing social scientist’s interaction strategies with Instruction-Tuned LLMs</h1>
+<h3>Myrthe Reuver</h3>
+<h6>Vrije Universiteit Amsterdam</h6>
+<h3>Indira Sen</h3>
+<h6>University of Konstanz</h6>
+<h3>Gabriella Lapesa</h3>
+<h6>GESIS - Leibniz-Institut für Sozialwissenschaften and Heinrich-Heine University Düsseldorf</h6>
+<br>
+Prompt-based, instruction-tuned models or Large Language Models (LLMs) such as GPT [1] and Mistral [2] are easy to use, and increasingly used by social scientists in their text-as-data analyses for constructs such as sexism and media frames. [3] These interactive generative models produce coherent and convincing (while not necessarily factually correct) conversations, due to their training on human feedback. [4] 
+<br><br>
+Social scientists with in-depth knowledge of these constructs may have strategies in interactions with LLMs to assess model suitability for the further use of the model in their research. Such interactions are currently collected, but not shared, by proprietary companies [8].  These conversations may be an avenue of hybrid intelligence [5, 6]: using expert knowledge together with model knowledge to improve model classification results.  Other work has used LLM-generated as well as human-generated definitions of complex constructs for zero-shot classification of texts. [7] However, under-researched is work on co-created definitions in such zero-shot classification. We analyze social scientists’ interaction strategies with LLMs, and use definitions generated in these interactions for zero-shot learning with these same LLMs.
+<br><br>
+Our research questions are:<br>
+- How do experts with knowledge of social science theory interact with and evaluate LLMs for construct detection? <br>
+- Can we use expert-LLM interactions for expert-LLM hybrid intelligence, in the form of co-created definitions, for detecting social science constructs?
+<br><br>
+We research expert interactions with LLMs, specifically GPT3.5, on two complex constructs: sexism and media frames. We have developed a survey in which participants can directly interact with LLMs. We record expert’s input and model output in a 10-turn interaction, with two tasks for experts: <br>
+1. assess model suitability for detecting constructs based on their conversation; <br>
+2. co-create definitions usable for zero-shot LLM classification of these constructs. 
+<br><br>
+This work contributes to the literature with: a) a survey-based framework to record user’s multi-turn interactions with LLMs; b) a dataset of expert-LLM interactions, as well as validated Likert scale data on how experts rated these models based on these conversations; c) an in-depth analysis of expert interactions to get definitions and prompts for LLMs, and their impact on model performance. 
+<br><br>
+Our initial pilot experiments indicate that experts have different strategies for assessing model suitability for detecting content: some ask for definitions of the construct, some instead ask the model to classify typical examples, and others quiz the model on its in-depth knowledge. In larger-scale experiments, we plan to qualitatively analyze interactions between experts and LLMs, and assess how qualitative trends and categories correspond to experts’ ratings of the interactions and models. Additionally, we plan to analyze how the qualitative analyses of different interaction strategies connect to the benchmark performance of these same LLMs with zero-shot classification using the co-created definitions. Our presentation will show the (preliminary) results of these analyses. (457 words)
+<br><br>
+References<br>
+[1] Brown, T., et al. (2020). Language models are few-shot learners. In Advances in neural information processing systems 33, 1877-1901.<br>
+[2] Jiang, A. Q., Sablayrolles, A., Mensch, A., Bamford, C., Chaplot, D. S., Casas, D. D. L., ... & Sayed, W. E. (2023). Mistral 7B. arXiv preprint arXiv:2310.06825.<br>
+[3] Weber, M., & Reichardt, M. (2023). Evaluation is all you need. Prompting Generative Large Language Models for Annotation Tasks in the Social Sciences. A Primer using Open Models. arXiv preprint arXiv:2401.00284.<br>
+[4] Griffith, S., Subramanian, K., Scholz, J., Isbell, C. L., & Thomaz, A. L. (2013). Policy shaping: Integrating human feedback with reinforcement learning. Advances in neural information processing systems, 26.<br>
+[5] Akata, Z., Balliet, D., De Rijke, M., Dignum, F., Dignum, V., Eiben, G., ... & Welling, M. (2020). A research agenda for hybrid intelligence: augmenting human intellect with collaborative, adaptive, responsible, and explainable artificial intelligence. Computer, 53(8), 18-28.<br>
+[6] Dellermann, D., Ebel, P., Söllner, M., & Leimeister, J. M. (2019). Hybrid intelligence. Business & Information Systems Engineering, 61(5), 637-643.<br>
+[7] Youri Peskine, Damir Korenčić, Ivan Grubisic, Paolo Papotti, Raphael Troncy, and Paolo Rosso. 2023. Definitions Matter: Guiding GPT for Multi-label Classification. In Findings of the Association for Computational Linguistics: EMNLP 2023, pages 4054–4063, Singapore<br>
+[8] Liesenfeld, A., Lopez, A., & Dingemanse, M. (2023). Opening up ChatGPT: Tracking openness, transparency, and accountability in instruction-tuned text generators. In Proceedings of the 5th International Conference on Conversational User Interfaces (CUI '23), Article 47, 1–6. https://doi.org/10.1145/3571884.3604316
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

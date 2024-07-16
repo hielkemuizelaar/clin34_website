@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Ontology-based distance metrics for keyword evaluation</h1>
+<h3>Simone van Bruggen, Maaike Koninx</h3>
+<h6>Bookarang, NBD Biblion</h6>
+<br>
+To successfully find the right document out of many, finding high-quality keywords can be essential to describe documents and can play an important part in tasks such as document retrieval, clustering, or recommender systems. To assert how well an extraction algorithm performs, we want to compare keyword sets in a meaningful way. Ideally, we want to find a model-agnostic metric that allows for using (ensembles of) various extraction algorithms. Due to the size and sparsity of the set of potential keywords and because the set of acceptable predictions can be much larger than the annotated ground truth, traditional metrics based on exact matching generally perform poorly and are not representative of the quality of the predictions. 
+<br><br>
+While traditional similarity metrics like word embedding distances allow for more fuzzy matching, they do not differentiate between levels of similarity. Depending on the use case, we might want to have a higher error score for certain mistakes. For example, when predicting book keywords, the keyword “Spain” for a book about “Germany” should get a bigger penalty than wrongfully predicting “police” for a book about “crime”. Existing knowledge bases can help in including real-world knowledge about the relationships between different keywords, but large annotated knowledge banks often have such a complex architecture that it becomes difficult to define clear links between concepts. Similarity measures based on knowledge bases, such as Wikidata, offer high-quality metrics, but are opaque and hard to tweak to constraints.
+<br><br>
+To measure similarity between sets of keywords in a semantically accurate and tunable way, we propose an evaluation metric that leverages an underlying structure to define meaningful distances. This structure is a meticulously curated ontology containing keyword annotations structured in a directed graph, specifically designed for recommenders. To standardize the keywords, we group labels of similar keywords under a canonical label, including synonyms and conjugations, but also more complex concept variants (e.g. “mortality” and “finality of life”). Additionally, each keyword group is assigned one or more class labels (concepts, people, periods, locations and events). The proposed metric incorporates the distance in the graph and the connection between the different classes. We calculate the shortest path in the graph between keywords and add a penalty when multiple predicted keywords are too closely connected and belong to the same class. This allows us to optimize for outputting a minimal set of high-similarity keywords with maximum distance between the predicted keywords, balancing accuracy and variety of the output. This metric can be tuned further to fit it to specific problems. For example, while two related, closely connected concepts might be correct for our desired output, two related periods might not. <br>
+We show the results of applying this metric to keyword extraction experiments for books focusing on our hand-annotated keyword structure.

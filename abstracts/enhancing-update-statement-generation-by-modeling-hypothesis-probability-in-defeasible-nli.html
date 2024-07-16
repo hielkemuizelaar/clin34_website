@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Enhancing Update Statement Generation by Modeling Hypothesis Probability in Defeasible NLI</h1>
+<h3>Marzieh Abdolmaleki, Veronique Hoste, Els Lefever</h3>
+<h6>LT3, Ghent University</h6>
+<br>
+Defeasible inference involves a form of reasoning in which the credibility of a hypothesis, derived from a premise, can be modified by introducing additional evidence that aligns with the premise. A model is required to produce a relevant statement, referred to as an “update”, that challenges a given hypothesis. The new information can either make a hypothesis stronger or weaker. For example, if we say that “A man is on a boat”, a plausible hypothesis could be “The man is sailing”. However, introducing additional evidence such as “The boat has a sail” or “The boat has a motor” can strengthen or weaken the hypothesis, respectively. This research aims to enhance the performance of Large Language Models in generating more effective supportive or opposing update statements using an English dataset called δ-NLI (Rudinger et al., 2020).
+<br><br>
+Improving the modeling of the probability of a hypothesis H given a context including a premise P and an update U, expressed as P(H|P, U), is a crucial aspect that has been overlooked in prior research on defeasible NLI. We can model changes in the strength of a hypothesis by tracking changes in the probability of a hypothesis given the premise alone (P(H|P)) and the premise and the generated update statement together. Additionally, current models lack clarity in understanding the relationship between update statements and hypotheses, leading to confusion about the types of updates. To address this, the presented approach incorporates the probability of a hypothesis given a premise into the training process. In this context, a supportive update U+ should logically strengthen the hypothesis probability given prior evidence (P(H|P) < P(H|P, U+)). Conversely, for an opposing update U-, the inequality should be reversed.  Integrating this concept into the model training process can potentially lead to enhancing its ability to discern between different update types, and ultimately improve the  reasoning capacities of the model. 
+<br><br>
+References
+<br><br>
+Rudinger, R., Shwartz, V., Hwang, J. D., Bhagavatula, C., Forbes, M., Le Bras, R., Smith, N. A., & Choi, Y. (2020). Thinking Like a Skeptic: Defeasible Inference in Natural Language. Findings of the Association for Computational Linguistics: EMNLP 2020, 4661–4675. https://doi.org/10.18653/v1/2020.findings-emnlp.418

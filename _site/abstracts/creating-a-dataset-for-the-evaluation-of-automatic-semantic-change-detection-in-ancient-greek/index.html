@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/creating-a-dataset-for-the-evaluation-of-automatic-semantic-change-detection-in-ancient-greek/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/creating-a-dataset-for-the-evaluation-of-automatic-semantic-change-detection-in-ancient-greek/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/creating-a-dataset-for-the-evaluation-of-automatic-semantic-change-detection-in-ancient-greek/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Creating a dataset for the evaluation of automatic semantic change detection in Ancient Greek</h1>
+<h3>Silvia Stopponi, Saskia Peels-Matthey, Malvina Nissim</h3>
+<h6>Center for Language and Cognition Groningen, University of Groningen</h6>
+<br>
+Lexical semantic change is a relevant phenomenon from both a linguistic and an anthropological point of view, concerning the modification of language and culture through time. Computational methods for semantic change detection have been mainly applied to modern languages (an overview is in Tahmasebi et al.  2021),  leveraging both large corpora and native speakers to train large models and to reliably evaluate their performance. This is not the case for ancient languages, such as Ancient Greek, on which this contribution focuses. Ancient languages lack native speakers and knowledge about these languages typically relies on a written corpus, limited in size, which cannot be substantially increased.
+<br><br>
+Most existing studies on lexical semantic change in Ancient Greek were carried out with the close-reading method (or ‘philological’ method), allowing for a detailed analysis of word occurrences in context. However, due to the time-consuming nature of the method, no ‘philological’ study in lexical semantics can include the whole corpus of Ancient Greek. Few studies tried to overcome this problem with automatic semantic change detection (Boschetti 2009, 2018; Rodda et al. 2017; Stopponi et al. forthcoming). The last one, in particular, adopted two automatic measures of semantic change successfully applied to English by Cassani et al. (2021), the Vector Coherence and the J. However, they found that the application of the two measures is problematic when applied to Ancient Greek, due to the characteristics of the corpus. Since Ancient Greek is a highly inflected language, computational studies about it generally use lemmatized versions of the corpora, to reduce data sparsity. Since most currently available corpora were automatically lemmatized, a certain amount of lemmatization errors is inevitable. Stopponi et al. (forthcoming) found that words affected by errors in lemmatization were more likely to be among the detections, i.e. among the possible candidates for semantic change. However, the Vector Coherence metric also detected real cases of semantic change, and seems thus a promising method for semantic change detection in Ancient Greek.
+<br><br>
+To better estimate the reliability of automatic metrics, a gold standard is needed, i.e. a dataset of already-known cases of semantic change, against which the results obtained with the metrics can be compared. One aim of this evaluation is to distinguish good detections from cases of wrong lemmatization, by identifying a range of metric values typically assigned to the evaluation items. Towards this aim, we collected a dataset of attested cases of semantic change in Ancient Greek, extracted from close-reading studies in lexical semantics, such as Gingrich (1954) and Buck (1949), and from the Grieks/Nederlands Woordenboek (Sluiter et al. 2024). In this contribution we describe the procedure followed to create the dataset, including the identification of relevant semantic areas where cases of semantic change were likely to occur, the selection of the philological studies, and item selection. We explain the challenges encountered with this specific language and the solutions adopted. Finally, we show the results of the comparison between the dataset and the results obtained with the J  and Vector Coherence metrics.
+<br><br>
+**References**
+<br><br>
+Federico Boschetti. 2009. A corpus-based approach to philological issues. PhD thesis, University of Trento.
+<br><br>
+Federico Boschetti. 2018. Copisti digitali e filologi computazionali. CNR Edizioni.
+<br><br>
+Buck, Carl Darling. 2008. A dictionary of selected synonyms in the principal Indo-European languages. University of Chicago Press.
+<br><br>
+Giovanni Cassani, Federico Bianchi, and Marco Marelli. 2021. Words with consistent diachronic usage patterns are learned earlier: A computational analysis using temporally aligned word embeddings. Cognitive science, 45(4):e12963.
+<br><br>
+Gingrich, F. Wilbur. 1954. The Greek New Testament as a landmark in the course of semantic change. Journal of Biblical Literature: 189-196.
+<br><br>
+Martina A Rodda, Marco SG Senaldi, and Alessandro Lenci. 2017. Panta rei: Tracking semantic change with distributional semantics in Ancient Greek. IJCoL. Italian Journal of Computational Linguistics, 3(3-1):11–24.
+<br><br>
+Ineke Sluiter, Lucien van Beek, Ton Kessels, and Albert Rijksbaron. 2024. Woordenboek Grieks/Nederlands. Amsterdam University Press.
+<br><br>
+Silvia Stopponi, Saskia Peels-Matthey, and Malvina Nissim. Forthcoming. Viability of automatic lexical semantic change detection on a diachronic corpus of literary Ancient Greek.
+<br><br>
+Nina Tahmasebi, Lars Borin, and Adam Jatowt. 2021. Survey of computational approaches to lexical semantic change detection. Computational approaches to semantic change, 6(1).
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

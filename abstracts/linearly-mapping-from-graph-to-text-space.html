@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Linearly Mapping from Graph to Text Space</h1>
+<h3>Congfeng Cao, Jelke Bloem</h3>
+<h6>Institute for Logic, Language and Computation, University of Amsterdam</h6>
+<br>
+Aligned multi-modality models, such as vision-language models and audio-language models, have recently attracted significant attention. These models address the limitation of uni-type encoders by aligning various modalities' encoders. For example, the standard training procedure for training a vision-language model aims to align text and image representations using a contrastive loss function that maximizes the similarity between image-text pairs while pushing negative pairs away.
+<br><br>
+Some work trains a linear mapping from the output embeddings of vision encoders to the input embeddings of language models to explore the relationship between vision and language encoders in vision-language models, which exhibits impressive performance on image captioning and VQA tasks based on this linear transformation. In the vision-language domain, linear regression and relative representations are also used to evaluate the relationship of multi-modality encoders with a set of multi-modality representation pairs.
+<br><br>
+We raise the following central question: Do graph and language encoders also differ only by a linear transformation in graph-language models? Given that graphs have a more complex topology structure than the grid structure of vision, is the result of graph-language models with a linear transformation in accordance with vision-language models?
+<br><br>
+Similar to CLIP, which is an aligned text-image model in vision-language, MoleculeSTM is a multi-modalities model in graph-language trained by chemical graph structures and text description pairs. We hypothesize that graph and language encoders can also be transformed by a linear model. Selecting a collection of chemical graphs and text description pairs and splitting it to a training set and a test set from the PubChemSTM dataset, we leverage the training set to learn a linear transformation from the graph embedding space to the text and apply the transformation to get the text embeddings from graph embeddings on test set. Given the graph embeddings on the test set, we can obtain text embeddings from MoleculeSTM and the linear transformation, allowing the embeddings from two different sources to be evaluated based on cosine similarity.

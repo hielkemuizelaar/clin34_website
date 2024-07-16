@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>One Size Does Not Fit All: Exploring Variable Thresholds for Distance-Based Multi-Label Text Classification</h1>
+<h3>Andrew Kosar</h3>
+<h6>University of Antwerp; Textgain</h6>
+<h3>Jens Van Nooten</h3>
+<h6>University of Antwerp</h6>
+<h3>Walter Daelemans</h3>
+<h6>University of Antwerp</h6>
+<h3>Guy De Pauw</h3>
+<h6>Textgain</h6>
+<br>
+Zero-shot multi-label text classification is a challenging task in text classification. Existing methods apply computationally expensive approaches, such as Natural Language Inference classifiers like BLANC for each label, or prompt-based methods with Large Language Models (LLMs). An alternative is distance-based multi-label text classification, which leverages the semantic similarity between text and label representations in an embedding space through cosine similarity. This approach is attractive for settings where label sets change or expand regularly, as no model retraining is required. For distance-based classification, previous studies either use a fixed threshold of 0.5 or a tuned threshold based on a validation set. However, these methods overlook the variability of cosine similarity distributions for different models, datasets, and individual labels.
+<br><br>
+In this study, we establish an empirical basis that confirms each model, dataset genre, and label has a different 'optimal' cosine similarity threshold for classification by evaluating multiple out-of-the-box state-of-the-art sentence embedding models. Based on these findings, we aim to leverage these observations to enhance zero-shot multi-label text classification by online calculation of label-specific thresholds without relying on validation data, with the potential to improve performance over existing fixed and tuned threshold methods. While this study is still in progress, it demonstrates a promising approach to dynamically determining thresholds for improved zero-shot multi-label text classification.

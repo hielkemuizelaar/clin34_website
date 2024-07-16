@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Dataset Generation for Visual Entailment using Generative AI</h1>
+<h3>Rob Reijtenbach, Gijs Wijnholds</h3>
+<h6>Leiden University</h6>
+<br>
+Within the field of natural language processing, Natural Language Inference is a classification problem in which a premise-hypothesis pair has te be given a label, often entailment/neutral/contradiction. Built on the idea of textual entailment there is visual-textual entailment in which the premise is substituted by an image. In order to train models to correctly classify image-hypothesis pairs, datasets are needed. 
+<br><br>
+While there already are datasets of images combined with hypotheses and labels, e.g. SNLI-VE, there are several otherdatasets for conventional, textual entailment. In this work we researched the viability of using generative AI to generate images for the premises of a textual entailment dataset in order to create a visual entailment dataset.
+<br><br>
+We broadly execute three different experiments.<br>
+The first looks at the implicit similarity of generated images compared to original images, the second investigates how well a model trained ongenerated images performs compared to a model trained on original data. The third category of experiments focuses on transfer learning of the models to an entirely new dataset. This entails taking the models that were trained on one dataset and its generated version and comparing their performance when evaluating on a different dataset.

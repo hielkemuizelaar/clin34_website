@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Attributed Question Answering for the Dutch Law using Retrieval augmented Large language models</h1>
+<h3>Felicia Redelaar</h3>
+<h6>Leiden University; TNO</h6>
+<h3>Suzan Verberne</h3>
+<h6>Leiden University</h6>
+<h3>Maaike de Boer</h3>
+<h6>TNO</h6>
+<h3>Romy van Drie</h3>
+<h6>TNO</h6>
+<br>
+Many individuals are likely to face a legal conflict at some point in their lives, but their lack of understanding of how to handle these complicated issues can make them vulnerable. Advances in natural language processing, Large Language Models (LLM), and techniques like Retrieval-Augmented Generation (RAG) provide new opportunities to bridge this gap in legal understanding by developing legal aid systems to support laymen. This work proposes an end-to-end methodology designed to generate attributed long-form answers to Dutch conditional law questions. An example of the Attributed Question Answering task involves a tuple comprising a question, an answer, and an attribution. For instance, "When can the court terminate the guardianship of a natural person?" might be the question, with a corresponding answer like, "The court can terminate guardianship if the guardian abuses authority or lacks required consent," along with an attribution such as "Book 1 Dutch Civil Code, Article 327."
+<br><br>
+Our method employs a retrieve-then-read pipeline. Our experiments compare multiple retrievers, such as BM25 (sparse), DRAGON (dense), and SPLADE (hybrid). We test various LLMs to generate answers, including GPT-3.5, GPT-4, GEITje 7B, and LLama-3. To support this approach, we introduce and release a dataset containing 100 legal question-and-answer pairs in Dutch, verified by a legal expert. Our experiments show promising preliminary results on automatic evaluation metrics using the Automatic LLMs' Citation Evaluation (ALCE) Framework, indicating the potential of this approach to aid individuals navigating legal issues. We publicly release our code and dataset. 

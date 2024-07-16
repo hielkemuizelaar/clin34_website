@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    table {
+        width: 100%;
+        /* border-collapse: collapse; */
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: table-cell;
+    }
+    h1 {
+        margin-bottom: 10px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #001158;
+        color: white;
+    }
+    .name-column {
+        min-width: 250px;
+    }
+    .aff-column {
+        min-width: 300px;
+    }
+    .title-column {
+        min-width: 300px;
+    }
+    .containers {
+        margin: 0;
+        display: table;
+    } 
+
+</style>
+
+<div class="containers">
+    <table>
+        <thead>
+            <tr><th class="name-column">Timeslot</th>
+                <th class="aff-column">Program</th>        </thead>
+        <tbody>
+            <tr><td>8:30 - 9:00</td><td>Registration & Coffee</td></tr>
+            <tr><td>9:30 - 10:50</td><td> <a href="/program/morning-session/">Morning Session</a></td></tr>
+            <tr><td>10:50 - 11:15</td><td>Coffee Break</td></tr>
+            <tr><td>11:15 - 12:15</td><td>Keynote 1 - Diana Maynard</td></tr>
+            <tr><td>12:15 - 13:30</td><td>Lunch & <a href="/program/first-poster-session/">Poster Session 1</a></td></tr>
+            <tr><td>13:30 - 14:50</td><td><a href="/program/afternoon-session/">Afternoon Session</a></td></tr>
+            <tr><td>14:50 - 16:00</td><td>Coffee Break & <a href="/program/second-poster-session/">Poster Session 2</a></td></tr>
+            <tr><td>16:00 - 17:00</td><td>Keynote 2 - GPT-NL</td></tr>
+            <tr><td>17:00 - 18:00</td><td>Closing Drinks</td></tr>
+        </tbody>
+    </table>
+</div>

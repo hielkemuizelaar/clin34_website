@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Styloscope and Toposcope: Towards user-friendly digital text analysis </h1>
+<h3>Jens Lemmens, Walter Daelemans</h3>
+<h6>University of Antwerp</h6>
+<br>
+Natural Language Processing (NLP) has been one of the fastest-growing research fields in the last decade. Innovations such as pre-trained large language models based on transformer neural networks have not only led to the popularization of AI and NLP in the general public, but also to interdisciplinary research projects facilitated by the scalability of these methods. With this in mind, we present two tools that were developed during the CLARIAH-Flanders project, and aim to facilitate said interdisciplinary research.
+<br><br>
+The first tool, Styloscope, can be used for large-scale writing style analysis. For a given input corpus, Styloscope computes an array of writing style features on document level, such as readability, lexical richness, and distributions regarding syntactic dependencies, part-of-speech tags, etc. In addition, Styloscope generates corpus-level visualizations of the aforementioned distributions and provides the option to compare the results against a number of reference corpora consisting of different text genres.
+<br><br>
+The second tool, Toposcope, can be used to automatically discover and annotate topics in large amounts of unstructured text data. Toposcope features four topic modeling algorithms – BERTopic, Top2Vec, LDA, and NMF – and a number of built-in preprocessing steps such as tokenization, lemmatization, and stopword removal. The output consists of raw results (i.e. annotations, topic-document matrix, topic-term matrix, etc.), but also includes an automatic evaluation and visualizations of the detected topics. Furthermore, users have the option to provide timestamps and generate a diachronic trend analysis of the topic distributions.
+<br><br>
+The tools we present were developed in Python and can be used through a user interface or in the command line. The input data can be either a local corpus or a publicly available dataset from the Huggingface hub.

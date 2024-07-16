@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Welzijn.AI: a System in Development for Monitoring Mental Wellbeing in Dutch Elderly Populations</h1>
+<h3>Bram van Dijk, Marco Spruit</h3>
+<h6>Leiden University Medical Center</h6>
+<br>
+We present work in progress on Welzijn.AI, an AI-solution in development for monitoring mental wellbeing in elderly populations. Welzijn.AI aims to be a conversational partner, topically structured around a validated health survey like the EQ-5D [1], and is driven by a Dutch Large Language Model (LLM). Welzijn.AI extracts established biomarkers of mental wellbeing (mainly acoustic and textual features, see [2] for an overview) from the language input of an elderly individual as user, to deliver explainable insights to professional and informal caregivers regarding the mental wellbeing of the user. Following the guidelines of the Innovation Funnel for Valuable AI in Healthcare [3], we discuss some general aspects of the Value and Technology dimensions of Welzijn.AI in its early development phase. Value concerns the intended impact the technology has in its broadest sense, and the early involvement of various stakeholders to probe their perspective on this impact, whereas Technology covers technical aspects such as data and model availability for achieving this impact. 
+<br><br>
+Regarding Value, we report on various stakeholder analyses we carried out with both the elderly and experts on the perceived key characteristics of Welzijn.AI. For example, experts were overall positive about AI-systems like Welzijn.AI to monitor and improve the mental health of the elderly, but also pointed to the risk of creating too much dependence on the system, privacy concerns with regard to access to the collected data, and ensurance of safety of the conversational AI.
+<br><br>
+Regarding Technology, we discuss the interdisciplinary requirements of Welzijn.AI that require work on state-of-the-art conversational AI with LLMs, Automatic Speech Recognition (ASR), Text-To-Speech (TTS) mapping, and Biomarker Extraction (BE) from audio and text. This NLP work all depends on language data from Dutch elderly individuals, currently an underrepresented population in NLP. We elaborate on some of the models we intend to use for conversational AI, ASR, TTS and BE, and present some preliminary results in how these models deal with elderly language, and how we attempt to address current challenges in our NLP tasks. These include, among others, keeping dialogues with the conversational AI (LLMs) focused around the established health survey, improving accuracy in ASR on speech from the elderly that differs from the data ASR systems are trained on, and training a machine learning module that is capable of distinguishing elderly individuals with different levels of mental wellbeing.          
+<br><br>
+References:<br>
+[1] R. Brooks, E. Group, Euroqol: the current state of play, Health policy 37 (1) (1996) 53–72.<br>
+[2] M. Malgaroli, T. D. Hull, J. M. Zech, T. Althoff, Natural language processing for mental health interventions: a systematic review and research framework, Translational Psychiatry 13 (1) (2023) 309.<br>
+[3] Ministry of Health, Welfare and Sport. Innovation Funnel for Valuable AI in Healthcare, https://www.datavoorgezondheid.nl/documenten/publicaties/2021/07/15/innovation-funnel-for-valuable-ai-in-healthcare (accessed 13 May 2024) (2022).

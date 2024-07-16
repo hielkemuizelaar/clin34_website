@@ -4,7 +4,7 @@ title: Accepted abstracts for CLIN 34
 date: 2024-06-15 8:00 +0100
 tags: [abstracts]
 toc:  false
-excerpt: Notifications of acceptance for CLIN 34 have been sent out. Find a list of accepted abstracts <a href="/2024/06/15/accepted-abstracts/">here</a>.
+excerpt: Notifications of acceptance for CLIN 34 have been sent out. Find the program <a href="/program/">here</a>.
 ---
 
 <style>

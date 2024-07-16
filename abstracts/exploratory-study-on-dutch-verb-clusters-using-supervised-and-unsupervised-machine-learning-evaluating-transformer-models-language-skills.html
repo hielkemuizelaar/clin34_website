@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Exploratory Study on Dutch Verb Clusters Using Supervised and Unsupervised Machine Learning: Evaluating Transformer Models’ Language Skills</h1>
+<h3>Marthe Kellen, Tim Van De Cruys</h3>
+<h6>KU Leuven</h6>
+<br>
+The evolution of NLP has shifted towards neural network architectures, such as transformer models, which rely solely on vast datasets for training. These neural architectures have achieved remarkable success in various domains, raising questions about the role of linguists in this new landscape. However, linguistic theories have the potential to contribute to the advancement and optimisation of neural networks. As many advanced NLP methods have transitioned towards primarily pre-trained models, there is a growing need to examine the linguistic knowledge acquired by these models.
+<br><br>
+This study aims to gain deeper insights into transformer models, focusing on the word order variation in Dutch two-verb clusters composed of a participle and an auxiliary verb – referred to as the red and green verb order. This variation may seem arbitrary, as speakers are typically unaware of this alteration, and there appears to be no discernible difference in meaning between the two orders. Nevertheless, this does not imply that word order is merely random; a considerable number of studies have identified underlying factors that influence the selection between the two orders. The red and green verb order presents an intriguing case study for this research due to its reliance on semantic and syntactic features. The primary objective is to identify potential distinctions between sentences with the red and the green verb order in the vector space. 
+<br><br>
+A series of experiments was conducted on a sizeable dataset of sentences with the red and green verb order. We analysed BERTje’s contextualised embeddings using unsupervised clustering methods, specifically the K-means and Agglomerative clustering algorithms, to discern the syntactic and semantic properties of language represented in the model based on the cosine similarity and the clustering behaviour. Ultimately, the transformer models BERTje and RobBERT were finetuned to verify whether they could accurately predict the original verb order from a sentence.
+<br><br>
+The visualisations of the embeddings for most past participles revealed a cluster predominantly comprising red verb orders. Moreover, the model seems to cluster based on certain syntactic and semantic features underlying the red and green verb order, such as the nature of the past participle (i.e. whether it has a more verbal or adjectival meaning) and the auxiliary verb. The indication that the model has one red cluster suggests the model’s potential to predict the original verb order. The results of the verb order prediction demonstrate that BERTje and RobBERT achieve 77% and 78% accuracy, respectively, exceeding the 66% baseline. Finally, the sentences most likely to occur in the red and the green verb order were examined. The analysis was consistent with previous research on the red and green verb order and revealed that separable compound verbs have a high probability of emerging in the red verb order, while past participles that express a state have a higher probability of occurring in the green verb order. In conclusion, our research demonstrates that BERTje’s embeddings possesses significant syntactic and semantic information.

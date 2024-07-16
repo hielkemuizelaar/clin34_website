@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Comprehensive Evaluation of RAG Pipelines in QA Systems: Insights from the CRAG Benchmark</h1>
+<h3>Mert Yazan</h3>
+<h6>Leiden University</h6>
+<h3>Jirui Qi</h3>
+<h6>University of Groningen</h6>
+<h3>Xinyi Chen</h3>
+<h6>University of Amsterdam</h6>
+<h3>Andreas Paraskeva</h3>
+<h6>Leiden University</h6>
+<h3>Yumeng Wang</h3>
+<h6>Leiden University</h6>
+<h3>Mohanna Hoveyda</h3>
+<h6>Radboud University</h6>
+<br>
+The rise of retrieval augmented generation (RAG) with Large Language Models (LLMs) has motivated the introduction of a diverse array of pipelines and modules to improve question-answering systems. Yet, the abundance of approaches and the variability of benchmarks complicate the evaluation and comparison of RAG pipelines. By participating in the Comprehensive Retrieval Augmented Generation (CRAG) Benchmark challenge at the KDD Cup 2024, we aim to conduct a thorough evaluation of state-of-the-art RAG pipelines to discern their efficacy across a spectrum of question types and subsequently enhance their design based on our findings.
+<br><br>
+The CRAG Benchmark provides a rigorous testing ground with eight different question types, including but not limited to factual, conditioned, multihop, and false premise questions. The evaluation metrics favor the generation of correct answers but also penalize “hallucinations”. Simulating real-world usage scenarios, the time limit to answer any type of question is only 30 seconds, which considerably narrows down the possible solution space. Participants are restricted to using Llama 2 and 3 models, and the amount of GPUs they can use is limited. 
+<br><br>
+In our study, we implement various modules and RAG pipelines, which include but are not limited to:<br>
+        •        Preprocessing to minimize redundancy in the retrieved results.<br>
+        •        Ranking Algorithms comparison including BM25, GTR, ColBERT, and DPR.<br>
+        •        Content Summarization and Augmentation via Noise to refine the raw retrieved data.<br>
+        •        Advanced Filtering Techniques such as entailment, MIRAGE, or conditional cross-mutual information to enhance the relevance and accuracy of the search content.<br>
+        •        Various Prompting Schemes and Query Regeneration for improved query handling.<br>
+        •        GraphRAG and Information Retrieval Enhanced Chains of Thought (CoT) for better interaction between the LLM and the retrieval module.<br>
+<br>
+In addition to these approaches, we evaluate per-question type and include the effect of various LLM versions and sizes on the performance as well. 
+<br><br>
+Our preliminary results indicate:<br>
+Incorrect Answer Persistence: Given information retrieval results, vanilla LLMs occasionally generate incorrect or irrelevant answers. This underscores the probability of LLMs’ inability to correctly utilize the input text or the insufficiency of helpful information in the retrieved data.<br>
+Improvement with Enhanced Filtering: Implementing filtering techniques, significantly boosts system performance by prioritizing accurate and relevant information and omitting the incorrect/irrelevant search results.<br>
+Computational Demand Variability: Different question types demand varying levels of computational processing. While some queries are resolved with straightforward retrieval, others require complex reasoning and information synthesis, suggesting the necessity for adaptive or question-type-specific pipeline configurations.
+<br><br>
+This ongoing project aims to continue evaluating and refining the mentioned and future observations into actionable insights that can guide the development of more effective and efficient RAG systems. By addressing these specific errors and operational challenges, we contribute to enhancing reliability and robustness within the constraints of practical QA applications.

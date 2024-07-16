@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Natural Chatbots: Designing an Intuitive Healthcare Conversational Agent by Studying the Role of Empathy in Generated Messages</h1>
+<h3>Cristina Reguera-Gómez</h3>
+<h6>TNO; Utrecht University</h6>
+<h3>Denis Paperno</h3>
+<h6>Utrecht University</h6>
+<h3>Maaike H. T. de Boer</h3>
+<h6>TNO</h6>
+<br>
+We report our work on designing and evaluating a chatbot that can help guide people towards a healthier lifestyle. We assess several off-the-shelf models to use as the basis of the chatbot and experiment with adapting the best model to use more empathetic language.<br>
+In our contemporary healthcare situation, lifestyle-related diseases are increasing, primarily influenced by unhealthy habits such as smoking, poor diet, lack of exercise, and excessive alcohol consumption (Balwan & Kour, 2021). These behaviors significantly contribute to non-communicable diseases (NCDs) like cardiovascular diseases, stroke, diabetes, and specific cancers (Tabish, 2017). The World Health Organization (WHO) highlights the alarming global mortality rates attributed to these lifestyle choices (2023). Simultaneously, the use of conversational AI or chatbots has gained popularity and emerged as powerful tools, particularly in the healthcare sector. While healthcare chatbots have already been used during the COVID-19 pandemic for various services, including information dissemination and appointment scheduling (Amiri & Karahanna, 2022), concerns persist regarding their ability to convey empathy and adapt to users’ linguistic expectations. Consequently, there is still a gap in understanding how linguistic design impacts user engagement. <br>
+In our work, we  addresses this gap by exploring the design and evaluation of a natural and intuitive chatbot tailored for healthcare, focusing on lifestyle changes. Specifically, it investigates how the use of empathy in generated messages influence user experience and the likelihood of integrating such a chatbot into daily life. The study’s objectives include assessing the impact of empathetic versus non-empathetic tones in messages, and understanding user expectations in human-computer interactions..
+<br><br>
+The methodology involves two experiments: 1) An initial evaluation of different language models (LLMs), both general and domain-specific, through G-Eval (Liu et al., 2023) on the MASH-QA dataset (Zhu et al., 2020). The selected models were GPT-4 (OpenAI, 2023), Llama3 (Meta, 2024), MedAlpaca (Han et. al, 2023), and Meditron (Chen at al., 2023). Metrics include fluency, naturalness, coherence and groundedness (Mehri and Eskenazi, 2020; Zhong et al., 2022). Results showed similar average scores across the models, ranging from 0.812 to 0.827. Due to the focus of our project, we chose the model with the highest score on naturalness (GPT-4 = 0.806, Llama 3 = 0.787, MedAlpaca = 0.826 and Meditron = 0.818). Henceforth, MedAlpaca was integrated into our chatbot system. 2) A human experiment, conducted to evaluate the chatbot’s performance in  real-world-like scenarios, with participants requesting lifestyle advice related to behavior changes according to four topics: exercise, diet, smoking and alcohol. The condition in the human experiment, which involves varying the level of empathetic language used by the chatbot, is the primary independent variable to be investigated. A subsequent questionnaire focuses on message naturalness and the impact of empathy on natural language generation. At the time of CLIN, we can share the results of our work in which it will shed light on how messages varying in empathetic tones can enhance human-computer interactions.

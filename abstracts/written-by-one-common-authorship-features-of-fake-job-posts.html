@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Written by one: Common authorship features of Fake Job Posts</h1>
+<h3>Behnaz Motavali</h3>
+<h6>Radboud University</h6>
+<br>
+The online job platforms have facilitated the job-seeking process, but they have also led to an increase in fake job postings, posing risks to individuals and impacting platform integrity. This paper explores the common textual features, particularly in terms of authorship, within fake job posts. Leveraging Natural Language Processing techniques, we investigate whether these fraudulent posts share commonalities in language usage, potentially indicating the same authorship. We employ the "Employment Scam Aegean Dataset" (EMSCAD) and focus on the description column for analysis. Our approach involves extracting Authorship Attribution features, encompassing lexical and syntactic aspects.<br>
+In the lexical analysis, we utilize CountVectorizer and Word Frequency techniques, revealing distinct word patterns in fake and real job descriptions. WordCloud visualizations highlight key differences, with "Work" prominent in fake posts and "Team" in real ones. For syntactic analysis, TfidfVectorizer is employed, showcasing unique syntactic structures for each category. The identified features serve as inputs to various machine learning models, including Naive Bayes, Random Forest, Support Vector Machine, Logistic Regression, K-Nearest Neighbors, and Decision Tree. <br>
+Results demonstrate that Authorship Attribution features can indeed be used to improve models performance. This research suggests with implications for future research, emphasizing the need for refined textual feature extraction and model enhancements in combating fraudulent job postings.

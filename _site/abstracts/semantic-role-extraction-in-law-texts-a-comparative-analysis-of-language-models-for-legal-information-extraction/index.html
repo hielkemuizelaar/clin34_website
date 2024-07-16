@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/semantic-role-extraction-in-law-texts-a-comparative-analysis-of-language-models-for-legal-information-extraction/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/semantic-role-extraction-in-law-texts-a-comparative-analysis-of-language-models-for-legal-information-extraction/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/semantic-role-extraction-in-law-texts-a-comparative-analysis-of-language-models-for-legal-information-extraction/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Semantic Role Extraction in Law Texts: A Comparative Analysis of Language Models for Legal Information Extraction</h1>
+<h3>Roos M. Bakker</h3>
+<h6>TNO; Leiden University</h6>
+<h3>Juul A. Schoevers</h3>
+<h6>TNO</h6>
+<h3>Romy A.N. van Drie</h3>
+<h6>TNO</h6>
+<h3>Marijn P. Schraagen</h3>
+<h6>Utrecht University</h6>
+<h3>Maaike H. T. de Boer</h3>
+<h6>TNO</h6>
+<br>
+Norms are essential in our society: they dictate how individuals should behave and interact within a community. They can be written down in laws or other written sources. Interpretations often differ; this is where formalisations offer a solution. They express an interpretation of a source of norms in a transparent manner. However, creating these interpretations is labour intensive. Natural language processing techniques can support this process. Previous work showed the
+potential of transformer-based models for Dutch law texts. In this paper, we 1) introduce a dataset of 2335 English sentences annotated with legal semantic roles conform the Flint framework; 2) fine-tune a collection of language models on this dataset, and 3) query two non-fine-tuned generative large language models (LLMs). This allows us to compare performance of fine-tuned domain-specific, task-specific, and general language models with non-fine-tuned generative LLMs.
+The results show that models fine-tuned on our dataset have the best performance (accuracy around 0.88). Furthermore, domain-specific models perform better than general models, indicating that domain knowledge is of added value for this task. Finally, different methods of querying LLMs perform unsatisfactorily, with maximum accuracy scores around 0.6. This indicates that for specific tasks, such as this adaptation of semantic role labelling, the process of annotating data and fine-tuning a smaller language model is preferred over querying a generative LLM, especially when domain-specific models are available.
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Identifying Controversial Claims in Political YouTube Comments</h1>
+<h3>Natalia Evgrafova, Véronique Hoste, Els Lefever</h3>
+<h6>LT3, Ghent University</h6>
+<br>
+In political argument mining, it is vital to identify controversies that incite debate. As put by Lawrence and Reed (2019), identifying controversial points already gives us information about the argumentative structure, as  two conflicting propositions attract more supporting and attacking views. In this study, we aim to generate the prevailing controversial claims (conclusions)  from user comments on recent political YouTube videos.
+<br><br>
+The  topics for the existing corpora that contain user-generated comments on political  or social issues have been chosen mostly manually. Habernal and Gurevych (2017) focused on the domain of education, and, in cooperation with experts, identified current controversial topics within the domain. Rumshisky et al. (2017) collected comments about Maidan events in Ukraine in 2013-2014, and tracked the major changes associated with the topic over time. Other datasets of user-generated comments were mined from the debate portals with user predefined topics (Ajjour-2019; Abbott-2016). The research on controversy detection in social media comments was performed mostly as a classification task in order to detect posts that contain controversy based on the posts content, reply tree structure or community labelled features (Hessel and Lee, 2019; Zhong et al., 2020; Figueras et al., 2023). 
+<br><br>
+In our study, topics are the most discussed events mentioned in recent news videos. We use the YouTube Data API to find the most relevant and commented news videos (from January 2024 to May 2024) and scrape the longest comment threads to these videos. We decided on the official channels of newspapers in the target languages – Dutch, Russian, and English (VRT NWS, BBC Russian Service, BBC NEWS respectively) to ensure the content quality and relevance. To be able to extract argumentative structure of comments, we first want to define the target controversial claim(s). 
+<br><br>
+The preliminary manual analysis of the video threads revealed that the comments contain repeated competing claims, either implicitly or explicitly stated. For example, a BBC video on Moscow terror attack includes such competing claims as “Ukraine has been involved in the attack”, “Ukraine has not been involved in the attack”. For VRT NWS video on the reaction of the Belgian influencer Acid to the court decision in a legal case, the debated narratives include “The decision was fair”, “The decision was unfair”, for the BBC Russian Service Interview with Vasily Nebenzya, such pairs as “The Crimean Referendum was legitimate”, “The Crimean referendum was illegitimate” could be drawn.  
+<br><br>
+To detect such claims automatically, we present an approach incorporating:<br>
+(1) semantic similarity clustering, as done for prominent argument identification in Boltužić and Šnajder (2015), (2) structural information from a reply tree that has been rebuilt using the comment time and user-names (since it is not available with the YouTube API) as in Zhong et al. (2020), and (3) human annotations of explicit/implicit claims. Drawing such pairs of claims will make it possible to analyse the prevailing claims around relevant news events and extract corresponding premises from comments. This will contribute to a deeper understanding of public opinion and reasoning on current political news.

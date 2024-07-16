@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>ASMtransformers: a BERT model for ARM64 assembly</h1>
+<h3>Anne Fleur van Luenen</h3>
+<h6>Netherlands Forensic Institute</h6>
+<br>
+Reverse engineering binary code for the exploration of vulnerabilities is a common concept in the cybersecurity domain. It can be used to get access to phones, to decrypt databases, or simply for better understanding of a certain application. However, reverse engineering is a tedious task, and there are few people capable of doing it. Therefore, a form of automation is welcome.
+<br><br>
+A significant leap was made by Wang et al. (2022), who trained a BERT model (Devlin et al., 2018) on x86-64 assembly code to perform semantic code search. x86-64 assembly is a human readable form of binary code, that is typically used in computers. Their model allowed them to take an un-reversed function and search for similar functions in a database of already reversed functions, speeding up the annotation process. We applied this work to ARM64 assembly, which is also a human readable form of binary code, but it is typically used in phones (and nowadays some computers).
+<br><br>
+ARM64 is a Reduced Instruction Set Computer language, whereas x86-64 is a Complex Instruction Set Language. This means that vocabulary size and complexity are very different between the two languages. As they are fundamentally different from natural language, we had to train our model from scratch, reconsidering basic concepts such as tokenisation and general training parameters. To make matters more difficult, it is impossible to experiment with any parameters due to the long training times.
+<br><br>
+In this talk we will discuss how to train a BERT model on assembly code: we will discuss the Jump Target Prediction task invented by Wang et al. (2022) to replace Next Sentence Prediction in the training process; We will also discuss the dilemmas we encountered when building this model and what choices we made in the process. Finally, we would like to elaborate on our cooperation with the Device Forensics department at the Netherlands Forensic Institute. 
+<br><br>
+Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.
+<br><br>
+Wang, H., Qu, W., Katz, G., Zhu, W., Gao, Z., Qiu, H., ... & Zhang, C. (2022, July). Jtrans: Jump-aware transformer for binary code similarity detection. In Proceedings of the 31st ACM SIGSOFT International Symposium on Software Testing and Analysis (pp. 1-13).

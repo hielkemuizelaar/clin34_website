@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Informed Evaluation of Text Analysis Tools</h1>
+<h3>Angel Daza</h3>
+<h6>Netherlands eScience Center</h6>
+<h3>Ellie Smith</h3>
+<h6>Vrije Universiteit Amsterdam</h6>
+<h3>Antske Fokkens</h3>
+<h6>Vrije Universiteit Amsterdam</h6>
+<br>
+In recent years, the field of Natural Language Processing (NLP) has witnessed accelerated and remarkable progress, yielding a multitude of promising tools designed for numerous text analysis tasks. These tools have been helpful for applications across disciplines and are being used by researchers to advance their own fields, one prominent case being Digital Humanities. However, the same rapid advancement of NLP has left the area with a weak spot regarding detailed and careful evaluation. In pursuit of performance improvements, NLP practitioners tend to focus too much on a handful of global metrics on specific benchmarks to assess the performance of their tools and publish raw numbers as the only source of information for potential users of a trained model. Having a more fine-grained assessment of tools becomes particularly important when researchers from other domains use the outcome of NLP tools for research in their own field: how can they know if the tools they are using can be trusted for their specific needs? Likewise, how can we, from the NLP community, ensure they have sufficient awareness to not blindly trust our tools?
+<br><br>
+We propose an evaluation methodology that takes into account both instance-level and aggregated comparisons of model outputs. By doing so, we can zoom into the strengths and weaknesses of different models, enabling well-informed decisions regarding the suitability of these models for actual use cases and spotting weaknesses and areas of improvement. We showcase the virtues of our method by focusing on a basic NLP task such as Named Entity Recognition (NER). We assume the scenario of a digital historian who wants to build and compare networks of people, places, and organizations. To achieve this, they must pick the best possible NER model for their corpus, which, in this case, comprises thousands of biographies written in Dutch between the 18th and the 21st centuries.
+<br><br>
+The proposed evaluation method can work with different span classification tasks and can be performed at the corpus, document, and sentence levels, with or without gold data. We also release a tool for visual exploration that allows us to analyze the performance of documents of interest by picking them manually, based on search terms and metadata, or ranking the documents by order of difficulty or disagreement of models when labeling.  Our use case is an example of how to make informed decisions and improve the outcomes of the original research question. We hope our proposal encourages the development of more methods that aid careful human evaluation and quality assessment to make more informed usage of automatic tools.

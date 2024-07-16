@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Evaluating the Linguistic Knowledge of Dutch Large Language Models</h1>
+<h3>Julia Pestel, Raquel G. Alhama</h3>
+<h6>Institute for Logic, Language and Computation; University of Amsterdam</h6>
+<br>
+The rapid development of large language models (LLMs) has seen major improvement in the performance of these models across a range of natural language processing (NLP) tasks. Recent work has contributed valuable resources for evaluating LLMs in an effort to determine their linguistic knowledge. Although many of these developments are focused on English LLMs, research addressing the grammatical abilities of LLMs in other languages is flourishing, as is the case for Dutch language (de Vries et al., 2023; Suijkerbuijk & Prins, 2024).
+<br><br>
+Here, we contribute to such efforts. We present a challenge set for evaluating the grammatical abilities of LLMs on major grammatical phenomena in Dutch. We design our dataset following the descriptive grammar in the Algemene Nederlandse Spraakkunst (ANS), which aims to provide a comprehensive description of the grammatical phenomena of contemporary Standard Dutch. We focus on four different types of phrases (noun phrase, adjective phrase, adpositional phrase and verb phrase) and 13 syntactic phenomena that span across these phrases. For each phenomenon, we provide 50 minimal pairs, i.e. pairs of minimally different sentences that differ in grammatical acceptability on the specific syntactic phenomenon. To construct the dataset, we retrieved the minimal pairs provided in the ANS website (which ranged from 2 to 10 pairs), and we are currently extending each set with additional pairs, until reaching 50. We generate the extra pairs using a generative model (in particular, ChatGPT) and revise them manually.
+<br><br>
+The next step in our (still ongoing) work is evaluating acceptability judgments on these minimal pairs for a range of Dutch LLMs (in particular, RobBERT (Delobelle et al., 2020), BERTje (de Vries et al., 2019), GEITje (Vanroy, 2023), GPT2 (Radford et al., 2019), and Llama (Touvron et al., 2023)). Our analyses will be extended with a comparison against human acceptability judgments, performed on a subset of our dataset. Thus, our work will provide a reliable dataset and an analysis of the linguistic knowledge of LLMs, shedding light on the grammatical abilities of Dutch LLMs.

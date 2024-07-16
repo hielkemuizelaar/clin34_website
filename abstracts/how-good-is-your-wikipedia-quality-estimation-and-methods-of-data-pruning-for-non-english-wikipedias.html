@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>How Good is Your Wikipedia? Quality Estimation and Methods of Data Pruning for Non-English Wikipedias</h1>
+<h3>Kushal Tatariya</h3>
+<h6>KU Leuven</h6>
+<h3>Artur Kulmizev</h3>
+<h6>KU Leuven</h6>
+<h3>Esther Ploeger</h3>
+<h6>Aalborg University</h6>
+<h3>Marcell Bollman</h3>
+<h6>Linköping University</h6>
+<h3>Jiaming Luo</h3>
+<h6>Google</h6>
+<h3>Johannes Bjerva</h3>
+<h6>Aalborg University</h6>
+<h3>Miryam de Lhoneux</h3>
+<h6>KU Leuven</h6>
+<h3>Heather Lent</h3>
+<h6>Aalborg University</h6>
+<br>
+Efforts in low-resource and multilingual NLP have traditionally employed Wikipedia as a "high quality" data source - either for language model pre-training or downstream task annotation. However, insights about the data quality of Wikipedia largely stem from the English Wiki, which enjoys a disproportionately large community of writers, editors, and administrators. In this project, we conduct a comprehensive evaluation of non-English Wikipedia articles and demonstrate that quality varies highly by Wiki. For example, we show that approximately 10% of the Assamese Wiki contains non-Assamese text, with multiple articles written almost entirely in English. Going further, we experiment with a series of data selection measures that aim to cull high-quality articles from raw Wiki dumps. To this end, we demonstrate that models trained on such high-quality partitions either perform similar to, or better than models trained on full Wikis, despite featuring less than half as many articles. Ultimately, our experiments highlight the importance of principled data curation for the low-resource and multilingual settings in NLP.

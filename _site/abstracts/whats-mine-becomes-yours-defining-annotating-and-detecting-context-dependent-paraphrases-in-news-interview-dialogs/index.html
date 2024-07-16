@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/whats-mine-becomes-yours-defining-annotating-and-detecting-context-dependent-paraphrases-in-news-interview-dialogs/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/whats-mine-becomes-yours-defining-annotating-and-detecting-context-dependent-paraphrases-in-news-interview-dialogs/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/whats-mine-becomes-yours-defining-annotating-and-detecting-context-dependent-paraphrases-in-news-interview-dialogs/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>What's Mine becomes Yours: Defining, Annotating and Detecting Context-Dependent Paraphrases in News Interview Dialogs</h1>
+<h3>Anna Wegmann</h3>
+<h6>Utrecht University</h6>
+<h3>Tijs van den Broek</h3>
+<h6>Vrije Universiteit Amsterdam</h6>
+<h3>Dong Nguyen</h3>
+<h6>Utrecht University</h6>
+<br>
+Repeating or paraphrasing what the previous speaker said has time and again been found to be important in human-to-human or human-to-computer dialogs: It encourages elaboration and introspection in counseling, can help deescalate conflicts in crisis negotiations, can have a positive impact on relationships, can increase the perceived response quality of dialog systems and generally provides tangible understanding-checks to ground what both speakers agree on.<br>
+In NLP, paraphrases have received wide-spread attention: researchers have created numerous paraphrase datasets, developed methods to automatically identify paraphrases, used paraphrase datasets to train semantic sentence representations, and benchmark modern LLMs. However, most previous work (1) has focused on context-independent paraphrases, i.e., those that are semantically equivalent independent from the given context, and has not investigated paraphrases in dialog specifically, (2) has classified paraphrases at the level of full texts although paraphrases often only occur in portions of larger paragraphs, (3) uses only one to three annotations per paraphrase pair and (4) only annotate pairs of texts that are “likely” to include paraphrases using heuristics like lexical similarity even though, we can not expect lexical similarity to be high for all or even most paraphrases.<br>
+We address all four limitations with this work. First, we are, the first to focus on operationalizing, annotating and automatically detecting context-dependent paraphrases in dialog. Second, instead of only classifying whether a text paraphrases (part) of a previous text, we identify the text spans that constitute the paraphrase pair. Third, we collect a larger number of annotations of up to 20 per item in line with typical efforts to address plausible human label variation. Even though context-dependent paraphrase identification in dialog might at first seem straight forward with a clear ground truth, similar to other “objective” tasks in NLP, human annotators (plausibly) disagree on labels. For example, consider the following interaction: Speaker 1: “The money will help.”, Speaker 2: “It cant hurt.”. “[The money] can't hurt” can be interpreted in at least two different ways, as a statement with approximately the same meaning as “the money will help” or as an opposing statement meaning the money actually will not help but at least “It can't hurt” either. Fourth, instead of using heuristics to select text pairs for annotation, we choose a setting with a higher than average expected occurrence of paraphrases: transcripts of NPR and CNN news interviews. In (news) interviews, paraphrasing or more generally active listening is encouraged.<br>
+In short, we operationalize context-dependent paraphrases in dialog with a definition and an iteratively developed hands-on training for annotators. Then, annotators classify paraphrases and identify the spans of text that constitute the paraphrase. We release a dataset with 5581 annotations on 600 utterance pairs from NPR and CNN news interviews. We use in-context learning on generative models like Llama 2 or GPT-4 and fine-tune a DeBERTa token classifier to detect paraphrases in dialog. In-context approaches perform better at classification, while the token classifier tends to provide better text spans. We hope to contribute to the reliable detection of paraphrases in dialog.
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

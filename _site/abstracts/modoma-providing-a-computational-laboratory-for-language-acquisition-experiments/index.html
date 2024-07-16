@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/modoma-providing-a-computational-laboratory-for-language-acquisition-experiments/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/modoma-providing-a-computational-laboratory-for-language-acquisition-experiments/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/modoma-providing-a-computational-laboratory-for-language-acquisition-experiments/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>MODOMA: Providing a Computational Laboratory for Language Acquisition Experiments</h1>
+<h3>David Shakouri</h3>
+<h6>Leiden University Centre for Linguistics (LUCL), Leiden University; Leiden Institute for Brain and Cognition (LIBC), Leiden University</h6>
+<br>
+This presentation discusses experiments performed using a multi-agent computational laboratory environment for language acquisition experiments, which has been named MODOMA, an acronym for Moeder-Dochter-Machine (Dutch for ‘Mother-Daughter-Machine’). This system is based on the interaction between two agents: (1) a mother language model based on Delilah (cf. Cremers, Hijzelendoorn, & Reckman, 2014), the Leiden parser and generator of Dutch, and (2) a daughter language model, which sets out to learn the mother language. Both agents implement a model of many aspects of grammar such as syntactic as well as semantic representations. Crucially, the daughter agent performs unsupervised learning: The daughter does not have access to the internal linguistic knowledge of the mother agent but only to the language exemplars the mother produces during the conversation. To this end, the daughter language model employs a hybrid approach combining statistical as well as rule-based techniques to acquire the target language that constitutes (a fragment of) Dutch. As soon as the daughter agent has acquired new grammatical knowledge, this is used to take part in the conversation with the mother. The presented experiments illustrate how the MODOMA can be used to acquire explicit abstract grammatical knowledge and substantiate that the MODOMA project resulted in a viable and functionable tool for language acquisition simulations.
+<br><br>
+The properties of the MODOMA provide novel possibilities for modelling language acquisition from a natural language processing perspective. Moreover, both the mother and daughter agents are knowledge-based language models: All aspects of the system are parametrized and can straightforwardly be consulted by researchers employing the system. As most computational models of language acquisition are based on corpus data such as the CHILDES database (MacWhinney, 2014), the multi-agent conversational framework such that two language models take part in an interaction but only one of these agents provides samples of the target language while the other acquires the mother language, enables addressing new research questions by conducting computational language acquisition experiments. Crucially, this design allows the adult language model to give feedback to the daughter.
+<br><br>
+In particular, the presented experiments illustrate that the MODOMA provides an additional tool to perform language acquisition experiments from a cognitive perspective adding to experimentations with on the one hand human children and on the other hand adult subjects. For example, several experimentations demonstrated that by analyzing training and test data generated during interactions the daughter agent successfully acquires discrete grammatical categories such as content and function words, noun, adjective and verb, which are subsequently added to her grammatical knowledge. As part of the hybrid approach, classification of mother exemplars is performed. It is argued that this procedure can be used to acquire structures that are similar to grammatical categories proposed by linguists for natural languages. Thus, it is established that non-trivial grammatical knowledge has been acquired. 
+<br><br><br>
+Cremers, C. L. J. M., Hijzelendoorn, P. M., & Reckman, H. G. B. (2014). Meaning versus grammar. Leiden: Leiden University Press.<br>
+MacWhinney, B. (2014). The CHILDES project: Tools for analyzing talk (3rd ed.). New York, NY: Routledge.
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

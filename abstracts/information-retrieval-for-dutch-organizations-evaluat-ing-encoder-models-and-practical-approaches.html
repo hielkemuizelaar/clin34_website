@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Information Retrieval for Dutch Organizations: Evaluating Encoder Models and Practical Approaches</h1>
+<h3>Pauline van Nies</h3>
+<h6>Ordina; University of Applied Sciences Utrecht</h6>
+<h3>Marten Koopmans</h3>
+<h6>Ordina; University of Applied Sciences Utrecht</h6>
+<h3>Gijs Wobben</h3>
+<h6>Ordina</h6>
+<h3>Coen Goedhart</h3>
+<h6>Ordina</h6>
+<h3>Paul Verhaar</h3>
+<h6>Ordina; University of Applied Sciences Utrecht</h6>
+<br>
+This work investigates which models are best for information retrieval (IR) applications that Dutch (governmental) organizations wish to implement on public or internal data. We investigate the effectiveness of encoder models fine-tuned for Dutch, focusing on question answering and symmetric retrieval tasks. We are especially interested in models that can be deployed locally during development of the application. First, we start by machine-translating two of the BEIR datasets originally in English to be able to compare international benchmarks. We report on the evaluation of Dutch open source embedding models (a.o. NFI/robbert-2022-dutch-sentence-transformers of size ~0.5GB) and a cross-encoder model (NFI/robbert-2023-dutch-base-cross-encoder) and compare their performance metrics with that of multilingual models of the same size and the BM25 baseline metric. We demonstrate that a hybrid search combining these approaches achieves the best results.
+<br><br>
+Because each organization has their own text documents and vocabulary, it is important to evaluate the models for information retrieval on a specific context. We present a practical approach for creating a domain-specific Dutch dataset which can be used by organizations to evaluate the Dutch models for their use case. We first focus on creating an evaluation dataset based on the question answering task, where an LLM is prompted to create a query and return the exact quote of the corpus chunk where it was found. This initially creates a dataset of the single best answer scenario, and is expanded by running the information retrieval pipeline on all corpus documents and letting an LLM judge if and where the answer to the query is found in other chunks retrieved. The updated evaluation dataset can now be used during optimization of the indexing (chunk optimization), retrieval (e.g. choice model and hybrid search parameter) and post-retrieval (rerank methods) stages. 
+<br><br>
+Additionally, we evaluate the effectiveness of multilingual models for cross talk scenarios, assessing their performance when answering Dutch questions on an English corpus and vice versa. Finally, we explore future directions for fine-tuning embedding models for domain-specific IR tasks within Dutch applications. 

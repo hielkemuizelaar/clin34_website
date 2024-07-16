@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Using GPT-4 for Conventional Metaphor Detection</h1>
+<h3>Jiahui Liang</h3>
+<h6>Leiden University</h6>
+<h3>Stephan Raaijmakers</h3>
+<h6>Leiden University; TNO</h6>
+<h3>Aletta G. Dorst</h3>
+<h6>Leiden University</h6>
+<h3>Jelena Prokic</h3>
+<h6>Leiden University</h6>
+<br>
+Metaphor detection is a highly complex process that involves identifying metaphorical uses of words in a sentence with a high level of abstraction. Metaphors are difficult to detect automatically as their contextual meanings differ from their literal meanings, and their interpretation requires establishing connections between concrete and abstract domains. Further, understanding metaphors hinges on shared social and cultural knowledge between language users in a wide variety of communicative settings.
+<br><br>
+Conventional metaphors account for 99% of linguistic metaphors (Steen et al. 2010). Their metaphorical meanings are lexicalized and frequently escape awareness in usage by humans. For example, “lower” in “lower standard of life” and “indefensible” in “indefensible claim.” Their detection, compared to general linguistic metaphor detection procedures, requires an extra step examining whether the metaphorical meaning is conventionalized or not.
+<br><br>
+Metaphor detection models that rely on annotated texts for machine learning show limitations in addressing the challenges above. The emergence of Large Language Models (LLM) creates new possibilities for metaphor detection and sub-type labeling. Recent research indicates that LLMs trained on extensive data on the Internet demonstrate superior performance in contextual semantic comprehension compared to previous generations of language models (Zhou et al. 2023). Prompting (or in-context learning) approaches appear useful techniques for the application of LLMs to NLP tasks (Chung et al. 2022).
+<br><br>
+In this study, we use GPT-4 to explore whether prompting can enable high-end LLMs to identify conventional metaphors. We subject a subset of the VUAMC metaphor corpus (Steen et al. 2010) to a number of zero- and N-shot prompting metaphor detection experiments. Our paper presents a detailed error analysis of the outcomes, an analysis of GPT-4’s consistency across different prompts with the same number of shots, and an evaluation of the effect of varying the number of shots for a single prompt on performance.
+<br><br>
+Our analysis aims to extract linguistic information crucial for subsequent fine-tuning of LLMs on metaphor detection and contributes to estimating the performance of LLMs for detecting conventional metaphors.
+<br><br>
+Reference 
+<br><br>
+Chung, H. W., Hou, L., Longpre, S., Zoph, B., Tay, Y., Fedus, W., ... & Wei, J. (2022). Scaling instruction-finetuned language models. arXiv preprint arXiv:2210.11416. (Accessed: 15 June 2023). 
+<br><br>
+Steen, G. J., Dorst, A. G., Herrmann, J. B., Kaal, A. A., & Krennmayr, T. (2010). Metaphor in usage. 
+<br><br>
+Zhou, C., Li, Q., Li, C., Yu, J., Liu, Y., Wang, G., ... & Sun, L. (2023). A comprehensive survey on pretrained foundation models: A history from bert to chatgpt. arXiv preprint arXiv:2302.09419. (Accessed: 15 June 2023). 

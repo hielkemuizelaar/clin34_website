@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/dutch-cola-dutch-grammatical-knowledge-in-monolingual-and-multilingual-language-models/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/dutch-cola-dutch-grammatical-knowledge-in-monolingual-and-multilingual-language-models/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/dutch-cola-dutch-grammatical-knowledge-in-monolingual-and-multilingual-language-models/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Dutch CoLA: Dutch grammatical knowledge in monolingual and multilingual language models</h1>
+<h3>Silvana Abdi, Hylke Brouwer, Martine Elzinga, Shenza Gunput, Sem Huisman, Collin Krooneman, David Poot, Jelmer Top, Cain Weideman, Lisa Bylinina</h3>
+<h6>University of Groningen</h6>
+<br>
+Since the introduction of the Transformer (Vasvani et al, 2017), language models based on this architecture have been showing truly impressive performance on a variety of downstream tasks, and rapid progress on these tasks as well: benchmarks that were considered hard for years are quickly saturated, and ‘super-human’ performance is reported for many tasks (see Tedeschi et al., 2023 for a critical overview). 
+<br><br>
+There are two limitations to this progress: 
+1) Current language models are black boxes. They are trained on textual data and perform tasks that have textual input (and often also generate text as output), and therefore their performance relies on linguistic competence. At the same time, what language models know about language remains largely unexplored, with recent results sometimes pointing in different directions (Dentella et al., 2023; Hu et al., 2024). Is solid linguistic knowledge, empirically, a prerequisite for good performance on downstream tasks? Maybe the latter is possible without implicitly learning grammatical rules and constraints?<br>
+2) A lot of research in NLP centres around English, both in terms of progress in model performance and evaluation benchmarks. Despite continuous effort to extend the focus beyond English, even relatively high-resource languages like Dutch (class 4, ‘The Underdogs’, according to classification in Joshi et al., 2020) still lack NLP resources comparable to English.
+<br><br>
+To make progress on these two fronts, we introduce Dutch CoLA: a Corpus of Linguistic Acceptability for Dutch (available on Huggingface: https://huggingface.co/datasets/GroNLP/dutch-cola). Following the general approach of original, English, CoLA (Warstadt et al., 2018), we collect examples from grammar descriptions, expertly annotated for linguistic acceptability (grammaticality). As our sources, we use 8 volumes of ‘Syntax of Dutch’ (Broekhuis et al., 2012-2019) and ‘The syntax of Dutch’ (Zwart 2011). We extracted examples alongside their acceptability annotation by the original authors. The resulting dataset contains the following fields:
+<br><br>
+- Source of the example<br>
+- Original ID: example number in the original source<br>
+- Acceptability: 0 (unacceptable) or 1 (acceptable)<br>
+- Original annotation: acceptability label of the sentence in the original source (empty, ‘*’, ‘??’, ‘?’ etc.)<br>
+- Sentence<br>
+- Material added: 0 or 1 (if material was added to make the example a full sentence)
+<br><br>
+The dataset is split into 4 subsets:
+<br><br>
+- Train: 19893 rows<br>
+- Validation: 2400 rows<br>
+- Test: 2400 rows<br>
+- Intermediate: examples with intermediate original acceptability labels (‘?’ and ‘(?)’). 1199 rows
+<br><br>
+Using Dutch CoLA, we perform a series of experiments that target linguistic knowledge in Dutch and multilingual language models. Where applicable, we report comparison with existing Dutch benchmarks (de Vries et al, 2023 a.o.). We explore:<br>
+- the role of fine-tuning in linguistic representations and layer-wise localisation of linguistic knowledge;<br>
+- the role of model architecture in capturing linguistic acceptability;<br>
+- the difference between Dutch-only and multilingual model linguistic performance;<br>
+- prompt-sensitivity and robustness of linguistic knowledge in generative models.
+<br><br>
+Finally, we discuss potential practical uses of Dutch CoLA (such as: evaluating automatically generated text in Dutch) and its limitations (such as: subjectivity in expert annotation that does not always align with speakers’ intuitions). 
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Evaluating Grapheme-to-Phoneme Conversion and Syllable Counting of Large Language Models for Dutch</h1>
+<h3>Leonardo Grotti</h3>
+<h6>CLiPS, University of Antwerp</h6>
+<br>
+This study aims to evaluate the phonological competence of Large Language Models (LLMs) in Dutch, specifically focusing on grapheme-to-phoneme (G2P) conversion and syllable counting (SC). The research builds upon the work of Survana, Khandelwal, and Peng (2024), which explored these tasks for the English language. Here, we aim at extending the results of their studies and we address the following research questions: (1) How accurately can LLMs perform G2P conversion in Dutch? (2) How reliable are LLMs at counting syllables in Dutch words?
+<br><br>
+To address these questions, we will test three open-source models (GEITje-7b, Llama-3-8B, and Qwen) and one closed-source model (GPT-4) using Dutch data. Our methodology involves using a sample of 1000 words from the FONILEX corpus for G2P tasks and 1000 words from the CELEX corpus for SC. Following the approach of Survana, Khandelwal, and Peng (2024), the sampling is based on syllable complexity for SC and word frequency for G2P conversion. For comparability, the models' performance is measured in terms of accuracy, defined as the match between the predicted phoneme sequence or number of syllables and the gold standard. Additionally, we report two further metrics: the proportion of correctly identified phonemes in their exact positions and the mean-squared error for SC.
+<br><br>
+This research is significant as it explores the phonological capabilities of LLMs in a language other than English, addressing a gap in current applications of LLMs to phonologically related tasks. The findings will provide insights into the adaptability and limitations of LLMs in handling Dutch phonological data, with potential implications for improving downstream tasks such as automatic speech recognition, poetry generation, machine translation, and text-to-speech applications.

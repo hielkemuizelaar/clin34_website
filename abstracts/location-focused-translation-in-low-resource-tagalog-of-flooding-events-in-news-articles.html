@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Location-focused Translation in Low-resource Tagalog of Flooding Events in News Articles</h1>
+<h3>Suzan Lejeune</h3>
+<h6>Centre for Language Studies, Radboud University</h6>
+<h3>Iris Hendrickx</h3>
+<h6>Centre for Language and Speech Technology, Radboud University</h6>
+<br>
+The Philippines is impacted by hurricanes multiple times a year, which leads to floods all over the country. We are interested in the development of automatic information extraction tools that can harvest flooding events from local media reports. This information can then be used by disaster managers to send effective disaster relief measures to the impacted areas. However, these reports are often in Tagalog and the automatic tools are developed for English. We investigated whether we could optimize existing open-source machine translation models to location extraction in Tagalog.<br>
+We fine-tuned  these MT models in different ways and then evaluated these different versions to compare the translation quality of locations using a custom location evaluation metric. We created two new parallel Tagalog-English datasets for this task focussing on flooding events in specific locations. <br>
+The first is a larger dataset used for fine-tuning. We collected English news articles focussing on flooding events and automatically back-translated them into Tagalog to create the parallel dataset. We used named entity recognition to automatically mark locations in the English text. The locations are both entity-augmented by replacing the locations with their translation acquired through a knowledge base, or traditionally masked by replacing the locations with a masking token. <br>
+The second is a smaller dataset used for evaluation. We collected Tagalog news articles, which a native speaker manually translated into English. In the translated English text we marked all locations, the type of location, and whether the location is relevant to a flooding event or not. <br>
+The open-source model we used for this task is No Language Left Behind (NLLB). The fine-tuning dataset is used to create four different fine-tuned versions of NLLB. The first version is fine-tuned on all the data. The second version is pre-trained on the entity augmented data and then further fine-tuned on a subset of unedited data. The third version follows entity augmentation approach but with the traditional masking tokens. The final fine-tuned version only fine-tunes on the smaller unedited data subset. <br>
+All fine-tuned versions of NLLB, the base version of NLLB and Google Translate (as baseline) are evaluated using a custom evaluation metric we refer to as the location F-score, on top of both BLEU and COMET for evaluation. <br>
+Results show that fine-tuning on large amounts of domain-specific data improves the location F-score by 1.2% over the base NLLB version (from 95.58% to 96.78%). Entity augmenting lowers the location F-score by 1.24% over the base NLLB version, and the masking and the fine-tuning subset barely influence the location F-score . The BLEU and COMET scores follow this same pattern. <br>
+A further qualitative analysis shows common errors made. The entity augmented version often incorrectly anglicises location names, and non-standard locations such as local street names or barangays are often mistranslated. <br>
+This shows that especially more data on these non-standard locations is needed, since these locations are critical when providing disaster relief.

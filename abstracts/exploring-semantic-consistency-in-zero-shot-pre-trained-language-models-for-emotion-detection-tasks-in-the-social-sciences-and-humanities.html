@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Exploring Semantic Consistency in Zero-Shot Pre-trained Language Models for Emotion Detection Tasks in the Social Sciences and Humanities</h1>
+<h3>Pepijn Stoop</h3>
+<h6>University of Amsterdam</h6>
+<h3>Jelke Bloem</h3>
+<h6>Institute for Logic, Language and Computation, University of Amsterdam</h6>
+<br>
+In the social sciences and humanities (SSH) field, the use of pre-trained language models (PLMs) for zero-shot emotion detection tasks is on the rise. Despite achieving promising accuracy rates, the semantic consistency of these models in dimensional emotion detection tasks remains underexplored. Our study investigates how word-level prompt perturbation and the temperature hyper-parameter affect this consistency using the Emobank dataset, an English corpus annotated with dimensional emotional labels. 
+We evaluated both intra- and inter-tool semantic consistency by repeatedly prompting two commonly utilized PLMs in SSH research for emotion detection across a range of temperature settings. By introducing a novel metric, the Vector-Model-Consistency-Score (VMCS), various dissimilarities between predicted emotional vectors could be assessed and aggregated into a single score indicative of the semantic consistency of the model. 
+<br><br>
+Our findings indicate that prompt perturbation yields strong, contrasting effects on inter-tool consistency, associated with increased VMCS scores in one PLM and decreased scores in the other. Furthermore, lower temperature settings contribute positively to semantic consistency, although no significant relationships between temperature and accuracy were observed. Notably, our analysis reveals that the baseline outperformed both PLMs in terms of accuracy, suggesting a deficiency in the generalization of emotion detection tasks within these models. 
+<br><br>
+In conclusion, our study has found that prompt perturbation and temperature settings affect semantic consistency and that PLMs can show a lack of generalization during zero-shot emotion detection tasks. Therefore, we recommend exercising caution when using PLMs for emotion detection without prior fine-tuning on additional datasets and emphasize the importance of extensive testing with a collection of prompts and temperature settings. 

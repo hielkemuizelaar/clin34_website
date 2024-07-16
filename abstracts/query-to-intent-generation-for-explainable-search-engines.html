@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Query-to-intent generation for explainable search engines</h1>
+<h3>Yumeng Wang, Suzan Verberne</h3>
+<h6>Leiden University</h6>
+<br>
+Query understanding is a critical aspect of Information Retrieval (IR), focused on identifying the underlying search intent of textual queries. Traditional methods, such as query classification and clustering, often lack the necessary granularity for precise intent interpretation. In contrast, Zhang et al. (2020) introduce the Q2ID  task of automatically generating detailed and precise intent descriptions for search queries. For example, an user issues a short query ‘Amazon rain forest’, the search engine system generates a detailed query description based on information from relevant and irrelevant documents in the search results: ‘What measures are being taken by local South American authorities to preserve the Amazon tropical rain forest?’ In this way, the search engine represents its understanding of the user query for a searching need about protection measures, but not other aspects like location, weather, resident species etc. The user can then easily adjust their query to better represent their searching needs.<br>
+Our study replicates the work of Zhang et al. (2020) using transformer-based models (Vaswani et al. 2017) to generate comprehensive query intent descriptions. Specifically, our method employs a dual-encoder architecture designed to effectively distinguish between relevant and irrelevant documents. During the decoding process, we use contrastive learning techniques inherent to decoding architectures to ensure the generation of high-quality query descriptions.<br>
+Our preliminary findings indicate that the T5-base model (Raffel et al., 2020) demonstrate competitive performance compared to the prior methods. We augment this model to improve its capacity for performing contrastive learning tasks. Additionally, we plan to further interpret the model's learning outcomes from contrastive learning by visualizing layer-wise predictions. Experiments using a simulated click model will be conducted to demonstrate the practical applicability of our approach in user case studies. 
+<br><br>
+References:<br>
+Zhang, Ruqing, Jiafeng Guo, Yixing Fan, Yanyan Lan, and Xueqi Cheng. "Query understanding via intent description generation." In Proceedings of the 29th ACM International Conference on Information & Knowledge Management, pp. 1823-1832. 2020.<br>
+Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. "Attention is all you need." Advances in neural information processing systems 30 (2017).<br>
+Raffel, Colin, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu. "Exploring the limits of transfer learning with a unified text-to-text transformer." Journal of machine learning research 21, no. 140 (2020): 1-67.

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Do Hate Speech Detection Models Reflect their Dataset’s Definition? Investigating Model Behavior on Hate Speech Aspects</h1>
+<h3>Urja Khurana</h3>
+<h6>Vrije Universiteit Amsterdam</h6>
+<h3>Eric Nalisnick</h3>
+<h6>Johns Hopkins University</h6>
+<h3>Antske Fokkens</h3>
+<h6>Vrije Universiteit Amsterdam</h6>
+<br>
+Hate Speech is subjective and hence requires a lot of attention to detail when designing such a detection system. While picking a model that can properly capture this phenomenon is essential, the biggest challenge lies in the data. Ultimately, the model is going to learn the type of hate speech that is present in its training data. An important question to ask for a hate speech researcher is which dataset they should use. What kind of hate speech should be addressed and which dataset reflects this type of definition? But do these datasets deliver as promised? Previous research has illustrated certain limitations of hate speech datasets, but investigating whether they encapsulate their definition has not been at the forefront. We, therefore, investigate whether models trained on these datasets reflect their dataset's definition.
+<br><br>
+As such, we design a setup where we examine to what extent models trained on six different hate speech datasets follow their dataset's definition. We measure the compliance of a model to its dataset's definition by decomposing each definition into multiple aspects that make something hate speech, fueled by Hate Speech Criteria. After this decomposition, we match the aspects with HateCheck, an evaluation set for hate speech detection systems to uncover the strengths and weaknesses (which capabilities does my model perform well or badly on?) of the system. Different aspects are matched to different test cases and capabilities to systematically check if a model covers an aspect mentioned in the definition or not.

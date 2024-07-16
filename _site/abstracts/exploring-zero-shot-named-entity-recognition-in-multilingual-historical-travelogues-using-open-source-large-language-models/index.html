@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/exploring-zero-shot-named-entity-recognition-in-multilingual-historical-travelogues-using-open-source-large-language-models/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/exploring-zero-shot-named-entity-recognition-in-multilingual-historical-travelogues-using-open-source-large-language-models/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/exploring-zero-shot-named-entity-recognition-in-multilingual-historical-travelogues-using-open-source-large-language-models/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Exploring Zero-Shot Named Entity Recognition in Multilingual Historical Travelogues Using Open-Source Large Language Models</h1>
+<h3>Tess Dejaeghere</h3>
+<h6>Ghent Center for Digital Humanities, Ghent University; LT3, Ghent University</h6>
+<h3>Pranaydeep Singh</h3>
+<h6>LT3, Ghent University</h6>
+<h3>Bas Vercruysse</h3>
+<h6>Ghent Center for Digital Humanities, Ghent University</h6>
+<h3>Julie Birkholz</h3>
+<h6>Ghent Center for Digital Humanities, Ghent University</h6>
+<h3>Els Lefever</h3>
+<h6>LT3, Ghent University</h6>
+<br>
+Large Language Models (LLMs) present novel opportunities for information extraction for historical and literary research. Their unique capacity to be prompted through natural language and ability to process historical text material without major preprocessing steps could lower the threshold for historians and literary scholars to experiment with these techniques on small research use-cases. Despite their potential, the performance of LLMs on historical texts has not been thoroughly explored, particularly due to challenges concerning model bias, hallucinations, model availability (open-source vs. closed), opacity and reproducibility of the experiments and prompts.<br>
+We present work in progress regarding the application of LLMs for zero-shot Named Entity Recognition (NER) in the literary-historical text domain, focusing on a corpus of travelogues ranging from the 18th to 20th centuries written in English, French, Dutch, and German. Despite the potential of NER in literary-historical research settings, building information extraction systems for historical texts presents challenges inherent to the domain like concept drift and OCR errors, as well as the poor performance of existing off-the-shelf annotation tools and a lack of data for model training and evaluation.<br>
+This study discusses 1) the collection, annotation and publication of a dataset of travelogues, focusing on entities such as fauna, flora, works of art, persons, organizations, and locations; and 2) the evaluation of open-source instruction-trained LLMs by calculating strict and partial F1 using our annotated dataset as a gold standard. We construct a base template prompt which includes a persona, a task request, concise annotation guidelines explaining each category and a JSON-template to structure and parse the output. We log and compare changes made to our prompts and their effect on accuracy, and experiment with OCR correction and JSON validation through prompt stacking. Additionally, we specifically focus on empirically evaluating the model output across error types crucial to the domain in question - including bias, historical inaccuracies (e.g. through incomplete results or hallucinated output), the effect of applying the models to languages beyond English (French, Dutch and German) and the effect of the historical nature of the texts.<br>
+The set of instruct models under consideration are Llama (meta-llama/Meta-Llama-3-8B-Instruct), zephyr (HuggingFaceH4/zephyr-7b-beta) and Mixtral (mistralai/Mixtral-8x7B-Instruct-v0.1), – which were selected based on their open-source availability. All models and prompts are employed in a zero-shot setting.<br>
+The expected contributions include: (1) Creating and publicly sharing an annotated dataset for NER from literary-historical travelogues for evaluation purposes, (2) Conducting a pilot comparative evaluation of multiple open-source LLMs for zero-shot NER in the literary-historical domain across domain-specific error types such as OCR errors, bias, historical inaccuracies and confusion due to the multilingual nature of texts, and (3) Supporting the use of open-source LLMs in the literary-historical domain by providing access to our code through Jupyter Notebooks.
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

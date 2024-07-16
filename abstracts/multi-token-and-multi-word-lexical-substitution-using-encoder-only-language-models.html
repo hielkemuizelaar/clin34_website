@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Multi-token and Multi-word Lexical Substitution using Encoder-Only Language Models</h1>
+<h3>Henry Grafé, Tim Van de Cruys</h3>
+<h6>KU Leuven</h6>
+<br>
+Lexical Substitution involves identifying suitable paraphrase substitutes for a target word in context. Current state-of-the-art methods primarily use encoder-only Pre-trained Language Models, but face notable limitations: (1) they are unable to process multi-token target words as input, and (2) conversely, they are unable to generate multi-token candidate substitutes as output. As a consequence, these models are equally unable to properly process multi-word target expressions, or generate multi-word substitute expressions.
+<br><br>
+In this work, we address these gaps. Firstly, we quantify the impact of (1) using a subset of established Lexical Substitution benchmarks, and demonstrate that simple additions to the existing methods improve the generation of substitutes for multi-token and multi-word targets. Secondly, to address (2) we propose a new method that utilizes Encoder-only Pre-trained Language Models to generate multi-token substitute words and multi-word substitute expressions. We validate our method with a newly curated dataset designed to evaluate the generation of multi-word substitutes.

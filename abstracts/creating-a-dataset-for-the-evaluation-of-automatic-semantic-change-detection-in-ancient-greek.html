@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Creating a dataset for the evaluation of automatic semantic change detection in Ancient Greek</h1>
+<h3>Silvia Stopponi, Saskia Peels-Matthey, Malvina Nissim</h3>
+<h6>Center for Language and Cognition Groningen, University of Groningen</h6>
+<br>
+Lexical semantic change is a relevant phenomenon from both a linguistic and an anthropological point of view, concerning the modification of language and culture through time. Computational methods for semantic change detection have been mainly applied to modern languages (an overview is in Tahmasebi et al.  2021),  leveraging both large corpora and native speakers to train large models and to reliably evaluate their performance. This is not the case for ancient languages, such as Ancient Greek, on which this contribution focuses. Ancient languages lack native speakers and knowledge about these languages typically relies on a written corpus, limited in size, which cannot be substantially increased.
+<br><br>
+Most existing studies on lexical semantic change in Ancient Greek were carried out with the close-reading method (or ‘philological’ method), allowing for a detailed analysis of word occurrences in context. However, due to the time-consuming nature of the method, no ‘philological’ study in lexical semantics can include the whole corpus of Ancient Greek. Few studies tried to overcome this problem with automatic semantic change detection (Boschetti 2009, 2018; Rodda et al. 2017; Stopponi et al. forthcoming). The last one, in particular, adopted two automatic measures of semantic change successfully applied to English by Cassani et al. (2021), the Vector Coherence and the J. However, they found that the application of the two measures is problematic when applied to Ancient Greek, due to the characteristics of the corpus. Since Ancient Greek is a highly inflected language, computational studies about it generally use lemmatized versions of the corpora, to reduce data sparsity. Since most currently available corpora were automatically lemmatized, a certain amount of lemmatization errors is inevitable. Stopponi et al. (forthcoming) found that words affected by errors in lemmatization were more likely to be among the detections, i.e. among the possible candidates for semantic change. However, the Vector Coherence metric also detected real cases of semantic change, and seems thus a promising method for semantic change detection in Ancient Greek.
+<br><br>
+To better estimate the reliability of automatic metrics, a gold standard is needed, i.e. a dataset of already-known cases of semantic change, against which the results obtained with the metrics can be compared. One aim of this evaluation is to distinguish good detections from cases of wrong lemmatization, by identifying a range of metric values typically assigned to the evaluation items. Towards this aim, we collected a dataset of attested cases of semantic change in Ancient Greek, extracted from close-reading studies in lexical semantics, such as Gingrich (1954) and Buck (1949), and from the Grieks/Nederlands Woordenboek (Sluiter et al. 2024). In this contribution we describe the procedure followed to create the dataset, including the identification of relevant semantic areas where cases of semantic change were likely to occur, the selection of the philological studies, and item selection. We explain the challenges encountered with this specific language and the solutions adopted. Finally, we show the results of the comparison between the dataset and the results obtained with the J  and Vector Coherence metrics.
+<br><br>
+**References**
+<br><br>
+Federico Boschetti. 2009. A corpus-based approach to philological issues. PhD thesis, University of Trento.
+<br><br>
+Federico Boschetti. 2018. Copisti digitali e filologi computazionali. CNR Edizioni.
+<br><br>
+Buck, Carl Darling. 2008. A dictionary of selected synonyms in the principal Indo-European languages. University of Chicago Press.
+<br><br>
+Giovanni Cassani, Federico Bianchi, and Marco Marelli. 2021. Words with consistent diachronic usage patterns are learned earlier: A computational analysis using temporally aligned word embeddings. Cognitive science, 45(4):e12963.
+<br><br>
+Gingrich, F. Wilbur. 1954. The Greek New Testament as a landmark in the course of semantic change. Journal of Biblical Literature: 189-196.
+<br><br>
+Martina A Rodda, Marco SG Senaldi, and Alessandro Lenci. 2017. Panta rei: Tracking semantic change with distributional semantics in Ancient Greek. IJCoL. Italian Journal of Computational Linguistics, 3(3-1):11–24.
+<br><br>
+Ineke Sluiter, Lucien van Beek, Ton Kessels, and Albert Rijksbaron. 2024. Woordenboek Grieks/Nederlands. Amsterdam University Press.
+<br><br>
+Silvia Stopponi, Saskia Peels-Matthey, and Malvina Nissim. Forthcoming. Viability of automatic lexical semantic change detection on a diachronic corpus of literary Ancient Greek.
+<br><br>
+Nina Tahmasebi, Lars Borin, and Adam Jatowt. 2021. Survey of computational approaches to lexical semantic change detection. Computational approaches to semantic change, 6(1).

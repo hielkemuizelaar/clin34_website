@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Do we still need specialized transformers? A comparison to generative foundation models for non-normative Dutch</h1>
+<h3>Florian Debaene, Aaron Maladry, Pranaydeep Singh, Els Lefever, Veronique Hoste</h3>
+<h6>LT3, Language and Translation Technology Team, Ghent University</h6>
+<br>
+In past years, creating expert systems by fine-tuning pre-trained transformer models has been a dominant methodology to achieve state-of-the-art results for many domain-specific NLP tasks. Recently, however, large generative language models (LLMs) have shown to be highly performant, flexible and widely-applicable. Until now, most generative models were primarily trained and tested on English, whereas Dutch-specific models, such as GEITje (https://huggingface.co/Rijgersberg/GEITje-7B) and Fietje (https://huggingface.co/BramVanroy/fietje-2b) only appeared in the last few months. These new models are trained on general-domain web-scraped and Wikipedia corpora that mostly contain standardised Dutch, which may hamper their capabilities when handling less-normative language forms. As the full potential of the latest methodological advances still remains to be explored in Dutch domain-specific NLP tasks, this paper investigates whether pre-trained and fine-tuned domain-specific transformer models can hold their ground against generative LLMs for Dutch.
+<br><br>
+For our use case we evaluate the performance of these models for two different highly-specific domains: historical Dutch used in comedies and farces (1650-1725) and modern social media Dutch. While these two language forms might seem very different on the surface, they share similar linguistic characteristics that set them apart from standardised Dutch, showcasing orthographic variations, diverging vocabularies, syntactical inconsistencies and semantic shifts. For both of these domains we evaluate the performance of (1) new domain-specific models that are pre-trained on our own background corpora and fine-tuned for downstream tasks and compare the performance to (2) supervised fine-tuned (SFT) generative LLMs (such as GEITje and Fietje). For historical comical Dutch, we test the performance for sentiment classification and multi-label and multi-class emotion detection. For social media Dutch, we evaluate the models for multi-class emotion detection and binary irony detection. With these experiments, we aim to answer the central research question: "Do we still need pre-trained domain-specific transformer models or have generative LLMs also become the SOTA for non-normative Dutch?"

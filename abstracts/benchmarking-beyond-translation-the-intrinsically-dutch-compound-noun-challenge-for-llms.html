@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Benchmarking Beyond Translation: The Intrinsically Dutch Compound Noun Challenge for LLMs</h1>
+<h3>Rik van Noord</h3>
+<h6>University of Groningen	</h6>
+<br>
+Given the ever increasing number and corresponding capabilities of large language models, accurately benchmarking them is becoming increasingly important. As usual, there are ample resources available for English, but surprisingly little for other languages. Dutch, for example, is currently benchmarked by using translations of English benchmarks, such as MMLU, ARC and TruthfulQA. While this generally works well, these benchmarks conflate the model’s ability to solve problems with its ability to understand and generate (in) the Dutch language. We argue that there is a need for challenging benchmarks developed specifically for a single language, which meet the following conditions: i) the task is inherently non-translatable to English (or any other language), (ii) it is challenging for state-of-the-art LLMs, (iii) remains doable for humans and (iv) requires generating Dutch text from an open vocabulary.

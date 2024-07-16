@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Causal Methods for a (Mechanistic) Understanding of Gender Bias in Dutch Language Models</h1>
+<h3>Caspar de Jong</h3>
+<h6>University of Amsterdam</h6>
+<h3>Oskar van der Wal</h3>
+<h6>Institute for Logic, Language and Computation, University of Amsterdam</h6>
+<h3>Willem Zuidema</h3>
+<h6>Institute for Logic, Language and Computation, University of Amsterdam</h6>
+<br>
+The recent successes of Large Language Models (LLMs) in tasks as diverse as content generation and question answering have led to excitement about integrating this technology in everyday applications, and even in important decision-making practices. Unfortunately, these LLMs are known to exhibit undesirable biases that, if left unchecked, could lead to real-world harm. Yet, our ability to measure and mitigate these remains limited—a problem that is only aggravated for Dutch LMs, as little research has been done on bias outside the English context (Talat et al., 2022). To address this gap, this paper aims to get a better understanding of how Dutch GPT-style models rely on gender stereotypes in coreference resolution.
+<br><br>
+We build on previous work that used Causal Mediation Analysis (CMA; Vig et al., 2020; Chintam et al., 2023) to identify transformer-components responsible for gender bias in English LMs, and adapt the methods and datasets to Dutch. We perform CMA on the 144 attention heads of GPT2-small-dutch by, a Dutch LM trained by GroNLP (de Vries & Nissim, 2021). The original English CMA dataset (the Professions dataset from Vig et al., 2020) is translated to Dutch with the Google Translate API and manually verified for correctness. Interestingly, the CMA results for the Dutch LM are very similar to the components identified by Chintam et al. (2023) in the English GPT-2 small model.
+<br><br>
+Following Chintam et al. (2023), we then test the effectiveness of ‘targeted fine-tuning’, i.e. finetuning on only the top 10 CMA-identified attention heads on a gender-balanced dataset in reducing the gender bias, when compared to fine-tuning a random set of attention heads or the full model. To obtain this fine-tuning dataset, we translate an English dataset of 1717 sentences containing one or more gendered pronouns (BUG Gold; Levy et al., 2021) to Dutch and perform counterfactual data augmentation (CDA; Lu et al., 2020) by swapping the gender of these pronouns (thus creating a gender-balanced dataset of 3434 sentences).
+Our results indicate that targeted fine-tuning of the CMA-identified attention heads can reduce the gender bias with limited damage to the general language modeling capabilities, as measured by perplexity on the DutchParliament dataset (van Heusden et al., 2023). 
+<br><br>
+While we believe that this work shows a promising research direction for understanding undesirable biases in Dutch LMs, we also recognize the limitations imposed by a lack of  proper bias evaluation tools. We therefore call for the development of new benchmarks for measuring biases and harms as a crucial next step in the development of safe Dutch LMs.
+<br><br>
+References
+<br><br>
+Chintam, A., Beloch, R., Zuidema, W., Hanna, M., & Van Der Wal, O. (2023). Identifying and Adapting Transformer-Components Responsible for Gender Bias in an English Language Model. 
+https://arxiv.org/pdf/2310.12611.pdf
+<br><br>
+de Vries, Wietse, & Nissim, M. (2021). As good as new. How to successfully recycle English GPT-2 to make models for other languages (C. Zong, F. Xia, W. Li, & R. Navigli, Eds.; pp. 836–846). Association for Computational Linguistics.
+https://doi.org/10.18653/v1/2021.findings-acl.74
+<br><br>
+Heusden, van, Kamps, J., & Marx, M. (2023). Neural coreference resolution for dutch parliamentary documents with the DutchParliament dataset. Data, 8, 2. https://doi.org/10.3390/data8020034
+<br><br>
+Levy, S., Lazar, K., & Stanovsky, G. (2021). Collecting a large-scale gender bias dataset for coreference resolution and machine translation. CoRR, abs/2109.03858. https://arxiv.org/abs/2109.03858
+<br><br>
+Lu, K., Mardziel, P., Wu, F., Amancharla, P., & Datta, A. (2020). Gender bias in neural natural  language processing (V. Nigam, Ban Kirigin, Tajana, C. Talcott, J. Guttman, S. 
+<br><br>
+Kuznetsov, T. Loo, & M. Okada, Eds.; pp. 189–202). Springer International Publishing. https://doi.org/10.1007/978-3-030-62077-6%E2%82%814
+<br><br>
+Talat, Z., Névéol, A., Biderman, S., Clinciu, M., Dey, M., Longpre, S., Luccioni, S., Masoud, M., Mitchell, M., Radev, D., Sharma, S., Subramonian, A., Tae, J., Tan, S., Tunuguntla, D., & Der, V. (2022). You reap what you sow: On the challenges of bias evaluation under multilingual settings (A. Fan, S. Ilic, T. Wolf, & M. Gallé, Eds.; pp. 26–41). Association for Computational Linguistics. https://doi.org/10.18653/v1/2022.bigscience-1.3
+<br><br>
+Vig, J., Gehrmann, S., Belinkov, Y., Qian, S., Nevo, D., Singer, Y., & Shieber, S. (2020). Investigating gender bias in language models using causal mediation analysis (H. Larochelle, M. Ranzato, R. Hadsell, M.F. Balcan, & H. Lin, Eds.; Vol. 33, pp. 12388–12401). Curran Associates, Inc. https://proceedings.neurips.cc/paper_files/paper/2020/file/92650b2e92217715fe312e6fa7b90d82-Paper.pdf

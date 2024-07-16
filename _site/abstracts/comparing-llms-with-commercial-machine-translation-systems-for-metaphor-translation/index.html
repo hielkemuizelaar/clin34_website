@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/comparing-llms-with-commercial-machine-translation-systems-for-metaphor-translation/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/comparing-llms-with-commercial-machine-translation-systems-for-metaphor-translation/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/comparing-llms-with-commercial-machine-translation-systems-for-metaphor-translation/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Comparing LLMs with commercial Machine Translation systems for Metaphor Translation</h1>
+<h3>Aletta Dorst, Alina Karakanta</h3>
+<h6>Leiden University Centre for Linguistics, Leiden University</h6>
+<br>
+Literary translation has been called the last bastion of machine translation (MT), despite a growing number of studies obtaining promising results for different genres and languages (e.g. Green et al., 2010; Voigt & Jurafsky, 2012; Besacier, 2014; Toral & Way, 2015a, 2015b, 2018). However, no studies have focused specifically on metaphor, which is pervasive in fiction and non-fiction alike (e.g. Steen et al., 2010a, b). The studies by Steen et al. show that 13.7% of the words in a sample of approx. 40,000 words of fiction was related to metaphor, compared to 16.4% in news, 18.5% in academic texts, and 7.7% in casual conversation. Subsequently, Dorst (2011, 2015) showed that fiction may contain fewer metaphor-related words than news and academic discourse but it contains a higher percentage of more explicit, deliberate and creative ones. In a follow-up focusing on metaphor in literary machine translation, Dorst (2023) postulates that it is not the creative metaphors that are problematic for machines, but the conventional and idiomatic ones. Currently, it is unclear whether the perceived quality of literary MT or the errors observed are related to particular types or uses of metaphor.
+<br><br>
+Given recent developments in MT, also brought about by large language models (LLMs) (Kocmi et al., 2023), our current project investigates (i) how different types of metaphor are translated by different systems, (ii) how literary translators react to machine-translated metaphors during post-editing, and (iii) how readers react to machine-translated metaphors when reading short excerpts. This study presents the results of the first phase, in which we determine 1) how suitable commercial state-of-the-art MT systems (Neural Machine Translation and LLMs) are for translating metaphors and 2) how different types of metaphor are translated. 
+<br><br>
+A test set was created containing four English fiction texts from the VUAMC corpus (Steen et al., 2010c), manually aligned to their published Dutch translations (482 sentences, ~6700 words). It was translated automatically using Google Translate, DeepL and ChatGPT4. ChatGPT received a simple prompt in the form: ‘Translate the following sentences from English into Dutch (NL)’. The outputs were evaluated for general translation quality against the human reference using automatic metrics (BLEU [Papineni et al., 2002], chrF [Popović, 2015], TER [Snover et al., 2006] and COMET [Rei et al., 2020]). In addition, the systems’ fluency and accuracy in translating different types of metaphors are assessed via human evaluation.<br>
+In terms of general translation quality, we observe a discrepancy between string-based automatic MT quality metrics (BLEU, chrF and TER) which rate DeepL as the significantly highest-performing engine, and neural COMET, which favours Google Translate. ChatGPT, despite coming with high promises for creative domains, performs significantly worse, at least without sophisticated prompting. A preliminary manual analysis confirms that all three systems translate metaphors directly in most instances, leading to incorrect, unidiomatic and sometimes meaningless translations for many conventionalized metaphors. It also suggests that DeepL outperforms both Google Translate and ChatGPT when it comes to idiomatic metaphors, occasionally producing fluent translations that are indistinguishable from human translation.
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

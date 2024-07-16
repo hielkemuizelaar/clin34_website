@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>On the possibility of using pre-trained ASR-models to assess oral reading exams automatically</h1>
+<h3>Bram Groenhof, Wieke Harmsen, Helmer Strik</h3>
+<h6>Radboud University</h6>
+<br>
+Dutch children’s reading skills have been declining consistently for many years (OECD, 2023). One of the ways oral reading is measured among primary school students in the Netherlands is the three-minute-exam (DMT). The DMT is time-consuming to carry out as teachers have to administer the tests in a one-on-one setting, in which the teacher has to indicate the word reading correctness on-the-fly. (Cito B.V., 2017). One possible way of alleviating this workload is to use automatic speech recognition (ASR) to help automate the assessment. A key concern is that many ASR-models struggle with children’s speech (Cleuren et al., 2008; Jain et al., 2023). However, since the DMT only requires a binary judgement of correct or incorrect, a perfect transcription is not needed.
+<br><br>
+In the current research we explore the performance of state-of-the-art (SOTA) pre-trained ASR-models perform judgments on isolated word tasks similar to the DMT, and analyze which mistakes the ASR-models make. Current SOTA pre-trained ASR-models tend to use end-to-end ASR-models like Wav2vec2 as opposed to hybrid models like Kaldi. The end-to-end ASR-models generally outperform the hybrid models  (Parikh et al., 2023). In the current research, we will develop a pipeline that will provide metrics on the ASR-models’ performance as well as the ASR-models’ transcriptions. The metrics will allow us to interpret the results and the transcriptions will allow us to carry out error analysis.
+<br><br>
+These results will provide insights into how suitable different current pre-trained ASR-models are for the assessment of the DMT. They will also present insights on improving the performance of these ASR-models on this automatic word assessment task by showing what types of mistakes occur. These findings can guide decisions on whether current pre-trained ASR-models are suitable for DMT assessment. These findings can help future researchers to fine-tune ASR-models so that they perform better for this task.
+<br><br>
+References:<br>
+Cito B.V. (2017). Handleiding DMT (Cito volgsysteem). Cito B.V. http://www.goloca.org/nt2/dmt/cito_dmt_handleiding_groep_3-8.pdf
+<br><br>
+Cleuren, L., Duchateau, J., Ghesquière, P., & Van hamme, H. (2008). Children’s Oral Reading Corpus (CHOREC): Description and Assessment of Annotator Agreement. In N. Calzolari, K. Choukri, B. Maegaard, J. Mariani, J. Odijk, S. Piperidis, & D. Tapias (Eds.), Proceedings of the Sixth International Conference on Language Resources and Evaluation (LREC’08). European Language Resources Association (ELRA). http://www.lrec-conf.org/proceedings/lrec2008/pdf/254_paper.pdf
+<br><br>
+Jain, R., Barcovschi, A., Yiwere, M. Y., Corcoran, P., & Cucu, H. (2024). Exploring Native and Non-Native English Child Speech Recognition With Whisper. IEEE Access, 12, 41601–41610. https://doi.org/10.1109/ACCESS.2024.3378738
+<br><br>
+OECD (2023). PISA 2022 Results (Volume I): The State of Learning and Equity in Education. OECD. https://doi.org/10.1787/53f23881-en
+<br><br>
+Parikh, A., ten Bosch, L., van den Heuvel, H., & Tejedor-Garcia, C. (2023). Comparing Modular and End-To-End Approaches in ASR for Well-Resourced and Low-Resourced Languages. In M. Abbas & A. A. Freihat (Eds.), Proceedings of the 6th International Conference on Natural Language and Speech Processing (ICNLSP 2023) (pp. 266–273). Association for Computational Linguistics. https://aclanthology.org/2023.icnlsp-1.28

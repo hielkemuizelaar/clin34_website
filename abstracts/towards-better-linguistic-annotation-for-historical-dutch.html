@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Towards better linguistic annotation for historical Dutch</h1>
+<h3>Katrien Depuydt, Jesse de Does, Thomas Haga, Roland de Bonth, Tim Brouwer, Vincent Prins, Mathieu Fannee</h3>
+<h6>Instituut voor de Nederlandse Taal</h6>
+<br>
+Historical texts are essential source material for both linguistic and digital humanities research. Adding linguistic annotation to historical text corpora helps to make the data more accessible. Users need not be concerned with historical spelling variation, and can query or analyse the data using higher-lever categories like part of speech and lemma.
+Unfortunately, automatic linguistic annotation of historical Dutch in all its diversity still remains a challenge. Work has been done in several projects, but results are fragmented, mutually incompatible, and far from providing a completely satisfactory solution.
+<br><br>
+In the CLARIAH+ project, we have therefore invested in the development of an infrastructure for better linguistic annotation of historical Dutch which will be released in June 2024. The infrastructure contains the following elements:
+<br><br>
+- A tagset (TDN) and lemmatisation guidelines applicable for diachronic Dutch corpora over 400.000 tokens of gold standard annotated data from the 14th until the 19 century (which will be further extended), tagged and lemmatised according to the above mentioned principles <br>
+- Trained tagger-lemmatizers (currently using the PIE framework and the Hugging Face transformers framework)<br>
+- Detailed evaluations of PoS tagging and lemmatisation<br>
+- The GaLAHaD application for corpus annotation and evaluation<br>
+- The LAnCeLoT application for the creation of gold standard corpus data
+<br><br>
+The aim of the infrastructure is to provide better tooling for the linguistic annotation of historical Dutch and to enable non technical end users to choose the optimal path for the material they want to annotate with part of speech and lemma. The docker-based application architecture of the GaLAHaD platform ensures easy contribution of tools to the platform. The LAnCeLoT application enables users to manually correct automatically annotated corpus material in an efficient way. Both environments will be offered as a service. Data and software will be freely available.
+<br><br>
+The aim of this contribution is to give more detailed insight into the quality of the linguistic annotation of historical Dutch that so far has been achieved. For our project, we started out with a preliminary investigation of the following tagging systems:<br>
+- An inhouse SVM-based tagger developed by INT<br>
+- The well known Frog tagger, also trainable for historical Dutch (https://languagemachines.github.io/frog/) <br>
+- RNNTagger, developed by Helmut Schmid. (https://www.cis.uni-muenchen.de/~schmid/tools/RNNTagger/) <br>
+- PIE, developed by Enrique Manjavacas and Mike Kestemont https://github.com/emanjavacas/pie 
+<br><br>
+Among these, PIE demonstrated the best performance on historical data. However, its performance declines significantly when only a limited amount of training data is available. To address the steep learning curve, we leveraged pre-trained language models by implementing a wrapper around the token classifier from the Hugging Face transformers library. This approach effectively reduces the amount of training data required to achieve acceptable performance across several of our evaluation subsets.<br>
+We provide a detailed analysis of the performance of these systems on the datasets developed during the project. Finally, we conduct an experiment to evaluate the current potential of few-shot learning with Large Language Models.

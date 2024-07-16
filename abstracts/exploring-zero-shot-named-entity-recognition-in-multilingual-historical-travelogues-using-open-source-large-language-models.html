@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Exploring Zero-Shot Named Entity Recognition in Multilingual Historical Travelogues Using Open-Source Large Language Models</h1>
+<h3>Tess Dejaeghere</h3>
+<h6>Ghent Center for Digital Humanities, Ghent University; LT3, Ghent University</h6>
+<h3>Pranaydeep Singh</h3>
+<h6>LT3, Ghent University</h6>
+<h3>Bas Vercruysse</h3>
+<h6>Ghent Center for Digital Humanities, Ghent University</h6>
+<h3>Julie Birkholz</h3>
+<h6>Ghent Center for Digital Humanities, Ghent University</h6>
+<h3>Els Lefever</h3>
+<h6>LT3, Ghent University</h6>
+<br>
+Large Language Models (LLMs) present novel opportunities for information extraction for historical and literary research. Their unique capacity to be prompted through natural language and ability to process historical text material without major preprocessing steps could lower the threshold for historians and literary scholars to experiment with these techniques on small research use-cases. Despite their potential, the performance of LLMs on historical texts has not been thoroughly explored, particularly due to challenges concerning model bias, hallucinations, model availability (open-source vs. closed), opacity and reproducibility of the experiments and prompts.<br>
+We present work in progress regarding the application of LLMs for zero-shot Named Entity Recognition (NER) in the literary-historical text domain, focusing on a corpus of travelogues ranging from the 18th to 20th centuries written in English, French, Dutch, and German. Despite the potential of NER in literary-historical research settings, building information extraction systems for historical texts presents challenges inherent to the domain like concept drift and OCR errors, as well as the poor performance of existing off-the-shelf annotation tools and a lack of data for model training and evaluation.<br>
+This study discusses 1) the collection, annotation and publication of a dataset of travelogues, focusing on entities such as fauna, flora, works of art, persons, organizations, and locations; and 2) the evaluation of open-source instruction-trained LLMs by calculating strict and partial F1 using our annotated dataset as a gold standard. We construct a base template prompt which includes a persona, a task request, concise annotation guidelines explaining each category and a JSON-template to structure and parse the output. We log and compare changes made to our prompts and their effect on accuracy, and experiment with OCR correction and JSON validation through prompt stacking. Additionally, we specifically focus on empirically evaluating the model output across error types crucial to the domain in question - including bias, historical inaccuracies (e.g. through incomplete results or hallucinated output), the effect of applying the models to languages beyond English (French, Dutch and German) and the effect of the historical nature of the texts.<br>
+The set of instruct models under consideration are Llama (meta-llama/Meta-Llama-3-8B-Instruct), zephyr (HuggingFaceH4/zephyr-7b-beta) and Mixtral (mistralai/Mixtral-8x7B-Instruct-v0.1), – which were selected based on their open-source availability. All models and prompts are employed in a zero-shot setting.<br>
+The expected contributions include: (1) Creating and publicly sharing an annotated dataset for NER from literary-historical travelogues for evaluation purposes, (2) Conducting a pilot comparative evaluation of multiple open-source LLMs for zero-shot NER in the literary-historical domain across domain-specific error types such as OCR errors, bias, historical inaccuracies and confusion due to the multilingual nature of texts, and (3) Supporting the use of open-source LLMs in the literary-historical domain by providing access to our code through Jupyter Notebooks.

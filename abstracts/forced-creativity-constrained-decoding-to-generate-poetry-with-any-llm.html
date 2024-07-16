@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Forced Creativity: Constrained Decoding to Generate Poetry With Any LLM</h1>
+<h3>Bram Vanroy, Tim Van De Cruys</h3>
+<h6>KU Leuven</h6>
+<br>
+Training and finetuning large language models (LLMs) is expensive in terms of time and computational power. Furthermore, one needs access to relevant data, and lots of it. Oftentimes such large datasets are not readily available, for instance due to copyright limitations. This is especially true for poetry where large bodies of copyright-cleared, contemporary work are not readily available. As such we introduce a proof-of-concept framework to generate poetry without the need of further training. It can be applied to any generative LLM, although, unsurprisingly, more powerful models generate more convincing results.
+<br><br>
+Our approach consists of several techniques to force the model to follow a given rhyme scheme and preferred topic for a poem. First, we constrain the model to only generate suitable candidates in terms of rhyme by making use of rhyming dictionaries. Second, the model is guided to follow an abstract form of meter, meaning that every line should not exceed a given number of syllables. Finally, we also infuse a given topic in the model by modifying the model’s predicted logits with a topic prior. 
+<br><br>
+These modifications by themselves are not sufficient as models will often generate gibberish or nonsensical constructions. To increase the likelihood of generating well-formed poetry, we therefore sample every new line many times and rate all the generated possibilities. Lines are scored on how well they rhyme, how strictly they follow the meter, on their perplexity and the perplexity of the poem so far. Other automatic evaluation metrics are still being investigated. Ultimately the framework will yield the highest scored poem while also returning all the generated options and their scores, which is useful for further analysis.
+<br><br>
+Our code is publicly available on GitHub.

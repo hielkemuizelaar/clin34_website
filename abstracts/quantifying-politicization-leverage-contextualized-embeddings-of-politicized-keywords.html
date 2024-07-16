@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Quantifying Politicization: Leverage Contextualized Embeddings of Politicized Keywords</h1>
+<h3>Sidi Wang</h3>
+<h6>Computational Linguistics and Text Mining Lab, Vrije Universiteit Amsterdam</h6>
+<h3>Jelke Bloem</h3>
+<h6>Data Science Centre, University of Amsterdam; Institute for Logic, Language and Computation, University of Amsterdam</h6>
+<br>
+In previous work, a metric measuring politicization was developed for foreign aid project reports applying the Doc2Vec model. This metric is computed by measuring the cosine similarity distance between the document embeddings of each report and sets of known politicized keywords, which were derived from the USAID thesaurus and hand-coded with politicized scores by political science domain experts. A Spearman correlation test was conducted on the metric with a politicization silver score derived from the report metadata, showing a weak but statistically significant correlation. <br>
+However, the Doc2Vec model only produces static, non-context-sensitive embeddings. It is built on Word2Vec, which is known for its limited handling of polysemy. For a given document, Doc2Vec generates a static vector in which all words contribute equally, irrespective of context. <br>
+As a follow-up to the aforementioned pilot study, the objective of this research is to develop a novel metric using contextualized embedding produced by BERT for foreign aid project reports. The built pipeline uses BERT model to embed a given politicized keyword by taking care of the context it appears. Then it takes the sum of the last four layers of a keyword as embedding for the politicization score calculation. This study compared the results of the contextualized embedding metric with the metric yielded by the Doc2Vec model. Furthermore, I explored the correlation between politicization and project effectiveness, since political interests may affect aid effectiveness.

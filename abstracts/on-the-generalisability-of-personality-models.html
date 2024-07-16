@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>On the generalisability of personality models</h1>
+<h3>Simon Blanchard, Walter Daelemans</h3>
+<h6>University of Antwerp</h6>
+<br>
+Published work on predicting personality traits from language tends to focus on one model and one dataset. But to be useful a model should generalise to other datasets. In this research we investigate: How well does a model trained on one dataset generalise to other datasets? Which type of model generalises the best? Does the type of data or training have an effect on generalisability? We answer these questions by collecting datasets of language with personality labels from published research and testing every dataset/model combination. In the process we have built an open source NLP framework for testing combinations of models and datasets. Although the focus of this work is personality prediction, the test framework is generic in that it can be used with any labels. So, it should be generally useful to the community. In this talk I will introduce results from this work, the test setup and discuss the challenges.

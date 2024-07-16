@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>EVALUATION OF COREFERENCE MODELS ON DIFFERENT DOMAINS AND TEXT GENRES</h1>
+<h3>Shantanu Nath</h3>
+<h6>University of Trento</h6>
+<br>
+Coreference resolution can enhance Natural Language Understanding (NLU)
+employed in downstream tasks such as summarisation, knowledge representation, and narrative understanding. Recent advancements in coreference resolution models have showcased impressive performance levels when evaluated on the OntoNotes benchmark. However, the OntoNotes dataset is limited in terms of the diversity of the data it includes. This makes it difficult to evaluate the generalizability and reliability of different coreference resolution models. The performance of these models on different domains and text genres still needs to be analyzed.<br>
+In this thesis, we evaluate state-of-the-art (SOTA) coreference resolution models trained on the OntoNotes dataset on an out-of-domain text genre i.e. personal narratives. Personal narrative is a collection of life events narrated by an individual. Following OntoNotes guidelines, we annotate a publicly available narrative dataset, namely the Stanford Emotional Narratives Dataset (SEND). Then, we evaluate the performance of SOTA coreference models on the SEND dataset. By evaluating their performance on this dataset, we can gain insights into the applicability and reliability of these models in understanding and analyzing personal narratives, which can ultimately contribute to the development of effective mental health support systems. Our findings demonstrate that Autoregressive Structured Prediction outperforms Word-level coreference resolution and SpanBERT in performance on the SEND dataset, aligning closely with their performance on the OntoNotes dataset. Furthermore, when evaluated in an out-of-domain context on the SEND dataset, these models demonstrate a modest degradation in performance (1-3%) compared to their performance on the OntoNotes dataset, highlighting their generalizability and reliability across diverse settings.

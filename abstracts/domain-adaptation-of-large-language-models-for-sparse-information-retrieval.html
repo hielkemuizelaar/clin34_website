@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Domain adaptation of Large Language Models for Sparse Information Retrieval</h1>
+<h3>Katharina Sommer, Evgeniia Egorova, Eugene Shalugin</h3>
+<h6>Radboud University</h6>
+<br>
+Recent advancements in information retrieval systems have significantly benefited from the incorporation of Large Language Models (LLMs), particularly in enhancing retrieval capabilities. However, the application of these models in domain-specific contexts is still challenging because of the scarcity of annotated datasets necessary for effective model training (Thakur et al.). This study focuses on adapting LLMs for effective usage in sparse retrievers in the medical domain through the employment of transfer learning and Parameter-Efficient Fine-Tuning (PEFT) techniques.
+<br><br>
+Our methodology involves a two-stage process:
+1) domain adaptation with a supervised sequence classification using LoRA to fast-forward the training; 
+2) fitting the adapted model into an information retrieval system, in our case the DeepCT approach (Dai and Callan). 
+<br><br>
+This way we plan to address the shortage of domain-specific datasets for the ranking task as only the first step requires domain-oriented annotations which are much more widespread and easy to create for the classification task.
+<br><br>
+For our experiments we chose medical texts as a target domain and utilized the Medical Abstract TC Corpus for the domain adaptation; during the second stage the MS MARCO dataset was used to train the retrieval model. We evaluated the resulting system on both medical (in-domain) and financial (out-of-domain) datasets from the BEIR benchmark to assess the transferability of the adapted models across different domains. The findings from our experiments indicate that domain adaptation via LoRA and subsequent integration into DeepCT results in marginal but notable improvements in domain-specific retrieval effectiveness without significant degradation in performance in out-of-domain settings. 
+<br><br>
+References<br>
+Dai, Z., & Callan, J. (2020). Context-Aware Term Weighting For First Stage Passage Retrieval. Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval, 1533–1536.<br>
+Thakur, N., Reimers, N., Rücklé, A., Srivastava, A., & Gurevych, I. (2021). BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models. In J. Vanschoren & S. Yeung (Eds.), Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks (Vol. 1).

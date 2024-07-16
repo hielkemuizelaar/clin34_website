@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Similarity Detection in Medieval Marginal Writing</h1>
+<h3>Colin Swaelens</h3>
+<h6>LT3, Ghent University, Belgium</h6>
+<h3>Ilse De Vos</h3>
+<h6>VAIA - Flanders AI Academy</h6>
+<h3>Els Lefever</h3>
+<h6>LT3, Ghent University, Belgium</h6>
+<br>
+Antique literature survived thanks to scribes painstakingly copying texts from one manuscript to the other, prior to the art of printing. Occasionally, these scribes added metrical paratexts to the manuscripts, i.e. texts standing next to the main text (Genette, 1987) and introduced in Byzantine scholarship by Lauxtermann (2003) as book epigrams. Ghent University’s Database of Byzantine Book Epigrams (Ricceri et al., 2023) stores more than 12,000 of such epigrams, being verbatim transcriptions  precisely as they are found in the manuscripts. This entails that the Greek of these epigrams is interspersed with orthographic inconsistencies, mainly due to phonetic changes like the itacism. These verbatim transcriptions are called occurrences and are grouped under one or more so-called types, a readable representation of its occurrences in standardised, classical Greek. Eventually, we aim to develop a dynamic system to group hemistichs, verses and epigrams based on distinct similarity measures in order for scholars to find all kinds of similar texts instead of only the ones that pop up in their mind. <br>
+While developing those similarity measures, just like any other algorithm, evaluation is an essential part of the development process. However, a gold standard for the evaluation of verse similarity measures does not exist. At this point, we already conducted a pilot study on pairwise annotation of 2 verses with 10 annotators. Each verse was set off alongside six pairs of verses, of which the annotator had to mark the most similar one in their opinion. The inter-annotator agreement (IAA) yielded an agreement score of 57.69%, which is seen as a moderate agreement (Landis & Koch, 1977). This agreement score is the arithmetic mean of the agreement between each pair of annotators, as all annotators annotated the exact same set of verses. <br>
+Despite the rather modest size of this pilot study, it is possible to unravel the distinct lines of reasoning of the annotators. They did not receive detailed instructions for the annotation process, because of which every annotator was free to have their own focal point. The most remarkable of those focal points was the metre. One of the annotators based their judgement on the amount of syllables a verse counts. The majority, however, seemed to take syntax as a decisive factor to determine the most similar verse; semantics were only deciding, if the syntax of both options was identical. <br>
+The results of this pilot study are promising enough to start the annotation of the first gold standard to measure verse similarity within a Greek corpus. Prior to the annotation of the complete DBBE corpus, a comprehensive IAA study will be performed on the first 2500 trials of pairwise annotations to ensure the quality of the data. The gold standard will eventually be freely accessible for the community.

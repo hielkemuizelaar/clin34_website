@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Dutch CoLA: Dutch grammatical knowledge in monolingual and multilingual language models</h1>
+<h3>Silvana Abdi, Hylke Brouwer, Martine Elzinga, Shenza Gunput, Sem Huisman, Collin Krooneman, David Poot, Jelmer Top, Cain Weideman, Lisa Bylinina</h3>
+<h6>University of Groningen</h6>
+<br>
+Since the introduction of the Transformer (Vasvani et al, 2017), language models based on this architecture have been showing truly impressive performance on a variety of downstream tasks, and rapid progress on these tasks as well: benchmarks that were considered hard for years are quickly saturated, and ‘super-human’ performance is reported for many tasks (see Tedeschi et al., 2023 for a critical overview). 
+<br><br>
+There are two limitations to this progress: 
+1) Current language models are black boxes. They are trained on textual data and perform tasks that have textual input (and often also generate text as output), and therefore their performance relies on linguistic competence. At the same time, what language models know about language remains largely unexplored, with recent results sometimes pointing in different directions (Dentella et al., 2023; Hu et al., 2024). Is solid linguistic knowledge, empirically, a prerequisite for good performance on downstream tasks? Maybe the latter is possible without implicitly learning grammatical rules and constraints?<br>
+2) A lot of research in NLP centres around English, both in terms of progress in model performance and evaluation benchmarks. Despite continuous effort to extend the focus beyond English, even relatively high-resource languages like Dutch (class 4, ‘The Underdogs’, according to classification in Joshi et al., 2020) still lack NLP resources comparable to English.
+<br><br>
+To make progress on these two fronts, we introduce Dutch CoLA: a Corpus of Linguistic Acceptability for Dutch (available on Huggingface: https://huggingface.co/datasets/GroNLP/dutch-cola). Following the general approach of original, English, CoLA (Warstadt et al., 2018), we collect examples from grammar descriptions, expertly annotated for linguistic acceptability (grammaticality). As our sources, we use 8 volumes of ‘Syntax of Dutch’ (Broekhuis et al., 2012-2019) and ‘The syntax of Dutch’ (Zwart 2011). We extracted examples alongside their acceptability annotation by the original authors. The resulting dataset contains the following fields:
+<br><br>
+- Source of the example<br>
+- Original ID: example number in the original source<br>
+- Acceptability: 0 (unacceptable) or 1 (acceptable)<br>
+- Original annotation: acceptability label of the sentence in the original source (empty, ‘*’, ‘??’, ‘?’ etc.)<br>
+- Sentence<br>
+- Material added: 0 or 1 (if material was added to make the example a full sentence)
+<br><br>
+The dataset is split into 4 subsets:
+<br><br>
+- Train: 19893 rows<br>
+- Validation: 2400 rows<br>
+- Test: 2400 rows<br>
+- Intermediate: examples with intermediate original acceptability labels (‘?’ and ‘(?)’). 1199 rows
+<br><br>
+Using Dutch CoLA, we perform a series of experiments that target linguistic knowledge in Dutch and multilingual language models. Where applicable, we report comparison with existing Dutch benchmarks (de Vries et al, 2023 a.o.). We explore:<br>
+- the role of fine-tuning in linguistic representations and layer-wise localisation of linguistic knowledge;<br>
+- the role of model architecture in capturing linguistic acceptability;<br>
+- the difference between Dutch-only and multilingual model linguistic performance;<br>
+- prompt-sensitivity and robustness of linguistic knowledge in generative models.
+<br><br>
+Finally, we discuss potential practical uses of Dutch CoLA (such as: evaluating automatically generated text in Dutch) and its limitations (such as: subjectivity in expert annotation that does not always align with speakers’ intuitions). 

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Exploring Translation's Impact on Dutch BERT Model Performance</h1>
+<h3>Marcel Haas, Hielke Muizelaar, Marco Spruit</h3>
+<h6>Leiden University Medical Center</h6>
+<br>
+In recent years, BERT models have demonstrated remarkable effectiveness across a wide array of Natural Language Processing (NLP) tasks. While the original BERT model is trained exclusively on English text, the development of Dutch models like RobBERT and BERTje for general tasks, and MedRoBERTa.nl for clinical applications, has showcased promising outcomes in Dutch language tasks such as Named Entity Recognition (NER) and multi-label text classification. Dutch BERT models, however, typically rely on smaller pre-training datasets compared to their English counterparts, This is mainly due to lower data availability which is the result of the language's lower prevalence. Furthermore, the application of Dutch-English Translation has been generally unexplored in BERT research, although we have shown in prior research that fine-tuning English models on translated Dutch clinical texts can yield similar or even better results than using Dutch models on the same task. These findings underscore the need for further investigation into the application of translation to facilitate the utilization of larger English models in the Dutch BERT domain.

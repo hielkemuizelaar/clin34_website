@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Utilizing Conversations as a Proxy for Topic: a Study in Forensic Authorship Attribution</h1>
+<h3>Wouter Hajer</h3>
+<h6>Netherlands Forensic Institute; TU Delft</h6>
+<h3>Anne Fleur van Luenen</h3>
+<h6>Netherlands Forensic Institute</h6>
+<h3>Jakob Söhl</h3>
+<h6>TU Delft</h6>
+<h3>Rolf Ypma</h3>
+<h6>Netherlands Forensic Institute</h6>
+<br>
+Authorship Attribution, the science of finding the specific author of a text of unknown origin, is a common problem in forensic casework. Due to concerns about the influence of the topic of texts on the attribution, mathematically simple models are currently used in practice. To test the performance of more advanced methods from the field of computational authorship attribution, like support vector machines and methods using deep learning, a dataset that is both controlled for topic and forensically relevant is necessary to ensure attribution is based upon style instead of topic. In practice such a dataset is unattainable when using real forensic messages. To fill this gap we propose the usage of texts from the conversation partner in either chat messages or speech transcriptions as a proxy for a text about the same topic. As this text is the other half of the same conversation, we expect it to cover the same topics. This method would allow us to study new authorship attribution methods on all forensic datasets where conversations can be reconstructed.
+<br><br>
+To verify the relation between texts of the same topic and texts from the same conversation a variety of authorship attribution methods is tested on two Dutch corpora: abc_nl1 [1], which consists of essays controlled for topic, and FRIDA [2], which consists of transcriptions of phone conversations. For each corpus, the methods are evaluated for two tasks: a standard task, where no influence of topic is expected, and a confusion task, where we attempt to maximize this influence. By measuring the difference in false attributions on the confusion task to the standard task we quantify the influence of the topic on a specific authorship attribution method. By doing this for both the topic-controlled and the conversation-controlled corpus we can study the correlation between the influence of topic and conversation. We currently find a correlation of 0.90 between these results using support vector machines with a variety of feature vectors. This suggests that we could indeed use the text written by the conversation partner as a proxy for a text written about the same topic. Further research into this correlation when using BERT-based authorship attribution models is still in progress.
+<br><br>
+[1] Baayen, H., Van Halteren, H., Neijt, A., & Tweedie, F. (2002, March). An experiment in authorship attribution. In 6th JADT (Vol. 1, pp. 69-75).<br>
+[2] Van der Vloed, D., Bouten, J., Kelly, F., & Alexander, A. (2018). NFI-FRIDA–Forensically realistic interdevice audio database and intial experiments. In 27th Annual Conference of the International Association for Forensic Phonetics and Acoustics (IAFPA) (pp. 25-27).

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>NewsBERTje: a Domain-Adapted Dutch BERT Model</h1>
+<h3>Loic de Langhe, Orphée De Clercq, Veronique Hoste</h3>
+<h6>LT3, Ghent University</h6>
+<br>
+In recent years, pre-trained language models, particularly BERT (Bidirectional Encoder Representations from Transformers), have demonstrated remarkable success across various natural language processing (NLP) tasks. However, deploying these models on specific domains where labeled data is scarce or substantially different from the pre-training corpus poses a significant challenge. Domain adaptation techniques aim to mitigate this issue by continuously pre-training models on domain-specific data, thereby enhancing their performance in target domains.
+<br><br>
+This abstract explores the potential of domain adaptation for BERT-based models in the Dutch language domain. We enhance the capabilities of the widely used BERTje model in online news settings by continuing its pretraining on a large online news collection from a large variety of sources. Concretely, our domain-specific corpus consists of around 20 million tokens of news articles from online versions of Dutch (and Flemish) newspapers such as NOS, De Morgen, Het Nieuwsblad, Het Laatste Nieuws, De Standaard and Het Belang van Limburg, as well as articles published on the news website of the Flemish public broadcasting agency VRT News. The result is a BERT model, fully adapted for Dutch news texts: ‘NewsBERTje’, which is freely available through the Huggingface transformer hub.
+<br><br>
+We benchmarked the performance of this newly trained model by evaluating it on a large number of tasks within the Dutch news domain such as news sentiment classification, news event prominence classification, sarcasm and partisanship detection and both coarse -and fine-grained news topic classification. We find that NewsBERTje outperforms other Dutch BERT models such as BERTje, RobBERTje and RobBERT on each of these tasks, highlighting the benefit of training task -and domain specific models. 

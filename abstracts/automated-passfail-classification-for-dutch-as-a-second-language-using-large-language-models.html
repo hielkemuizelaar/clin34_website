@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Automated Pass/Fail Classification for Dutch as a Second Language Using Large Language Models </h1>
+<h3>Sisi Chen</h3>
+<h6>Department of Computer Science, KU Leuven</h6>
+<h3>Vincent Vandeghinste</h3>
+<h6>Centre for Computational Linguistics, KU Leuven</h6>
+<h3>Goedele Vandommele</h3>
+<h6>Centre for Language and Education, KU Leuven</h6>
+<br>
+This study investigates the effectiveness of automated scoring models in educational assessment, focusing specifically on Dutch as a second language. Traditional scoring methods primarily rely on manual grading, which faces challenges related to subjectivity, time, and cost. Thus, automated scoring systems are gaining increasing attention. Within the framework of the Common European Framework of Reference for Languages (CEFR) and the Certificaat Nederlands als Vreemde Taal (CNaVT), this study compares traditional regression techniques with cutting-edge large language models. Specifically, the study compares the performance of three different models: a logistic regression model utilizing handcrafted linguistic features, a fine-tuned model based on a Dutch variant of BERT (robBERT), and a Dutch generative model, GEITje 7B, fine-tuned for classification and based on Mistral 7B. The two large language models are fine-tuned to classify students’ overall performance into “Pass” and “Fail” based on their responses to part of the tasks completed during the exam. This fine-tuning process is used to comparatively assess the effectiveness of an encoder-only model, which is traditionally known for its proficiency in classification tasks, against a decoder-only model that incorporates a more recent architectural approach. The study also considers the influence of different exam tasks on the models’ predictions of the overall result classification. Meanwhile, considering that models may produce inaccurate results, this paper adjusts the classification threshold of the model to categorize students’ exam performance into three classes: pass/fail/others. Outputs that are relatively uncertain are classified as “Others,” allowing human teachers to focus on grading papers belonging to the “Others” category. The findings are expected to aid human graders in scoring more quickly and accurately by providing classification suggestions and provide valuable insights into the capabilities of automated assessment models in high-stakes language evaluations.

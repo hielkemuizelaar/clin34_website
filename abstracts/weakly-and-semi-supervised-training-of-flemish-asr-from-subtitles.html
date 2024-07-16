@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Weakly and Semi-supervised Training of Flemish ASR from Subtitles</h1>
+<h3>Xinnain Zhao, Hugo Van hamme</h3>
+<h6>KU Leuven</h6>
+<br>
+TV subtitles offer a significant resource for weakly and semi-supervised learning of Automatic Speech Recognition (ASR) systems in low resourced scenarios, such as Belgian Dutch. Despite their potential, subtitles frequently suffer from misalignments with spoken audio due to inherent characteristics of closed captioning. However, typical end-to-end (E2E) ASR models demand strict verbatim transcripts, a requirement often not met by subtitles, thereby compromising the performance of models trained under weak supervision. To address this challenge, our proposed weakly supervised approach involves a preliminary refinement of both subtitle texts and timestamps prior to training. Subtitle timestamps are refined through word-level forced alignment. Following this, a hypothesis text is generated as an alternative by prompting the pretrained Whisper model with the subtitle text. Data selection is subsequently based on confidence scores derived from the forced alignment of subtitle and hypothesis texts. The refined data are then used to train a weakly supervised model to predict verbatim transcripts. In an effort to circumvent the complexities of these processing pipelines, we also propose a semi-supervised method which incorporates adversarial training aimed at achieving distribution-level textual predictions, thereby obviating the need for strict alignments. This method is reinforced by the integration of a supervised loss in the semi-supervised framework, which enhances the stability of the adversarial training process. We conducted experiments on 2860 hours of subtitled audio from 16 Flemish TV programs. The findings affirm the effectiveness of the refinement processes in our weakly supervised method. Moreover, the combination of an adversarial and a supervised loss in the semi-supervised training yields results that are comparable to those obtained through the refinement-based weakly supervised approach.

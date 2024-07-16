@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/examining-boundaries-recontextualizing-dutch-syllabification-algorithms/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/examining-boundaries-recontextualizing-dutch-syllabification-algorithms/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/examining-boundaries-recontextualizing-dutch-syllabification-algorithms/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Examining Boundaries: Recontextualizing Dutch Syllabification Algorithms</h1>
+<h3>Gus Lathouwers, Helmer Strik, Wieke Harmsen, Catia Cucchiarini</h3>
+<h6>Radboud University</h6>
+<br>
+Syllabification concerns the task of dividing a word into syl-la-bles. Even though seemingly easy to fulfill, training an algorithm to perform the task with high accuracy remains a challenge. Difficulties in the automation of syllabification arise from the need to recognize complex language patterns. However, the practical use cases associated with meaningful syllable information extraction, such as text-to-speech and language recognition processing purposes (e.g., Diaz-Asper et al., 2022), make it a worthwhile pursuit. 
+<br><br>
+With respect to the Dutch language, a number of language-specific and non-language-specific algorithms have been developed over the years. However, research studying the relative efficacy of algorithms is generally dated or does not address the nuances of different algorithms' behavior. Furthermore, researchers have occasionally failed to take into account features unique to the Dutch language in algorithm refinement (e.g., Trogkanis and Elkan, 2010; Bartlett, 2007). One often confused concept in the literature is the difference between word hyphenation and syllabification: the former describes breaking words according to Dutch spelling rules, the latter breaks words according to phonological conventions. 
+<br><br>
+The current research seeks to (a) delineate the accuracy of different syllabification algorithms that exist for the Dutch language, (b) optimize algorithm parameters where possible, and (c) perform a comparison on how well algorithms are suited to different data types. Historically, algorithm testing has often been conducted on dictionary word sets, yet these have the potential to generalize poorly when applied to real-life datasets. To that end, algorithm accuracy is here examined on three different data types, namely (a) traditional dictionary words (CELEX, n=29375), (b) loanwords from other languages (Sijs, 2005; n=1135), and (c) Dutch pseudowords (CHOREC, n=99).
+<br><br>
+Algorithms of different origins have been recreated, or algorithm patterns have been adjusted. They include a Dutch language-specific algorithm (Brandt Corstius, 1970), a popular data-driven algorithm that enjoys widespread use (Liang, 1983), and a modern algorithm built on sequential task selection principles (Conditional Random Fields; CRF, Trogkanis and Elkan, 2010). Data was also gathered as to how a modern AI chatbot, namely ChatGPT, would fare at the task of syllabification. 
+<br><br>
+Results show the algorithms responding uniquely to different data types. Overall, the data-driven algorithms perform best (words syllabized correctly rate of 99.4% for CRF, 98.5% for Liang). However, on one dataset (pseudowords), the Dutch-specific language-driven algorithm is found to have the best shared performance (words syllabized correctly rate of 98.0% for Brandt, 98.0% for CRF). All algorithms struggle significantly more with the syllabification of loanwords than dictionary words (mean words syllabized correctly rate of 80.7%). The AI chatbot shows considerable inconsistency when applying any ruleset to syllabizing the words given. 
+<br><br>
+Current research aims to provide a reference point for future syllabification endeavors when applied to the Dutch language. The explorative study should provide guidelines as to the weaknesses of algorithms when applied to different data types, as well as offer general insight on how these can be optimally used in the analysis of the Dutch language. 
+<br><br>
+References:
+<br><br>
+Bartlett, E. (2007). A discriminative approach to automatic syllabification [Unpublished master's thesis]. University of Alberta.
+<br><br>
+Brandt Corstius, H. (1970). Exercises in computational linguistics [Doctoral dissertation]. University of Amsterdam.
+<br><br>
+Diaz-Asper, M., Holmlund, T. B., Chandler, C., Diaz-Asper, C., Foltz, P. W., Cohen, A. S., & Elvevåg, B. (2022). Using automated syllable counting to detect missing information in speech transcripts from clinical settings. Psychiatry Research, 315, 114712.
+<br><br>
+Liang, F. M. (1983). Word hy-phen-a-tion by com-put-er [Doctoral dissertation]. Stanford University.
+<br><br>
+Van Der Sijs, N. (2005). Van Dale Groot Leenwoordenboek. De invloed van andere talen op het Nederlands. Van Dale Lexicografie. https://www.dbnl.org/tekst/sijs002groo01_01/
+<br><br>
+Trogkanis, N., & Elkan, C. (2010). Conditional random fields for word hyphenation. In J. Hajič, S. Carberry, S. Clark, & J. Nivre (Eds.), Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics (pp. 366–374). Association for Computational Linguistics.
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

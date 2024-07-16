@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Enriching Historical Records: An OCR and AI-Driven Approach for Database Integration</h1>
+<h3>Zahra Abedi, Gijs Wijnholds, Richard van Dijk</h3>
+<h6>Leiden University</h6>
+<br>
+This paper is part of the Linking University, City, and Diversity (LUCD) project, which aims to visualize the interactions between Leiden University and the city of Leiden since 1575 and capture the impact of international students and professors on Leiden. Focusing specifically on the digitization of the 'Leidse hoogleraren en lectoren 1575-1815' dataset, originally compiled by A.A. Bantjes and L. van Poelgeest between 1983 and 1985, this research is dedicated to converting these typewritten records into a digital format and importing them to a database. The dataset contains valuable information about professors at Leiden University, such as birth and death details, education, and career history. The central research question is: ‘How can we accurately extract and transform historical records data from scanned historical documents and map it into a centralized database?’ This question is addressed through three sub-questions: the accuracy of OCR techniques, the use of AI for structured data extraction, and the mapping of this data into a centralized database.
+<br><br>
+The methodology begins with image preprocessing to enhance the quality of scanned documents for better OCR performance. Tesseract OCR is then trained on a customized training set to improve text recognition accuracy, especially for historical and language-specific nuances. For structuring the extracted text, GPT-3.5 with function calling and Pydantic is used, enabling us to generate valid JSON outputs aligned with our format requirements. The final step involves modifying the database structure and creating an algorithm for optimal person matching, considering various personal attributes to ensure accurate data linkage.
+<br><br>
+The experimental phase includes generating OCR text, which, while prone to errors, provides a foundational dataset for further processing. The AI model, although well-defined, requires ongoing refinement to improve its consistency in responding accurately. Preliminary tests of the matching algorithm show promising results, demonstrating its effectiveness once accurate JSON files are provided.
+<br><br>
+Initial results indicate that while the OCR-generated text is imperfect and subject to errors, the approach is viable for digitizing historical records. The AI model is still under development, with efforts focused on enhancing its consistency. The person matching algorithm works efficiently with properly structured JSON data, showing potential for accurate data integration into the centralized database.
+<br><br>
+This research contributes to the field of digital humanities by providing a structured approach to digitizing and analyzing historical records. The methodologies developed herein, including advanced OCR and AI techniques, offer a framework for similar projects aiming to preserve and make accessible historical datasets. Future work will focus on refining the AI model to achieve greater accuracy and consistency in text extraction and integrating additional datasets to expand the scope of the LUCD project. Further, we aim to develop user-friendly tools for researchers and historians to interact with and explore the digitized data effectively.

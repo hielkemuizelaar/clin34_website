@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/generate-then-refine-data-augmentation-for-zero-shot-intent-detection/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/generate-then-refine-data-augmentation-for-zero-shot-intent-detection/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/generate-then-refine-data-augmentation-for-zero-shot-intent-detection/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Generate then Refine: Data Augmentation for Zero-shot Intent Detection</h1>
+<h3>I-Fan Lin</h3>
+<h6>Leiden University</h6>
+<h3>Faegheh Hasibi</h3>
+<h6>Radboud University</h6>
+<h3>Suzan Verberne</h3>
+<h6>Leiden University</h6>
+<br>
+Intent detection is one of the tasks in natural language understanding, commonly served as a common component in task-oriented dialogue systems. Its objective is to categorize user utterances into predefined classes of user intents. The advent of transformer-based models has significantly elevated the performance of intent detection. However, when faced with previously unseen domains and intents, a considerable challenge emerges, primarily stemming from data scarcity.
+<br><br>
+Data augmentation is a viable solution. Lee et al .[1]employ extrapolation techniques with a sequence-to-sequence model to generate new, under-represented utterances. Alternatively, leveraging the advancements in LLMs, Sahu et al.[2] use GPT-3 with in-context learning to get additional utterances. Lin et al [3] adopted a similar approach, using LLMs to generate synthetic examples, and then selecting  useful data for training based on the Pointwise V-Information metric.
+<br><br>
+Our approach differs from previous research in two key ways. Firstly, we specifically consider the zero-shot (instead of the few-shot) setting. This increases the challenge for LLMs to provide high-quality data. Secondly, rather than relying on a formula-based metric, we opt for a potentially more flexible approach -- the Refiner. The Refiner directly generates refined data instead of filtering out irrelevant samples. Our approach is based on an underlying assumption that domain-invariant patterns exist and we can learn them from sufficiently labeled data, including aspects such as utterance diversity, the use of synonymy, and other hidden features identified by the model during training.
+<br><br>
+Our Refiner includes  two stages: First, we generate utterances for intent labels using an open-source large language model in a zero-shot setting. Second, we use a smaller sequence-to-sequence model (the Refiner), to improve the generated utterances. The Refiner is fine-tuned on seen domains. We evaluate our method by training an intent classifier on the generated data, and evaluating it on real (human) data. We find that the Refiner can significantly improve the data quality over the zero-shot LLM baseline for unseen domains, with substantial improvements over seen domains.
+<br><br>
+Our results indicate that a two-step approach of a generative LLM in zero-shot setting and a smaller sequence-to-sequence model can provide high-quality data for intent detection:  Classifiers trained on data refined by the Refiner had a higher accuracy compared to those trained solely on utterances generated directly from LLMs. Additionally, using the lexical metrics metric demonstrated that the refined utterances show greater resemblance to real utterances. 
+<br><br>
+[1] Lee, K., Guu, K., He, L., Dozat, T., & Chung, H. W. (2021). Neural data augmentation via example extrapolation. arXiv preprint arXiv:2102.01335.<br>
+[2] Sahu, G., Rodriguez, P., Laradji, I., Atighehchian, P., Vazquez, D., & Bahdanau, D. (2022, May). Data Augmentation for Intent Classification with Off-the-shelf Large Language Models. In Proceedings of the 4th Workshop on NLP for Conversational AI (pp. 47-57). <br>
+[3] Lin, Y. T., Papangelis, A., Kim, S., Lee, S., Hazarika, D., Namazifar, M., ... & Hakkani-Tur, D. (2023, May). Selective In-Context Data Augmentation for Intent Detection using Pointwise V-Information. In Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics (pp. 1463-1476).
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

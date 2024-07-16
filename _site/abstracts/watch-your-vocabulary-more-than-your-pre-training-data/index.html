@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/watch-your-vocabulary-more-than-your-pre-training-data/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/watch-your-vocabulary-more-than-your-pre-training-data/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/watch-your-vocabulary-more-than-your-pre-training-data/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+
+<h1>Watch Your Vocabulary More Than Your Pre-training Data</h1>
+<h3>R. Kinds, S. Abdi, D. Timmer, S. van Loon, T. Caselli</h3>
+<h6>University of Groningen</h6>
+<br>
+Language Models (LMs) have revolutionized Natural Language Processing. It is known that the success of LMs is largely dependent on three main factors: the Transformer architecture and the self-attention mechanism; the availability of large amounts of data for pre-training; and the training objective(s). Additionally, the size of LMs plays a role. Empirical evidence has shown that a valid strategy to improve the performance of these models is scaling up: increase the number of layers, the number of attention heads, the embedding size, the vocabulary size, and the total number of parameters. Nevertheless, there are still issues that are far from being solved. Bacco et al., (2023) observed an instability of encoder-based LMs when further pre-trained. More recently, Petty et al. (2024) have investigated the impact of depth (i.e., number of layers) and width (i.e., number of attention heads) of encoder-based LMs when controlling for the total number of parameters, showing that if there are constraints on the total size of the model, increasing its depth is not an optimal solution to improve their performance.<br>
+In this contribution we compare  four monolingual LMs for Dutch when tested for offensive and abusive language detection against the DALC corpus (Caselli et al., 2022). In particular, we compare a BERT-based architecture, BERTje, against three RoBERTa-based models, namely RobBERT-v2, RobBERT-2022, and RobBERT-2023. All the models correspond to the base versions, presenting the same depth and width. The differences concern: the pre-training objective, with the RoBERTa-based using only MLM; the size of their vocabulary, with BERTje having only 30k tokens and the RobBERT LMs ranging between 40k up to 50k; the pre-training data, with RobBERT LMs using different versions of the OSCAR corpus (with increasing sizes) and BERTje a more controlled dataset composed by Wikipedia, news articles, and books. BERTje, RobBERT-v2, and RobBERT-2023 are all trained from scratch while RobBERT-2022 is a further pre-trained version (with a larger vocabulary) of RobBERT-v2. In addition to this, RobBERT-2023 adopts the Tik-to-Tok approach where token embeddings are initialized using the English RoBERTa model. Considering the commonalities of these models, we expect that the LM with the biggest vocabulary and largest pre-training data would result in the best performing once fine-tuned. However, this is not the case. For offensive language, RobBERT-v2 and RobBERT-v2 outperform BERTje (macro-F1 0.816 and 0.818 vs. 0.799), while RobBERT-2023 lags behind (macro-F1 0.775). The same behavior is observed when testing for abusive language, where RobBERT-2023 has a macro-F1 of 0.693 with a negative Δ=0.09 against RobBERT-v2, 0.11 against RobBERT-2022, and 0.02 against BERTje.<br>
+Contrary to the expectation that larger vocabularies and extensive pre-training data yield superior results, our analysis reveals additional dynamics at play. While RobBERT-2023 boasts the largest resources, it underperforms compared to RobBERT-v2 and RobBERT-2022. Surprisingly, BERTje, with a more focused dataset, also competes favorably. These findings underscore the need for nuanced considerations in LM development, beyond sheer scalability, to refine model design and enhance their applicability across diverse linguistic contexts. 
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

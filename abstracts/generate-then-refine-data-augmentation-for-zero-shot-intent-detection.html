@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Generate then Refine: Data Augmentation for Zero-shot Intent Detection</h1>
+<h3>I-Fan Lin</h3>
+<h6>Leiden University</h6>
+<h3>Faegheh Hasibi</h3>
+<h6>Radboud University</h6>
+<h3>Suzan Verberne</h3>
+<h6>Leiden University</h6>
+<br>
+Intent detection is one of the tasks in natural language understanding, commonly served as a common component in task-oriented dialogue systems. Its objective is to categorize user utterances into predefined classes of user intents. The advent of transformer-based models has significantly elevated the performance of intent detection. However, when faced with previously unseen domains and intents, a considerable challenge emerges, primarily stemming from data scarcity.
+<br><br>
+Data augmentation is a viable solution. Lee et al .[1]employ extrapolation techniques with a sequence-to-sequence model to generate new, under-represented utterances. Alternatively, leveraging the advancements in LLMs, Sahu et al.[2] use GPT-3 with in-context learning to get additional utterances. Lin et al [3] adopted a similar approach, using LLMs to generate synthetic examples, and then selecting  useful data for training based on the Pointwise V-Information metric.
+<br><br>
+Our approach differs from previous research in two key ways. Firstly, we specifically consider the zero-shot (instead of the few-shot) setting. This increases the challenge for LLMs to provide high-quality data. Secondly, rather than relying on a formula-based metric, we opt for a potentially more flexible approach -- the Refiner. The Refiner directly generates refined data instead of filtering out irrelevant samples. Our approach is based on an underlying assumption that domain-invariant patterns exist and we can learn them from sufficiently labeled data, including aspects such as utterance diversity, the use of synonymy, and other hidden features identified by the model during training.
+<br><br>
+Our Refiner includes  two stages: First, we generate utterances for intent labels using an open-source large language model in a zero-shot setting. Second, we use a smaller sequence-to-sequence model (the Refiner), to improve the generated utterances. The Refiner is fine-tuned on seen domains. We evaluate our method by training an intent classifier on the generated data, and evaluating it on real (human) data. We find that the Refiner can significantly improve the data quality over the zero-shot LLM baseline for unseen domains, with substantial improvements over seen domains.
+<br><br>
+Our results indicate that a two-step approach of a generative LLM in zero-shot setting and a smaller sequence-to-sequence model can provide high-quality data for intent detection:  Classifiers trained on data refined by the Refiner had a higher accuracy compared to those trained solely on utterances generated directly from LLMs. Additionally, using the lexical metrics metric demonstrated that the refined utterances show greater resemblance to real utterances. 
+<br><br>
+[1] Lee, K., Guu, K., He, L., Dozat, T., & Chung, H. W. (2021). Neural data augmentation via example extrapolation. arXiv preprint arXiv:2102.01335.<br>
+[2] Sahu, G., Rodriguez, P., Laradji, I., Atighehchian, P., Vazquez, D., & Bahdanau, D. (2022, May). Data Augmentation for Intent Classification with Off-the-shelf Large Language Models. In Proceedings of the 4th Workshop on NLP for Conversational AI (pp. 47-57). <br>
+[3] Lin, Y. T., Papangelis, A., Kim, S., Lee, S., Hazarika, D., Namazifar, M., ... & Hakkani-Tur, D. (2023, May). Selective In-Context Data Augmentation for Intent Detection using Pointwise V-Information. In Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics (pp. 1463-1476).

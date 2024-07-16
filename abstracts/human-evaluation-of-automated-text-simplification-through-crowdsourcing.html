@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Human Evaluation of Automated Text Simplification through Crowdsourcing</h1>
+<h3>Vincent Vandeghinste, Job van Doeselaar, Bram Vanroy</h3>
+<h6>Instituut voor de Nederlandse Taal</h6>
+<br>
+Automated metrics for evaluation of text simplification face several challenges. One of these challenges is that they often require gold standard reference simplifications to which the automated simplifications are compared. This is the case for metrics such as SARI, BLEU, ROUGE, BERTscore. For research in Dutch simplification, there are hardly any reference sets available, and if they are available, they consist of (automatic) translations of English test sets, as in Seidl & Vandeghinste (2024). In order to create a large scale gold standard test set we have set up a crowdsourcing application that allows users to manually evaluate automatic simplifications, on the following dimensions:<br>
+Users are asked to judge the fluency of sentences (is the sentence written in correct Dutch?)<br>
+Users are asked to judge the simplicity of sentences<br>
+Users are asked for a sentence pair which of the pair is the simplest sentence<br>
+Users are asked to judge the accuracy of the simplification (does the simplified sentence have the same meaning as the original?)<br>
+To stimulate user engagement we have included a score based on effort, speed, agreement and multi-day streaks and a user score board. The website will be available at https://duidelijketaal.ivdnt.org/ by the time of the conference. 
+<br><br>
+The sentences are uploaded in batches of 100 sentence pairs, in order to ensure multiple judgements per sentence pair. We have created a test set of 6986 sentence pairs, selecting the original sentences from the WRPEI component of the SONAR corpus, which consists of websites. We have chosen this component as it supposedly contains language which is directed to the general public and therefore is expected to be plain language. We have selected only sentences with more than 10 and fewer than 50 words, containing at least one verb, with a Leesindex coefficient (Brouwer 1961) higher than 60, and which consist of more than one clause. This was done with the tooling as described in Vandeghinste and Bulté (2019), in order to simplify sentences with a reasonable complexity to begin with. These sentences were automatically simplified using GPT-4 with the same prompt as used in the UWV/Leesplank project available on HuggingFace.<br>
+The resulting dataset will be made available in the CLARIN infrastructure at the Instituut voor de Nederlandse Taal. 
+<br><br>
+References<br>
+Theresa Seidl and Vincent Vandeghinste (2024). Controllable Sentence Simplification in Dutch. Computational Linguistics in the Netherlands Journal. Vol 13. pp. 31–61.<br>
+Vincent Vandeghinste and Bram Bulté (2019). Linguistic Proxies of Readability: Comparing Easy-to-Read and regular newspaper Dutch. Computational Linguistics in the Netherlands Journal, vol. 9. p. 81-100.

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/human-evaluation-of-automated-text-simplification-through-crowdsourcing/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/human-evaluation-of-automated-text-simplification-through-crowdsourcing/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/human-evaluation-of-automated-text-simplification-through-crowdsourcing/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Human Evaluation of Automated Text Simplification through Crowdsourcing</h1>
+<h3>Vincent Vandeghinste, Job van Doeselaar, Bram Vanroy</h3>
+<h6>Instituut voor de Nederlandse Taal</h6>
+<br>
+Automated metrics for evaluation of text simplification face several challenges. One of these challenges is that they often require gold standard reference simplifications to which the automated simplifications are compared. This is the case for metrics such as SARI, BLEU, ROUGE, BERTscore. For research in Dutch simplification, there are hardly any reference sets available, and if they are available, they consist of (automatic) translations of English test sets, as in Seidl & Vandeghinste (2024). In order to create a large scale gold standard test set we have set up a crowdsourcing application that allows users to manually evaluate automatic simplifications, on the following dimensions:<br>
+Users are asked to judge the fluency of sentences (is the sentence written in correct Dutch?)<br>
+Users are asked to judge the simplicity of sentences<br>
+Users are asked for a sentence pair which of the pair is the simplest sentence<br>
+Users are asked to judge the accuracy of the simplification (does the simplified sentence have the same meaning as the original?)<br>
+To stimulate user engagement we have included a score based on effort, speed, agreement and multi-day streaks and a user score board. The website will be available at https://duidelijketaal.ivdnt.org/ by the time of the conference. 
+<br><br>
+The sentences are uploaded in batches of 100 sentence pairs, in order to ensure multiple judgements per sentence pair. We have created a test set of 6986 sentence pairs, selecting the original sentences from the WRPEI component of the SONAR corpus, which consists of websites. We have chosen this component as it supposedly contains language which is directed to the general public and therefore is expected to be plain language. We have selected only sentences with more than 10 and fewer than 50 words, containing at least one verb, with a Leesindex coefficient (Brouwer 1961) higher than 60, and which consist of more than one clause. This was done with the tooling as described in Vandeghinste and Bulté (2019), in order to simplify sentences with a reasonable complexity to begin with. These sentences were automatically simplified using GPT-4 with the same prompt as used in the UWV/Leesplank project available on HuggingFace.<br>
+The resulting dataset will be made available in the CLARIN infrastructure at the Instituut voor de Nederlandse Taal. 
+<br><br>
+References<br>
+Theresa Seidl and Vincent Vandeghinste (2024). Controllable Sentence Simplification in Dutch. Computational Linguistics in the Netherlands Journal. Vol 13. pp. 31–61.<br>
+Vincent Vandeghinste and Bram Bulté (2019). Linguistic Proxies of Readability: Comparing Easy-to-Read and regular newspaper Dutch. Computational Linguistics in the Netherlands Journal, vol. 9. p. 81-100.
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

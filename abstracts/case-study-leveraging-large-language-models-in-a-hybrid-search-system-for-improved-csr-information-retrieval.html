@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Case Study: Leveraging Large Language Models in a Hybrid Search System for Improved CSR Information Retrieval</h1>
+<h3>Lorenzo Lazzari, Carlos Villacampa Calvo, Sophia Katrenko</h3>
+<h6>EcoVadis</h6>
+<br>
+Retrieving pertinent information from extensive documents, especially for complex queries with nuanced semantic subtleties to consider, poses a significant challenge in information retrieval (IR). Our work analyzes approaches that seamlessly integrate the efficiency of a standard search engine with the deep comprehension capabilities of Large Language Models (LLMs) within a specific case in the domain of Corporate Social Responsibility (CSR). Our architectural framework consists of a two-stage process. 
+<br><br>
+First, we harness the Elasticsearch search engine with the bm25 algorithm to retrieve the top n relevant pages based on the complete query text. Acknowledging the limitations of this initial sparse vector retrieval, yet confident in the selection of viable candidates, we introduce a subsequent stage of smarter re-ranking and filtering.
+<br><br>
+One effective approach involves utilizing a large and powerful commercial LLM, such as the GPT-4 Turbo model by OpenAI, with tailored prompt engineering to enhance the retrieval process. In this approach, all top n search results, along with the query, are input into the LLM for reranking and eventual filtering based on relevance. This strategy leverages the advanced language understanding capabilities of the LLM to enhance the precision and quality of IR.
+<br><br>
+In scenarios like ours, where simple binary labeled feedback (indicating relevance or irrelevance of a single search result to the query) is gathered within the system or from curated datasets, we can apply a supervised learning (SL) approach within the LLM framework. This data provides explicit relevance judgments for query-result pairs, enabling SL for relevance prediction. 
+<br><br>
+For the SL approach, we fine-tuned a relatively small open-source LLM (Llama-3 8B) with a classifier architecture. This involved incorporating a classification layer at the top, rather than the standard language modeling layer typically used for predicting subsequent tokens in chat-oriented decoder only models.
+For the training procedure we employed the QLoRA technique, fine-tuning a small portion (< 1%) of the model parameters together with the clean instantiated classification head, using just consumer grade GPU.
+<br><br>
+This task-specific fine-tuned LLM model acts as a binary classifier, assessing the relevance of a candidate retrieved page in relation to the query and assigning a probability score. The pool of scored predictions on the top n results retrieved by the first-level search engine can then be used for re-ranking and eventual filtering.
+<br><br>
+In our business task-related English dataset, the supervised Llama-3 8B approach improved the baseline search engine retrieval performance by increasing the precision of the first retrieved page (P@1) by 0.11. Furthermore, it outperformed the unsupervised GPT-4 Turbo, achieving an increase of 0.08 in P@1 precision compared to the baseline.
+<br><br>
+This applied analysis highlights the efficacy of integrating traditional search engines with LLM capabilities to rapidly enhance performance and precision in complex IR tasks by adding an additional step in the search system. We provide evidence of the significant potential of fine-tuning smaller, open-source LLMs on accessible hardware to achieve comparable or superior results compared to significantly larger and more resource-intensive models, along with the capacity for continuous learning within the architecture itself.

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/predicting-initial-quality-scores-of-dutch-essays-with-language-models-to-warm-start-comparative-judgment-assessments/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/predicting-initial-quality-scores-of-dutch-essays-with-language-models-to-warm-start-comparative-judgment-assessments/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/predicting-initial-quality-scores-of-dutch-essays-with-language-models-to-warm-start-comparative-judgment-assessments/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Predicting Initial Quality Scores of Dutch Essays with Language Models to Warm-Start Comparative Judgment Assessments</h1>
+<h3>Michiel De Vrindt</h3>
+<h6>imec research group ITEC, KU Leuven</h6>
+<h3>Anaïs Tack</h3>
+<h6>imec research group ITEC, KU Leuven</h6>
+<h3>Renske Bouwer</h3>
+<h6>Institute for Language Sciences, Utrecht University</h6>
+<h3>Wim Van Den Noortgate</h3>
+<h6>imec research group ITEC, KU Leuven</h6>
+<h3>Marije Lesterhuis</h3>
+<h6>Center for Research and Development of Health Professions Education, UMC Utrecht</h6>
+<br>
+The Comparative Judgment (CJ) method involves comparing pairs of items, such as essays, and estimating a final ranking (scoring) based on these comparisons. The assessment method has been applied to various domains, including assessing writing quality. While CJ is known to have high validity and reliability, it can suffer from inefficiency due to the need for numerous judgments before scores become reliable. To increase the efficiency of CJ, adaptive selection rules have been proposed (Pollitt, 2012). However, these rules face challenges: they cannot be used at the start of the assessment due to a “cold start” (i.e., the quality scores are unknown as no judgments have been made yet), and during assessment, they may inflate reliability estimates, causing biased quality scores. 
+<br><br>
+To address these challenges, we ran an experiment where we trained and evaluated language models to predict the quality scores of essays to increase the efficiency of CJ. Utilizing a dataset of Dutch essays centered on three argumentative topics (Lesterhuis et al., 2022), we fine-tuned several Dutch language models — BERTje (de Vries et al., 2019), RobBERT (Delobelle et al., 2022), and RobBERTje (Delobelle et al., 2021) — to predict the initial quality scores of essays at the start of an assessment. We trained models on completed assignments to predict scores for a new (unseen) assignment, simulating a real-world CJ scenario. We compared the performance of models fine-tuned solely on essay text to models incorporating both essay and prompt information. Our findings suggest that the RobBERT model consistently achieved the highest reliability of the predicted quality scores for Dutch essays by fine-tuning with both essay and prompt information. 
+<br><br>
+After having evaluated these Dutch language models, we examined two ways of integrating the predicted initial quality scores into CJ to increase the efficiency of the assessment. Firstly, we used the predicted quality scores to warm-start CJ by constructing informative prior distributions for the quality scores. We conducted simulations of CJ assessments to compare a warm-start Bradley-Terry-Luce (BTL) model with a cold-start BTL model, where initial quality scores are absent. Through our simulation study, we demonstrate that our approach increases the efficiency of CJ. On average, assessors need to make 30% fewer judgments for each essay to reach an overall reliability level of 0.70.  
+<br><br>
+Secondly, we used the predicted quality scores to devise an efficient selection rule to select pairs of essays. We constructed a selection rule based on the predicted quality scores used for warm-starting CJ. In addition to considering quality scores derived from texts, we also explored selection pairs based on textual differences between essay texts. As embeddings capture deeper semantic relationships between texts, we scrutinized the relationships between the fine-tuned embeddings of essay texts to select essay pairs. In a second simulation study, we compared various adaptive selection methods based on the predicted quality scores and essay embeddings. The results show that integrating the predicted quality scores in a selection rule further increases the efficiency of CJ by reducing the number of judgments required to obtain reliable quality scores. 
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

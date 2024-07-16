@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Classifying Utterances with Collaborative Problem-Solving Strategies in Student Teamwork Interactions</h1>
+<h3>Anaïs Tack, Tuba Özturan, Siem Buseyne</h3>
+<h6>imec research group ITEC, KU Leuven</h6>
+<br>
+Collaborative problem-solving (CPS) entails a collaborative effort to tackle complex issues through teamwork, communication, and shared decision-making (e.g., Graesser et al., 2018; Oliveri et al., 2017). Recognizing the importance of developing CPS competence, various stakeholders have emphasized the need to incorporate CPS practices into education (OECD, 2017; World Economic Forum, 2020). Yet, educators encounter challenges in promoting effective teamwork, such as managing individual contributions, defining roles, maintaining team dynamics, and crafting quality learning experiences (e.g., Graesser et al., 2018). Moreover, educators lack automated tools to support collaboration among learners. One promising approach involves utilizing natural language processing to transcribe speech and classify utterances into CPS strategies automatically. However, despite its potential, there's a scarcity of research on using computational models to identify CPS strategies in teamwork transcripts (Stewart et al., 2019, 2021, 2023), especially in the context of the Dutch language.
+<br><br>
+In this presentation, we assess the efficacy of current Dutch language models in capturing CPS strategies within collaborative learning contexts. We draw upon confidential data sourced from the Supporting Teamwork in Ambient Learning Spaces (STEAMS) project (Buseyne et al., 2022; Buseyne, Rajagopal, et al., 2023; Buseyne, Vrijdags, et al., 2023). This project aimed to address the aforementioned challenges by seamlessly integrating digital and physical learning environments to foster meaningful CPS experiences. The STEAMS dataset includes, among others, interactions from multiple teams, each comprised of four Dutch-speaking (Belgian) adults working on CPS tasks. The conversational data used in this study were collected and annotated by Buseyne, Rajagopal, et al. (2023). The data comprise 5,473 manually transcribed utterances, each labeled with various CPS strategies. Using this data, we fine-tuned and evaluated various Dutch language models for utterance classification, including the BERTje (de Vries et al., 2019) and RobBERT (Delobelle et al., 2020, 2022) models. Our evaluation includes cross-validation experiments to determine the accuracy of these models in classifying utterances according to CPS strategies.
+<br><br>
+References
+<br><br>
+Buseyne, S., Raes, A., Rajagopal, K., Vanneste, S., Windey, I., De Croon, R., Gutiérrez Hernández, F., Htun, N. N., & Verbert, K. (2022). Supporting teamwork in ambient learning spaces (STEAMS) by developing content and tools.<br>
+Buseyne, S., Rajagopal, K., Danquigny, T., Depaepe, F., Heutte, J., & Raes, A. (2023). Assessing verbal interaction of adult learners in computer‐supported collaborative problem solving. British Journal of Educational Technology, bjet.13391. https://doi.org/10.1111/bjet.13391<br>
+Buseyne, S., Vrijdags, A., & Raes, A. (2023). Productive Failure as a Method for Learning about Effective Collaborative Problem Solving. International Journal of Designs for Learning, 14(1), 46-61. https://doi.org/10.14434/ijdl.v14i1.35221<br>
+de Vries, W., van Cranenburgh, A., Bisazza, A., Caselli, T., van Noord, G., & Nissim, M. (2019). BERTje: A Dutch BERT Model (arXiv:1912.09582). arXiv. https://doi.org/10.48550/arXiv.1912.09582<br>
+Delobelle, P., Winters, T., & Berendt, B. (2020). RobBERT: A Dutch RoBERTa-based Language Model. Findings of the Association for Computational Linguistics: EMNLP 2020, 3255-3265. https://doi.org/10.18653/v1/2020.findings-emnlp.292<br>
+Delobelle, P., Winters, T., & Berendt, B. (2022). RobBERT-2022: Updating a Dutch Language Model to Account for Evolving Language Use (arXiv:2211.08192). arXiv. http://arxiv.org/abs/2211.08192<br>
+Graesser, A. C., Fiore, S. M., Greiff, S., Andrews-Todd, J., Foltz, P. W., & Hesse, F. W. (2018). Advancing the Science of Collaborative Problem Solving. Psychological Science in the Public Interest, 19(2), 59-92. https://doi.org/10.1177/1529100618808244<br>
+OECD. (2017). PISA 2015 Results: Collaborative Problem Solving: Vol. V. OECD Publishing. https://doi.org/10.1787/9789264091504<br>
+Oliveri, M. E., Lawless, R., & Molloy, H. (2017). A Literature Review on Collaborative Problem Solving for College and Workforce Readiness. ETS Research Report Series, 2017(1), 1-27. https://doi.org/10.1002/ets2.12133<br>
+Stewart, A. E. B., Keirn, Z., & D’Mello, S. K. (2021). Multimodal modeling of collaborative problem-solving facets in triads. User Modeling and User-Adapted Interaction, 31(4), 713-751. https://doi.org/10.1007/s11257-021-09290-y<br>
+Stewart, A. E. B., Rao, A., Michaels, A., Sun, C., Duran, N. D., Shute, V. J., & D’Mello, S. K. (2023). CPSCoach: The Design and Implementation of Intelligent Collaborative Problem Solving Feedback. In N. Wang, G. Rebolledo-Mendez, N. Matsuda, O. C. Santos, & V. Dimitrova (Red.), Artificial Intelligence in Education (Vol. 13916, pp. 695-700). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-36272-9_58<br>
+Stewart, A. E. B., Vrzakova, H., Sun, C., Yonehiro, J., Stone, C. A., Duran, N. D., Shute, V., & D’Mello, S. K. (2019). I Say, You Say, We Say: Using Spoken Language to Model Socio-Cognitive Processes during Computer-Supported Collaborative Problem Solving. Proceedings of the ACM on Human-Computer Interaction, 3(CSCW), 1-19. https://doi.org/10.1145/3359296<br>
+World Economic Forum. (2020). The Future of Jobs Report 2020. https://www.weforum.org/reports/the-future-of-jobs-report-2020/digest

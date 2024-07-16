@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>A pilot study and framework for using and analyzing social scientist’s interaction strategies with Instruction-Tuned LLMs</h1>
+<h3>Myrthe Reuver</h3>
+<h6>Vrije Universiteit Amsterdam</h6>
+<h3>Indira Sen</h3>
+<h6>University of Konstanz</h6>
+<h3>Gabriella Lapesa</h3>
+<h6>GESIS - Leibniz-Institut für Sozialwissenschaften and Heinrich-Heine University Düsseldorf</h6>
+<br>
+Prompt-based, instruction-tuned models or Large Language Models (LLMs) such as GPT [1] and Mistral [2] are easy to use, and increasingly used by social scientists in their text-as-data analyses for constructs such as sexism and media frames. [3] These interactive generative models produce coherent and convincing (while not necessarily factually correct) conversations, due to their training on human feedback. [4] 
+<br><br>
+Social scientists with in-depth knowledge of these constructs may have strategies in interactions with LLMs to assess model suitability for the further use of the model in their research. Such interactions are currently collected, but not shared, by proprietary companies [8].  These conversations may be an avenue of hybrid intelligence [5, 6]: using expert knowledge together with model knowledge to improve model classification results.  Other work has used LLM-generated as well as human-generated definitions of complex constructs for zero-shot classification of texts. [7] However, under-researched is work on co-created definitions in such zero-shot classification. We analyze social scientists’ interaction strategies with LLMs, and use definitions generated in these interactions for zero-shot learning with these same LLMs.
+<br><br>
+Our research questions are:<br>
+- How do experts with knowledge of social science theory interact with and evaluate LLMs for construct detection? <br>
+- Can we use expert-LLM interactions for expert-LLM hybrid intelligence, in the form of co-created definitions, for detecting social science constructs?
+<br><br>
+We research expert interactions with LLMs, specifically GPT3.5, on two complex constructs: sexism and media frames. We have developed a survey in which participants can directly interact with LLMs. We record expert’s input and model output in a 10-turn interaction, with two tasks for experts: <br>
+1. assess model suitability for detecting constructs based on their conversation; <br>
+2. co-create definitions usable for zero-shot LLM classification of these constructs. 
+<br><br>
+This work contributes to the literature with: a) a survey-based framework to record user’s multi-turn interactions with LLMs; b) a dataset of expert-LLM interactions, as well as validated Likert scale data on how experts rated these models based on these conversations; c) an in-depth analysis of expert interactions to get definitions and prompts for LLMs, and their impact on model performance. 
+<br><br>
+Our initial pilot experiments indicate that experts have different strategies for assessing model suitability for detecting content: some ask for definitions of the construct, some instead ask the model to classify typical examples, and others quiz the model on its in-depth knowledge. In larger-scale experiments, we plan to qualitatively analyze interactions between experts and LLMs, and assess how qualitative trends and categories correspond to experts’ ratings of the interactions and models. Additionally, we plan to analyze how the qualitative analyses of different interaction strategies connect to the benchmark performance of these same LLMs with zero-shot classification using the co-created definitions. Our presentation will show the (preliminary) results of these analyses. (457 words)
+<br><br>
+References<br>
+[1] Brown, T., et al. (2020). Language models are few-shot learners. In Advances in neural information processing systems 33, 1877-1901.<br>
+[2] Jiang, A. Q., Sablayrolles, A., Mensch, A., Bamford, C., Chaplot, D. S., Casas, D. D. L., ... & Sayed, W. E. (2023). Mistral 7B. arXiv preprint arXiv:2310.06825.<br>
+[3] Weber, M., & Reichardt, M. (2023). Evaluation is all you need. Prompting Generative Large Language Models for Annotation Tasks in the Social Sciences. A Primer using Open Models. arXiv preprint arXiv:2401.00284.<br>
+[4] Griffith, S., Subramanian, K., Scholz, J., Isbell, C. L., & Thomaz, A. L. (2013). Policy shaping: Integrating human feedback with reinforcement learning. Advances in neural information processing systems, 26.<br>
+[5] Akata, Z., Balliet, D., De Rijke, M., Dignum, F., Dignum, V., Eiben, G., ... & Welling, M. (2020). A research agenda for hybrid intelligence: augmenting human intellect with collaborative, adaptive, responsible, and explainable artificial intelligence. Computer, 53(8), 18-28.<br>
+[6] Dellermann, D., Ebel, P., Söllner, M., & Leimeister, J. M. (2019). Hybrid intelligence. Business & Information Systems Engineering, 61(5), 637-643.<br>
+[7] Youri Peskine, Damir Korenčić, Ivan Grubisic, Paolo Papotti, Raphael Troncy, and Paolo Rosso. 2023. Definitions Matter: Guiding GPT for Multi-label Classification. In Findings of the Association for Computational Linguistics: EMNLP 2023, pages 4054–4063, Singapore<br>
+[8] Liesenfeld, A., Lopez, A., & Dingemanse, M. (2023). Opening up ChatGPT: Tracking openness, transparency, and accountability in instruction-tuned text generators. In Proceedings of the 5th International Conference on Conversational User Interfaces (CUI '23), Article 47, 1–6. https://doi.org/10.1145/3571884.3604316

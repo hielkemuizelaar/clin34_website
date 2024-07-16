@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Speech-to-Text Translation: Cascaded or End-to-end? Multidimensional Comparative Evaluation</h1>
+<h3>Lilit Kharatyan</h3>
+<h6>Julius Maximilian University of Würzburg</h6>
+<h3>Frédéric Blain</h3>
+<h6>Tilburg University</h6>
+<h3>Gloria Corpas Pastor</h3>
+<h6>University of Malaga</h6>
+<br>
+The current study conducts a detailed evaluation of cascaded and end-to-end speech-to-text translation models, comparing them across various dimensions. Distinctively, unlike prevailing research which primarily focuses on enhancing the translation component of these models through various modifications, our approach identifies and addresses a gap in the assessment of additional model attributes. In alignment with established metrics for translation quality evaluation, our study extends the examination to include criteria such as latency, practicality, resource consumption, explainability, and adaptability to diverse domains. By integrating these parameters, our analysis seeks to provide an exhaustive understanding of the performance and utility of these models in a range of practical applications.
+<br><br>
+The study is driven by pivotal research questions aimed at uncovering the multifaceted impacts of model architecture on translation accuracy and system performance. 
+1) Initially, the extent to which architectural variations influence the translation output and the individual effectiveness of components within cascaded systems (ASR/MT, including the optional integration of components such as punctuation or grammar enhancement models) is investigated, with a focus on their impact on auxiliary characteristics such as latency and resource consumption. 
+2) Subsequently, systematic differences in error patterns between cascaded and end-to-end models are identified, and the correlation of these discrepancies with human post-editing evaluations is examined. 
+3) Furthermore, the effectiveness and applicability of current automatic metrics in capturing the quality of translations, as perceived by human evaluators, are assessed, probing the potential misalignments between these two assessment methods. 
+4) Lastly, the adaptability of these models across diverse application domains is explored, analyzing how performance varies with changes in speaker characteristics and environmental complexities, such as accented speech, paralinguistic information, and background noise. 
+This comprehensive exploration aims to elucidate the nuanced capabilities and limitations of each architectural approach, providing a robust framework for their application in varied real-world settings.
+<br><br>
+The findings of this study delineate the distinct advantages and limitations of cascaded and end-to-end speech-to-text translation models. Cascaded models, although slower due to extensive processing requirements, excel in translation accuracy and are particularly effective in settings that demand detailed output, such as literary and political discourse where complex narrative structures and speech irregularities dominate. Conversely, end-to-end models provide advantages in scenarios where rapid response is crucial, simplifying operational demands but exhibiting a higher propensity for errors such as mistranslations, omissions, and grammatical inaccuracies.
+<br><br>
+Contrary to expectations, both cascaded and end-to-end models demonstrate comparable computational resource consumption, despite the multi-component complexity of cascaded systems. This similarity suggests that the efficiency of end-to-end models may not be as pronounced as assumed. The study also critically examines the misalignment between current automatic metrics and human judgment, particularly in handling speech-specific elements and spoken punctuation. Such inconsistencies challenge the applicability of these metrics for accurately evaluating translation quality. Additionally, cascaded models provide enhanced explainability due to the visibility of component outputs, which facilitates more effective error diagnosis and system refinement.
+<br><br>
+The apparent dichotomy in how these models function suggests that selection should be based on the specific goals of a project. The insights provided by our results can guide this decision-making process, aiding in the selection of the appropriate architecture or in identifying aspects that warrant further development within these architectures.

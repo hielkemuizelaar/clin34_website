@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/assets/styles.css"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The 34th Meeting of Computational Linguistics in The Netherlands</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:locale" content="en" />
+<link rel="canonical" href="http://localhost:4000/abstracts/can-we-detect-the-need-for-closure-bias-in-social-media-behavior/" />
+<meta property="og:url" content="http://localhost:4000/abstracts/can-we-detect-the-need-for-closure-bias-in-social-media-behavior/" />
+<meta property="og:site_name" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The 34th Meeting of Computational Linguistics in The Netherlands" />
+<meta name="twitter:site" content="@hielkemuizelaar" />
+<meta name="google-site-verification" content="xxxxx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"The 34th Meeting of Computational Linguistics in The Netherlands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo.png"}},"url":"http://localhost:4000/abstracts/can-we-detect-the-need-for-closure-bias-in-social-media-behavior/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The 34th Meeting of Computational Linguistics in The Netherlands" />
+</head>
+
+
+  <body>
+
+    <div class="container pure-g"><div class="sidebar-left pure-u-1 pure-u-md-1-4" style="background-color: rgb(40, 73, 77); color: rgb(255, 255, 255); background-image: url(/ul.jpg);">
+
+<header class="masthead">
+  <div class="avatar"><img src="/logo_placeholder.png" class="avatar-image" alt="">
+    </div>
+  <div class="masthead-title">
+    <a href="/" title="Home">The 34th Meeting of Computational Linguistics in The Netherlands</a>
+  </div>
+  <div class="masthead-tagline">
+    <small></small>
+  </div><div class="social pure-menu pure-menu-horizontal">
+      <ul class="social-icons pure-menu-list">
+      <li class="pure-menu-item">
+          <a class="social-icon pure-menu-link" href="mailto:clin34@leidenuniv.nl">
+            <i class="fas fa-envelope" title="Email"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+</header>
+</div>
+
+      <div class="content pure-u-1 pure-u-md-1-2"><main>
+  <div class="home-header pure-menu pure-menu-horizontal">
+  <div class="home-header-bar">
+    
+    <ul class="home-header-menu pure-menu-list">
+      
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link "">Home</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/sponsors/" class="pure-menu-link "">Sponsors</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/program/" class="pure-menu-link "">Program</a>
+        </li>
+      
+        <li class="pure-menu-item">
+          <a href="/2024/07/05/registration-open/" class="pure-menu-link "">Register here</a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Can we detect the need-for-closure bias in social media behavior?</h1>
+<h3>Matthijs Westera, Mark Rademaker</h3>
+<h6>Leiden University</h6>
+<br>
+The questions we entertain can affect how we process incoming information (Grossnickle, 2016). We are more likely to accept information that answers our previous questions, a bias known as need-for-closure (Webster \& Kruglanski, 1994). 
+Despite this, the effects of questions in social media on users' adoption of (dis)information have hardly been studied. Our work aims to detect the need-for-closure bias in a newly collected corpus of hundreds of thousands of Reddit posts. Do social media users more readily accept information that answers a question they were previously exposed to?
+<br><br>
+Through the Reddit API, we obtained the 1000 most recent posts from a predetermined set of subreddits. Among the authors of these posts, we selected user accounts older than three years, expecting enough longitudinal data to detect long-term effects of the need-for-closure bias.
+For each of these users, we downloaded their top 1000 posts, resulting in a dataset of over 400K posts, with collection ongoing. For each post, we also collected its parent post (if it replies to another post) and any children (replies).
+<br><br>
+In the resulting dataset, we identify what we call pivots: sentences from posts with which a user has interacted (e.g., replied to) and which potentially affected their beliefs. For each pivot, we check (i) whether it answers a question from a post the user previously interacted with, and (ii) whether the user subsequently adopts the pivot. We hypothesize that pivots that answer a prior question with which the user engaged, tend to be entailed more by the user's subsequent posts: a direct operationalization of the need-for-closure bias.
+We expect it to be only a small effect, due to the noisy and varying nature of social media text, but an effect nonetheless.
+<br><br>
+Given the scale of our dataset, we compute the two crucial features with off-the-shelf models for Question Answering (QA; an Albert-xxlarge model trained on the SQuAD v2 dataset (Rajpurkar, 2018)) and Natural Language Inference Model (NLI; an Albert-xxlarge model trained on the datasets MNLI (Williams, 2017) and SNLI (Bowman, 2015):<br>
+The first gives us a proxy for the degree to which a pivot answers a prior question with which the user engaged; the second gives us an estimate of whether subsequent posts by the user logically entail (i.e., endorse) the pivot.<br>
+We worked around some limitations of these models; for instance, we exclude overly long or short sentences, and use additional classifiers to identify and exclude overly subjective or abstract sentences, which we found lead to false positives from the QA and NLI models.<br>
+Moreover, in our statistical analysis we isolate potential effects of the QA and entailment scores from those of plain relatedness (embedding similarity).
+<br><br>
+We relate our findings to work on disinformation, work in Linguistics on how questions can be triggered implicitly, and to studies in Psychology on the effects of questions, beyond need-for-closure, on information processing, mental health and social cohesion.<br>
+We hope to spur additional research into questions as a window onto our individual and collective curiosity, doubts, and vulnerabilities to disinformation.
+</main>
+<footer class="footer">
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center; /* Align items horizontally in the center */
+      gap: 20px; /* Optional: Adds some space between the images */
+      padding: 20px 0; /* Optional: Adds some padding above and below the images */
+    }
+
+    .image-container div {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <div class="image-container">
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">
+        <img src="/lucl.png" alt="LUCL" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/science/computer-science">
+        <img src="/liacs.jpg" alt="LIACS" width="240" height="150">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.universiteitleiden.nl/en/humanities/centre-for-digital-humanities">
+        <img src="/lucdh.png" alt="LUCDH" width="240" height="240">
+      </a>
+    </div>
+  </div>
+</footer>
+<small>
+  &copy; 2024 CLIN 34 Organisators. All rights reserved. Contact us via <a href="mailto:clin34@leidenuniv.nl">email</a>.
+</small>
+</div>
+      <div class="sidebar-right pure-u-1 pure-u-md-1-4">
+
+</div>
+    </div>
+
+    <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script><script>
+  function strip(str, remove) {
+    while (str.length > 0 && remove.indexOf(str.charAt(0)) != -1) {
+      str = str.substr(1);
+    }
+    while (str.length > 0 && remove.indexOf(str.charAt(str.length - 1)) != -1) {
+      str = str.substr(0, str.length - 1);
+    }
+    return str;
+  }
+
+  function scroll() {
+    console.log('scroll');
+    window.scrollTo({
+      left: 0, 
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+    sessionStorage.removeItem('forceCheckScroll');
+  }
+
+  const forceCheckScroll = sessionStorage.getItem('forceCheckScroll') === 'true';
+  const checkScroll = strip(window.location.pathname, '/') !== strip('', '/');
+
+  if (forceCheckScroll || checkScroll) {
+    const maxWidth = "(max-width: 48rem)";
+    const result = window.matchMedia(maxWidth);
+    if (result.matches) {
+      scroll();
+    } else {
+      result.addListener((match) => {
+        if (match.media == maxWidth) {
+          if (match.matches) {
+            scroll();
+          }
+        }
+      });
+    }
+  }
+</script>
+</body>
+</html>

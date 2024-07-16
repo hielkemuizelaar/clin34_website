@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% include home-header.html %}
+<button style="background-color: darkblue; color: white;" onclick="history.back()">Go Back</button>
+<h1>Automatic Identification of MWEs</h1>
+<h3>Jan Odijk, Martin Kroon, Tijmen Baarda, Ben Bonfil, Sheean Spoel</h3>
+<h6>Utrecht University</h6>
+<br>
+We report on ongoing work to convert the software underlying MWE-Finder (Odijk et al. 2024) into software to automatically enrich a text  corpus with annotations for multiword expressions.<br>
+MWE-Finder (URL) is an application to search for a (flexible) multiword expressions in text corpora. <br>
+The annotation software enriches each sentence in a text corpus with annotations for MWEs that occur in the DUCAME resource (https://surfdrive.surf.nl/files/index.php/s/2Maw8O0QTPH0oBP ), which contains 11k MWEs in canonical form (Odijk, 2023). The software underlying MWE-Finder automatically generates queries used to create the annotations. The annotations are  in accordance with the PARSEME guidelines (https://parsemefr.lis-lab.fr/parseme-st-guidelines/1.2/ ), though we will propose some extensions of these guidelines.<br>
+As a concrete example, in a sentence such as ‘Daar kraait geen haan naar’ the generated MWE-query marks the verb ‘kraait’  as VID (Verbal idiom) for the DUCAME MWE `0geen *haan zal naar iets kraaien’, it marks the words `haan’ and ‘naar’ as component words of this MWE, and it adds the DUCAME ID of this MWE (DCM03515)  to ‘kraait’.   <br><br> 
+References
+[Odijk 2023] Jan Odijk. 2023. A Canonical Form for Dutch Multiword Expressions (Version 1.0). https://surfdrive.surf.nl/files/index.php/s/2Maw8O0QTPH0oBP
+<br><br>
+[Odijk et al. to appear] Odijk, J., Kroon, M., Baarda, T., Bonfil, B., & Spoel, S. (to appear). MWE-finder: Querying for multiword expressions in large Dutch text corpora. In V. Giouli & V. B. Mititelu (Eds.), Multiword expressions in lexical resources. linguistic, lexicographic and computational perspectives. Language Science Press.
